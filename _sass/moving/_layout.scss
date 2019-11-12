@@ -333,7 +333,7 @@
       }
 
       .about-description {
-        margin-top: -0.6rem;
+        margin-top: -5px;
         @include relative-font-size(1);
         color: lighten($text-color, 25%);
       }
