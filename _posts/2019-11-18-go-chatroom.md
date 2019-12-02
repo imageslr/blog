@@ -97,7 +97,7 @@ git checkout v1-protocol-reader-writer
 
 `server/server.go` 将服务端的行为定义为一个接口，`server/tcp_server.go` 为相应的实现。
 
-### 实现客户端
+### 3. 实现客户端
 运行：
 ```
 git checkout v2-server-implementation
@@ -105,7 +105,7 @@ git checkout v2-server-implementation
 
 在这一步我们要实现客户端。客户端其实比较简单，只需要连接到服务端，然后向服务端发送消息或接收服务端的消息。这部分的工作主要在于 UI 的实现，不过我没有单独抽离它。感兴趣的读者可以查看 [tui/](https://github.com/imageslr/go-chat-server-practice/tree/master/tui) 目录下的源码。
 
-### 使用 gob 作为通信协议
+### 4. 使用 gob 作为通信协议
 运行：
 ```
 git checkout v3-client-implementation
