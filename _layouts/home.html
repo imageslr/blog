@@ -8,7 +8,13 @@ layout: default
   </head>
   <div class="home-title">
     <p class="home-heading">{{ site.title }}</p>
-    <p class="home-sub-heading">{{- site.description | escape -}}</p>
+    <p class="home-sub-heading">{{- site.description | escape -}}
+      <span class="busuanzi_container_site">
+        <span id="busuanzi_container_site_pv">PV: <span id="busuanzi_value_site_pv"></span></span> 
+        | 
+        <span id="busuanzi_container_site_uv">UV: <span id="busuanzi_value_site_uv"></span></span>
+      </span>
+    </p>
   </div>
 
   {%- if site.posts.size > 0 -%}
