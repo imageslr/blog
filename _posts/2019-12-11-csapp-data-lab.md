@@ -55,6 +55,23 @@ make
 ./fshow 15213243
 ```
 
+## 题目列表
+1. bitAnd：使用或、非实现与
+2. getByte：获取一个整数的某个字节
+3. logicalShift：实现逻辑右移
+4. bitCount：
+5. bang：不用 `!` 计算 `!x`
+6. fitsBits：判断某个数字是否能由一个 n 位二进制数表示
+7. tmin：返回 2 的补码的最小值
+8. divpwr2：计算某个数除以 2 的倍数
+9. negate：返回 -x
+10. isPositive：判断一个数是否是整数
+11. isLessOrEqual：判断 x <= y
+12. ilog2：计算某个数 log2
+13. float_neg：浮点数取反
+14. float_i2f：整型数转为浮点数
+15. float_twice：浮点数乘 2
+
 ## 题解
 完整代码：[bits.c](https://github.com/imageslr/CSAPP-Labs/blob/master/data-lab/datalab-handout-my-solution/bits.c)
 
@@ -176,7 +193,7 @@ int fitsBits(int x, int n)
 计算某个数除以 2 的倍数。对于正数来说，直接右移即可；对于负数来说，需要加一个 bias 以向 0 舍入。可以根据符号位是 0 还是 1 来决定要不要加 bias。
 
 ### 11. isLessOrEqual
-这里的问题在于直接作减法可能会溢出。
+判断 x <= y。这里的问题在于直接作减法可能会溢出。
 
 需要分类讨论两个数字的符号，如果符号不同，必然 y 最高位是 0，x 最高位是 1；如果符号相同，直接做减法也不会溢出。
 
