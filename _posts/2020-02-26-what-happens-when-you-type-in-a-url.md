@@ -137,5 +137,6 @@ HTTP 2 引入了**多路复用**，允许通过同一个连接发起多个请求
 进一步阅读：[浏览器的缓存机制](mweblib://15570203750404)
 
 ## 扩展阅读
-* [从输入一个 URL 到页面加载完成发生了什么 - 前端的视角](https://segmentfault.com/a/1190000013662126)
-* [从输入一个 URL 到页面加载完成发生了什么 - 硬件的视角](http://fex.baidu.com/blog/2014/05/what-happen/)
+* [撒网要见鱼的文章 - segmentfault](https://segmentfault.com/a/1190000013662126) - 前端的视角
+* [skyline75489 的文章 - github](https://github.com/skyline75489/what-happens-when-zh_CN) - 前端的视角
+* [nwind 的文章](http://fex.baidu.com/blog/2014/05/what-happen/) - 硬件的视角
