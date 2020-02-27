@@ -26,3 +26,10 @@ details {
   height: 6rem;
   margin: 0 1rem 0 0;
 }
+
+// kramdown markdown 语法 修饰类
+.no-wrap-table {
+  display: block;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
