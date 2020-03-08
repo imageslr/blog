@@ -52,7 +52,7 @@ int select(int nfds,
 
 一般来说，每个进程最多可以打开 64 个文件，`fd ∈ 0~63`。在不同系统上，最多允许打开的文件个数不同，Linux 2.4.22 强制规定最多不能超过 1,048,576。
 
-[进一步了解文件描述符](https://github.com/labuladong/fucking-algorithm/blob/master/%E6%8A%80%E6%9C%AF/linux%E8%BF%9B%E7%A8%8B.md)以图示的方式对文件描述符作了深入地讲解，可以进一步阅读。)。
+[这篇文章](https://github.com/labuladong/fucking-algorithm/blob/master/%E6%8A%80%E6%9C%AF/linux%E8%BF%9B%E7%A8%8B.md)以图示的方式对文件描述符作了深入地讲解，可以进一步阅读。
 
 ### socket 与 fd 的关系
 socket 是 Unix 中的术语。socket 可以用于同一台主机的不同进程间的通信，也可以用于不同主机间的通信。一个 socket 包含地址、类型和通信协议等信息，通过 `socket()` 函数创建：
