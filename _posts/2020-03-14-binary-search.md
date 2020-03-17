@@ -62,7 +62,7 @@ C++ STL 中的 `lower_bound()` 函数就实现了这个功能。
 
 ### 模板代码
 ```go
-// 查找满足 x ≥ target 的下界
+// 查找满足 x ≥ target 的下界的下标
 func LowerBound(nums []int, target int) int {
     left, right := 0, len(nums)-1
     for left <= right {
@@ -95,7 +95,7 @@ func LowerBound(nums []int, target int) int {
 
 对于本题而言，要找 `x ≤ target` 的上界，首先套用上文的模板代码，实现找 `x > target` 的下界的函数：
 ```go
-// 查找满足 x > target 的下界
+// 查找满足 x > target 的下界的下标
 func LowerBound(nums []int, target int) int {
         // ...
         if nums[mid] > target { // 只需将这里改为 >
@@ -105,7 +105,7 @@ func LowerBound(nums []int, target int) int {
 
 然后将下界的下标减一，就是我们要找的上界：
 ```go
-// 查找满足 x ≤ target 的上界
+// 查找满足 x ≤ target 的上界的下标
 func UpperBound(nums []int, target int) int {
     return LowerBound(nums, target)-1
 }
@@ -254,6 +254,6 @@ func LowerBound(nums []int, target int) int {
 * 上界和下界是相邻的，因此找上界可以转换为「互补的」找下界的问题，从而套用本文的模板
 * 「左闭右开」和「闭区间」的写法本质上都是相同的原理，只要理解了本文的内容，选择哪种写法都没有问题
 
-在后续的文章中，我会继续使用这个模板，解决更多的实际问题，欢迎关注！
+在后续的文章中，我们将继续使用这个模板，解决更多的实际问题，请阅读：[在实际问题中运用二分查找模板代码]({% post_url 2020-03-16-leetcode-875 %})。
 
 本文发表在我的博客 [https://imageslr.github.io/](https://imageslr.github.io/)。我也会分享更多的题解，一起交流，共同进步！
