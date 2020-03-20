@@ -68,8 +68,9 @@ defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
 在“系统偏好设置-键盘-快捷键”页面下方，打开全键盘控制：
 ![-w668](/media/15846068903987.jpg)
 
-
 注意：无论焦点聚焦于哪个选项，按下「回车」都相当于是选择 “确定”。
+
+当然，如果有 Touch Bar，可以直接在 Touch Bar 上完成操作。
 
 ### 显示电量百分比
 点击状态栏电源图标，选择“显示百分比”。
@@ -230,11 +231,11 @@ Mac 的一款窗口布局工具，可以快速缩放应用/移动位置，比如
 
 ### 效率神器：Alfred
 Mac 效率神器，不多作介绍。快捷键：
-1. `⌥+Space` 打开 Alfred
+1. `⌥ Alt` + `Space` 打开 Alfred
 2. `↑`、`↓` 切换选择
-3. `Enter` 选择当前高亮项
-4. `⌘+数字` 快速选择某一项
-5. `⌥+Enter`、`⌘+Enter` 会对当前高亮项执行特殊操作，按下 `⌥` / `⌘` 就会显示功能提示。比如对于应用程序来说，`⌥+Enter` 是在 Spotlight 中搜索，`⌘+Enter` 是在 Finder 中显示
+3. `↩︎ Enter` 选择当前高亮项
+4. `⌘ Command` + `数字` 快速选择某一项
+5. `⌥ Alt` + `↩︎ Enter`、`⌘ Command` + `↩︎ Enter` 会对当前高亮项执行特殊操作，按下 `⌥` / `⌘` 就会显示功能提示。比如对于应用程序来说，`⌥ Alt`+ `↩︎ Enter` 是在 Spotlight 中搜索，`⌘ Command` + `↩︎ Enter` 是在 Finder 中显示
 
 常见使用场景：
 * Google 搜索：`google {query}`
@@ -255,21 +256,21 @@ SnippetsLab 支持 iCloud 同步，这意味着当我们切换到新 Mac 后，�
 ![-w577](/media/15846151958103.jpg)
 
 点击查看 [Alfred 插件配置说明/使用方法/下载链接](https://www.renfei.org/snippets-lab/manual/mac/tips-and-tricks/alfred-integration.html)。使用方法：
-1. `⌥+Space` 打开 Alfred
+1. `⌥ Alt` + `Space` 打开 Alfred
 2. 输入 `snippet {query}` 查询
 3. 快捷键：
     1. `↑`、`↓` 切换选择
-    2. `Enter` 将当前选择的代码片段复制到剪切板
-    3. `⌘+数字` 快速选择某一代码片段
-    4. `⌥+Enter` 在 SnippetsLab 中打开当前选择的代码片段
-    5. `⌘+Enter` 将当前选择的代码片段粘贴到屏幕最前方的应用中
+    2. `↩︎ Enter` 将当前选择的代码片段复制到剪切板
+    3. `⌘ Command` + `数字` 快速选择某一代码片段
+    4. `⌥ Alt` + `↩︎ Enter` 在 SnippetsLab 中打开当前选择的代码片段
+    5. `⌘ Command` + `↩︎ Enter` 将当前选择的代码片段粘贴到屏幕最前方的应用中
 
 
 ### 记录剪切板历史：Paste
 Paste 可以记录剪切板历史。Paste 同样支持 iCloud 同步。
 ![-w1192](/media/15846159741374.jpg)
 
-快捷键：`⌘+⇧+V` 打开 Paste，`⌘+数字` 快速复制某一条记录。
+快捷键：`⌘ Command` + `⇧ Shift` + `V` 打开 Paste，`⌘ Command` + `数字` 快速复制某一条记录。
 
 <div id="terminal-fq"></div>
 ### 科学上网
@@ -291,7 +292,7 @@ Paste 可以记录剪切板历史。Paste 同样支持 iCloud 同步。
 
 ## 其他软件
 ### 记笔记：MWeb
-MWeb 是一款非常优秀的 Markdown 笔记软件。在尝试过印象笔记、Typora、Bear、Ulysses 等多款软件后，个人认为没有一款软件可以替代 MWeb，后者对 Markdown 与 LaTex 的支持相当完善，同时保持了良好的使用体验。此外，MWeb 也有 iOS 应用，在不内购的情况下可以阅读、编辑笔记，无法新建笔记，足以应对日常需求。
+MWeb 是一款非常优秀的 Markdown 笔记软件。在尝试过印象笔记、Typora、Bear、Ulysses 等多款软件后，个人认为没有一款软件可以替代 MWeb，后者对 Markdown 与 LaTex 的支持相当完善，同时保持了良好的使用体验。此外，MWeb 也有 iOS 应用，在不内购的情况下可以阅读、编辑笔记，无法新建笔记，足以满足日常需求。
 
 ![](/media/15846229381899.jpg)
 
@@ -306,5 +307,21 @@ OmniOutliner 是一款简介、专注的大纲制作软件，我使用它来安�
 
 ![](/media/15846254446005.jpg)
 
+### 浏览器：Chrome
+“系统偏好设置-通用-默认网页浏览器”，选择“Google Chrome”
+
+### PDF 阅读：PDF Expert
+PDF 阅读工具
+
+### 代码编辑：VS Code
+下载地址: [官网](https://code.visualstudio.com/download)。
+
+下载完成后，打开 VS Code，按下 `⌘ Command` + `⇧ Shift` + `P`，输入 `command`，选择 `Shell Command: Install 'code' command in PATH`。这样就可以在 iTerm2 中，直接打开某个文件夹：
+```
+code . // 在 VS Code 中打开当前目录
+code ~/my-blog // 在 VS Code 中打开 my-blog 目录
+code ~/.zshrc // 在  VS Code 中打开 .zshrc 文件，类似于 vim ~/.zshrc
+```
+
 ## 附件
-[百度云](https://pan.baidu.com/s/1DibQO9coT-NbBtn_hojV-g)，密码: awc3
+[百度云](https://pan.baidu.com/s/1nQesuO051LEaHICtm7tNrA)，提取码: c5yu
