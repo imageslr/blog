@@ -184,6 +184,25 @@ source $ZSH/oh-my-zsh.sh
 
 ![-w569](/media/15846317408700.jpg)
 
+### Git 配置
+`git commit` 要求设置用户名和邮箱，通过以下命令设置，省略 `--global` 只对当前仓库设置：
+```
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
+
+为常用 git 命令设置更短的别名：
+```
+[alias]
+        last = log -1
+        lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow) %d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+        co = checkout
+        ci = commit
+        st = status
+        br = branch
+        cp = cherry-pick
+```
+
 ## 高效插件
 ### 显示网速：iStat Menus
 iStat Menus 可以在状态栏显示网速，有利于判断网络情况：
