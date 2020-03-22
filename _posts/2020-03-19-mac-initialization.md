@@ -325,4 +325,4 @@ code ~/.zshrc // 在  VS Code 中打开 .zshrc 文件，类似于 vim ~/.zshrc
 ```
 
 ## 附件
-[百度云](https://pan.baidu.com/s/1nQesuO051LEaHICtm7tNrA)，提取码: c5yu
+[百度云](https://pan.baidu.com/s/1JOcAPk-8ekzdNmjbJn2NwA)，提取码: mjtu
