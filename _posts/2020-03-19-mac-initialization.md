@@ -310,6 +310,9 @@ Paste 可以记录剪切板历史。Paste 同样支持 iCloud 同步。
 ### 微信小助手
 [Github - MustangYM/WeChatExtension-ForMac](https://github.com/MustangYM/WeChatExtension-ForMac)
 
+### 快速连接 AirPods：ToothFairy
+菜单栏一键连接 AirPods
+
 ## 其他软件
 ### 记笔记：MWeb
 MWeb 是一款非常优秀的 Markdown 笔记软件。在尝试过印象笔记、Typora、Bear、Ulysses 等多款软件后，个人认为没有一款软件可以替代 MWeb，后者对 Markdown 与 LaTex 的支持相当完善，同时保持了良好的使用体验。此外，MWeb 也有 iOS 应用，在不内购的情况下可以阅读、编辑笔记，无法新建笔记，足以满足日常需求。
@@ -344,4 +347,4 @@ code ~/.zshrc // 在  VS Code 中打开 .zshrc 文件，类似于 vim ~/.zshrc
 ```
 
 ## 附件
-[百度云](https://pan.baidu.com/s/1JOcAPk-8ekzdNmjbJn2NwA)，提取码: mjtu
+[百度云](https://pan.baidu.com/s/1SPGJTFN3y6QzzlmAtwgQ1A)，提取码: u4gg
