@@ -159,7 +159,14 @@ cd autojump
 
 zsh-autosuggestion 可以根据当前输入的内容，自动提示之前执行过的命令。autojump 可以快速跳转到某个目录，比如当我们执行过 `cd ~/some-file` 后，执行 `j some`、`j so`、`j sf` 都可以跳转到 `~/some-file` 目录下。
 
-安装完后，还需要在 `~/.zshrc` 中加载这两个插件，才能生效。执行 `vim ~/.zshrc`，找到 `plugins=...`，其内容如下所示：
+**安装 zsh-syntax-highlighting：**
+```
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+```
+
+输入命令后，如果命令正确，则高亮为绿色，反之高亮为红色。
+
+安装完后，还需要在 `~/.zshrc` 中加载这些插件，才能生效。执行 `vim ~/.zshrc`，找到 `plugins=...`，其内容如下所示：
 ```bash
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
@@ -170,7 +177,7 @@ source $ZSH/oh-my-zsh.sh
 改成这样：
 ```bash
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions autojump)
+plugins=(git zsh-autosuggestions autojump zsh-syntax-highlighting)
 
 [[ -s /home/zsh/.autojump/etc/profile.d/autojump.sh ]] && source /home/zsh/.autojump/etc/profile.d/autojump.sh
 autoload -U compinit && compinit -u
@@ -178,7 +185,7 @@ autoload -U compinit && compinit -u
 source $ZSH/oh-my-zsh.sh
 ```
 
-退出 iTerm2 后重新打开，执行以下命令，验证插件是否安装成功：
+然后 `source ~/.zshrc` 使插件生效。执行以下命令，验证插件是否安装成功：
 1. 验证 autojump：首先执行  `cd ~/Downloads` 跳转到目录 `~/Downloads`，然后只需要输入目录的若干个字符：`j dow`，就可以自动跳转到 `~/Downloads`
 2. 验证 zsh-autosuggestions：输入之前执行过的命令的前几个字符，就会自动提示完整命令，按 `→` 可补全
 
@@ -313,6 +320,33 @@ Paste 可以记录剪切板历史。Paste 同样支持 iCloud 同步。
 ### 快速连接 AirPods：ToothFairy
 菜单栏一键连接 AirPods
 
+### 录屏软件
+macOS Catalina 10.15.2 下，系统自带的 QuickTime Player 已经足够好用。
+
+其他版本的系统，可以使用 Kap。[官网下载](https://getkap.co/)。
+
+### 录制系统声音：SoundFlower
+录制屏幕的时候只能录制自己说话的声音，录不了系统声音。
+
+安装 SoundFlower 可以录制系统声音。参考这里安装：
+* [macOS 下怎么录屏，能同时保留声音？有哪些较好的解决方案？ - 殊哥的回答 - 知乎](https://www.zhihu.com/question/20251726/answer/94938941)
+* [如何用 QuickTime 对 Mac 屏幕录制，而且录上声音？ - 夯七的回答 - 知乎](https://www.zhihu.com/question/26032781/answer/170489532)
+
+使用方法：
+1. 如果希望**同时录制系统和麦克风的声音**需要在录屏软件（如 QuickTime Player）里，输入（麦克风）选择**聚集设备**
+2. 如果想只录系统的声音，输入设备选择 Soundflower（2ch）
+3. 在视频软件（如 Zoom、MS Team）中，输入设备选择外接麦克风，这样对方就不会听到系统声音了
+
+
+原理：**SoundFlower 录制系统声音的原理是重定向系统的输入和输出**：
+* 将输出重定向到 Soundflower(2ch) 而不是耳机
+* 将输入重定向到 Soundflower(2ch) 而不是麦克风
+
+一些问题：
+1. 如何确认是否可以录制屏幕声音？“系统设置 -> 音频 -> 输入/输出”，选择默认设备。如果一切正确，那么系统有声音播放时，“输入电平”应该是有音量的
+3. 如果无法录制屏幕声音怎么办？参考[这里](https://www.zhihu.com/question/20251726/answer/94938941)，将 SoundFlower 静音、取消静音就可以了
+2. 按理说，为了在屏幕录制时**自己耳机里也能听到系统声音**，需要在状态栏的“声音”或者“系统设置 -> 音频 -> 输出”中，选择输出设备为“**多输出设备**”（要注意这一步没法调音量，需要提前设定好）。但我亲测**不需要设置选择多输出设备也可以听到系统声音**
+
 ## 其他软件
 ### 记笔记：MWeb
 MWeb 是一款非常优秀的 Markdown 笔记软件。在尝试过印象笔记、Typora、Bear、Ulysses 等多款软件后，个人认为没有一款软件可以替代 MWeb，后者对 Markdown 与 LaTex 的支持相当完善，同时保持了良好的使用体验。此外，MWeb 也有 iOS 应用，在不内购的情况下可以阅读、编辑笔记，无法新建笔记，足以满足日常需求。
@@ -345,6 +379,9 @@ code . // 在 VS Code 中打开当前目录
 code ~/my-blog // 在 VS Code 中打开 my-blog 目录
 code ~/.zshrc // 在  VS Code 中打开 .zshrc 文件，类似于 vim ~/.zshrc
 ```
+
+### 视频播放：IINA
+[官网下载](https://iina.io/)
 
 ## 附件
 [百度云](https://pan.baidu.com/s/1SPGJTFN3y6QzzlmAtwgQ1A)，提取码: u4gg
