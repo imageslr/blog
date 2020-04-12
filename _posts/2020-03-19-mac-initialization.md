@@ -145,6 +145,7 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 ```
 
 当 oh-my-zsh 安装成功后，我们会看到终端的文本不再是单调的白色，而是有了不同的颜色。这是因为 oh-my-zsh 提供了很多主题，可以通过编辑 `~/.zshrc` 中的 `ZSH_THEME` 字段修改，默认是 `robbyrussell`。
+> oh-my-zsh 提供了一个 `~/.zshrc` 模板，安装后会替换默认的 `~/.zshrc`。下面以安装 oh-my-zsh 后的 `~/.zshrc` 为准。
 
 **安装 zsh-autosuggestion 与 autojump：**
 ```
@@ -326,26 +327,9 @@ macOS Catalina 10.15.2 下，系统自带的 QuickTime Player 已经足够好用
 其他版本的系统，可以使用 Kap。[官网下载](https://getkap.co/)。
 
 ### 录制系统声音：SoundFlower
-录制屏幕的时候只能录制自己说话的声音，录不了系统声音。
-
-安装 SoundFlower 可以录制系统声音。参考这里安装：
+录制屏幕的时候只能录制自己说话的声音，录不了系统声音。安装 SoundFlower 可以录制系统声音。参考这里安装：
 * [macOS 下怎么录屏，能同时保留声音？有哪些较好的解决方案？ - 殊哥的回答 - 知乎](https://www.zhihu.com/question/20251726/answer/94938941)
 * [如何用 QuickTime 对 Mac 屏幕录制，而且录上声音？ - 夯七的回答 - 知乎](https://www.zhihu.com/question/26032781/answer/170489532)
-
-使用方法：
-1. 如果希望**同时录制系统和麦克风的声音**需要在录屏软件（如 QuickTime Player）里，输入（麦克风）选择**聚集设备**
-2. 如果想只录系统的声音，输入设备选择 Soundflower（2ch）
-3. 在视频软件（如 Zoom、MS Team）中，输入设备选择外接麦克风，这样对方就不会听到系统声音了
-
-
-原理：**SoundFlower 录制系统声音的原理是重定向系统的输入和输出**：
-* 将输出重定向到 Soundflower(2ch) 而不是耳机
-* 将输入重定向到 Soundflower(2ch) 而不是麦克风
-
-一些问题：
-1. 如何确认是否可以录制屏幕声音？“系统设置 -> 音频 -> 输入/输出”，选择默认设备。如果一切正确，那么系统有声音播放时，“输入电平”应该是有音量的
-3. 如果无法录制屏幕声音怎么办？参考[这里](https://www.zhihu.com/question/20251726/answer/94938941)，将 SoundFlower 静音、取消静音就可以了
-2. 按理说，为了在屏幕录制时**自己耳机里也能听到系统声音**，需要在状态栏的“声音”或者“系统设置 -> 音频 -> 输出”中，选择输出设备为“**多输出设备**”（要注意这一步没法调音量，需要提前设定好）。但我亲测**不需要设置选择多输出设备也可以听到系统声音**
 
 ## 其他软件
 ### 记笔记：MWeb
