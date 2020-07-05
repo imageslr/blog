@@ -4,6 +4,34 @@ title: 📝【LeetCode】一个模板通杀所有「二分查找」问题
 date: 2020/3/15 15:00
 ---
 
+本文涉及到的 LeetCode 题目：
+* [LeetCode 34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+* [LeetCode 35. 搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/)
+
+
+<details markdown="1">
+<summary> 个人笔记 </summary>
+* 建议使用左闭右开的模板，需要注意的细节更少
+
+```go
+// 返回第一个满足 x >= target 的 x 的下标
+// 也相当于按升序插入 target 的位置
+// 不存在满足此条件的 x 时，返回 len(nums)，即 target 应该插入在 nums 末尾
+func LowerBound(nums []int, target int) int {
+    left, right := 0, len(nums)
+    for left < right {
+        mid := left+(right-left)>>1
+        if nums[mid] >= target { // find first x >= target
+            right = mid // 下界是在左侧，所以应该往左缩小区间，因此调 right
+        } else {
+            left = mid+1
+        }
+    }
+    return left
+}
+```
+</details>
+
 ## 引言
 二分查找有很多应用场景。可以说，**只要问题对应的函数图像在给定区间是单调的，那就可以使用二分查找在这个区间搜索目标值**。
 
@@ -174,28 +202,25 @@ func searchRange(nums []int, target int) []int {
 ```
 
 ## 查找指定值的位置
-这就是最基本的二分查找问题，对应于 [LeetCode 35. 搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/)：给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。
+这是最基本的二分查找问题，对应于 [LeetCode 35. 搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/)：给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。
 
-我们已经分析过，`target` 按顺序插入的位置，就是满足 `x ≥ target` 的第一个元素的位置。因此，本题同样只需要套用找下界的模板代码。由于可以返回**任意一个**等于目标值的位置，因此增加一个判断，当 `nums[mid] == target` 时直接返回：
+之所以把这道题放在最后面说，是因为这道题**完完全全就是找下界的题目**！模板代码一行都不需要改：
 ```go
 func searchInsert(nums []int, target int) int {
     left, right := 0, len(nums)-1
     for left <= right {
-        mid := left + (right-left) >> 1
-+       if nums[mid] == target {
-+           return mid
-+       }
-        if nums[mid] > target { // 这里用 > 就可以了，上面已经判断过 =
-            right = mid - 1
+        mid := left+(right-left)>>1
+        if nums[mid] >= target {
+            right = mid-1
         } else {
-            left = mid + 1
+            left = mid+1
         }
     }
     return left
 }
 ```
 
-这就是我们最常见的二分查找代码。
+`target` 按顺序插入的位置，就是满足 `x ≥ target` 的第一个元素的位置。由于可以返回**任意一个等于**目标值的位置，所以这里还可以增加一个判断，当 `nums[mid] == target` 时直接返回。代码略。
 
 ## 总结：模板代码
 二分查找无论是找下界、还是找上界、还是找特定值，都可以套用「找下界」的模板代码：
