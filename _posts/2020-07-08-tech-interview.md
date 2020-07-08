@@ -44,10 +44,11 @@ date: 2020/7/8 00:00
 * I/O 多路复用，select / poll / epoll 的区别 [答案]({% post_url 2020-02-27-select-poll-epoll %})
 
 ## 计算机网络
-* 协议栈
+* 协议栈 [答案]({% post_url 2020-07-08-protocol-stack %})
     * OSI 协议栈
     * TCP/IP 协议栈
     * 每一层的作用
+* 两台主机间的通信过程
 * TCP 的三次握手和四次挥手
     * 客户端 TIME_WAIT 状态的意义是什么
 * TCP、UDP 对比
