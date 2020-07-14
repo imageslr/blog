@@ -1,3 +1,8 @@
+---
+layout: post
+title: 📔【操作系统】Copy-on-write（COW）机制
+date: 2019/11/15 15:00
+---
 
 参考资料
 * https://juejin.im/post/5bd96bcaf265da396b72f855
