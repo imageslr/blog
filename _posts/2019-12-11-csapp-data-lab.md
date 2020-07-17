@@ -2,7 +2,7 @@
 layout: post
 title: 📈【深入理解计算机系统】Labs：data-lab
 date: 2019/12/11 15:00
-permalink: 2019/12/11/csapp-data-lab
+permalink: 2019/12/11/csapp-data-lab.html
 ---
 
 ## 实验环境

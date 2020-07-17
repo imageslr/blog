@@ -2,6 +2,7 @@
 layout: post
 title: 📗【Go 原理】详解 interface
 date: 2019/11/12 19:00
+permalink: 2019/11/12/go-underlying-interface-detail.html
 ---
 
 ## 接口类型

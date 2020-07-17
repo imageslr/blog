@@ -2,7 +2,7 @@
 layout: post
 title: 📔【操作系统】陷阱、中断、异常、信号
 date: 2020/7/9 9:00
-permalink: 2020/07/09/trap-interrupt-exception
+permalink: 2020/07/09/trap-interrupt-exception.html
 ---
 
 ## 前言：异常控制流

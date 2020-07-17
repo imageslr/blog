@@ -2,7 +2,7 @@
 layout: post
 title: 📔【操作系统】进程的调度、僵尸进程/孤儿进程/守护进程
 date: 2020/7/7 08:00
-permalink: 2020/07/07/process-schedule
+permalink: 2020/07/07/process-schedule.html
 ---
 
 > 更多面试题总结请看：[🗂【面试题】技术面试题汇总]({%post_url 2020-07-08-tech-interview%})

@@ -2,7 +2,7 @@
 layout: post
 title: 💡【方法论】我的看书方法/学习方法/记笔记方法
 date: 2018/11/11 1:00
-permalink: 2018/11/11/learn-methodology
+permalink: 2018/11/11/learn-methodology.html
 ---
 
 ## 书籍与公开课

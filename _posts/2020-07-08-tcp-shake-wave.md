@@ -2,7 +2,7 @@
 layout: post
 title: 📔【计算机网络】TCP 三次握手与四次挥手
 date: 2020/7/7 10:00
-permalink: 2020/07/07/tcp-shake-wave
+permalink: 2020/07/07/tcp-shake-wave.html
 ---
 
 > 更多面试题总结请看：[🗂【面试题】技术面试题汇总]({%post_url 2020-07-08-tech-interview%})
