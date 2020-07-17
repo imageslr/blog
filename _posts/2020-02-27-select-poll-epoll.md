@@ -2,6 +2,7 @@
 layout: post
 title: 📔【操作系统】I/O 多路复用，select / poll / epoll 详解
 date: 2020/02/27 10:00
+permalink: 2020/02/27/select-poll-epoll
 ---
 
 > 更多面试题总结请看：[🗂【面试题】技术面试题汇总]({%post_url 2020-07-08-tech-interview%})

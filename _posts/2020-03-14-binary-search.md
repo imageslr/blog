@@ -2,6 +2,7 @@
 layout: post
 title: 📝【LeetCode】一个模板通杀所有「二分查找」问题
 date: 2020/3/15 15:00
+permalink: 2020/03/15/binary-search
 ---
 
 本文涉及到的 LeetCode 题目：

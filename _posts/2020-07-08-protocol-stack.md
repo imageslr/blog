@@ -2,6 +2,7 @@
 layout: post
 title: 📔【计算机网络】计算机网络基础与协议栈
 date: 2020/7/7 10:00
+permalink: 2020/07/07/protocol-stack
 ---
 
 > 更多面试题总结请看：[🗂【面试题】技术面试题汇总]({%post_url 2020-07-08-tech-interview%})

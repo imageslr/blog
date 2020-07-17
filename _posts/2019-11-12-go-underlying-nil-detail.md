@@ -2,6 +2,7 @@
 layout: post
 title: 📗【Go 原理】详解 nil：接口类型和值类型的区别
 date: 2019/11/12 18:00:00
+permalink: 2019/11/12/go-underlying-nil-detail
 ---
 
 在底层，interface 作为两个成员来实现：一个类型和一个值 `(type, value)`。`value `被称为接口的动态值，它是一个任意的具体值，而该 `type` 则为该值的类型。对于 int 值 3， 一个接口值示意性地包含 `(int, 3)`。

@@ -2,6 +2,7 @@
 layout: post
 title: 📔【操作系统】进程与线程
 date: 2020/7/7 08:00
+permalink: 2020/07/07/process-thread
 ---
 
 > 更多面试题总结请看：[🗂【面试题】技术面试题汇总]({%post_url 2020-07-08-tech-interview%})

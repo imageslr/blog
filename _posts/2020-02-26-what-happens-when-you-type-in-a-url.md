@@ -2,6 +2,7 @@
 layout: post
 title: 📔【计算机网络】从输入一个 URL 到页面加载完成的过程
 date: 2020/2/26 14:00
+permalink: 2020/02/26/what-happens-when-you-type-in-a-url
 ---
 
 ## 前言
