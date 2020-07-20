@@ -60,7 +60,7 @@ make
 1. bitAnd：使用或、非实现与
 2. getByte：获取一个整数的某个字节
 3. logicalShift：实现逻辑右移
-4. bitCount：
+4. bitCount：统计二进制中 1 的个数
 5. bang：不用 `!` 计算 `!x`
 6. fitsBits：判断某个数字是否能由一个 n 位二进制数表示
 7. tmin：返回 2 的补码的最小值
@@ -197,6 +197,17 @@ int fitsBits(int x, int n)
 判断 x <= y。这里的问题在于直接作减法可能会溢出。
 
 需要分类讨论两个数字的符号，如果符号不同，必然 y 最高位是 0，x 最高位是 1；如果符号相同，直接做减法也不会溢出。
+
+```c
+int isLessOrEqual(int x, int y)
+{
+  // y - x >= 0 直接做减法可能负溢出
+  int diffSign = !!((x >> 31) ^ (y >> 31));
+  int diff = y + ~x + 1;
+  // 符号不同，x 必然小于 0；符号相同，差非负，直接做减法不会溢出
+  return (diffSign & x >> 31) | (!diffSign & !(diff >> 31));
+}
+```
 
 ### 12. ilog2
 计算某个数 log2，本质就是找到最左的 1 所在的位置。这道题也比较难。
