@@ -66,6 +66,8 @@ permalink: 2020/07/09/trap-interrupt-exception.html
 | 是否会导致进程终止 | 否 | 否 | 可能 |
 {: .no-wrap-table}
 
+<div id="_signal"></div>
+
 ## 信号（signal）
 信号是一种**更高层的**软件形式的异常，同样会中断进程的控制流，可以由进程进行处理。一个信号代表了一个消息。信号的作用是用来**通知进程**发生了某种系统事件。
 

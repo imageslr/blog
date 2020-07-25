@@ -26,21 +26,21 @@ layout: default
         datetime="{{ page.date | date_to_xmlschema }}"
         itemprop="datePublished"
       >
-        {%- assign date_format = "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
+        {%- assign date_format = "%b %-d, %Y" -%} {{ page.date | date:
+        date_format }}
       </time>
       {%- if page.author -%} •
       <span itemprop="author" itemscope itemtype="http://schema.org/Person"
-        ><span class="p-author h-card" itemprop="name">{{
-          page.author | escape
-        }}</span></span
+        ><span class="p-author h-card" itemprop="name"
+          >{{ page.author | escape }}</span
+        ></span
       >
       {%- endif -%}
       <span class="busuanzi_container_page">
-      <span id="busuanzi_container_page_pv">
-        •
-        <span id="busuanzi_value_page_pv"></span> View
-      </span>
+        <span id="busuanzi_container_page_pv">
+          •
+          <span id="busuanzi_value_page_pv"></span> View
+        </span>
       </span>
     </p>
   </header>
@@ -53,4 +53,13 @@ layout: default
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
+
+<div class="page-navigation">
+  {% if page.previous.url %}
+  <a class="prev" href="{{page.previous.url}}">&laquo; 上一篇</a>
+  {% endif %} {% if page.next.url %}
+  <a class="next" href="{{page.next.url}}">下一篇 &raquo;</a>
+  {% endif %}
+</div>
+
 {%- include gitalk.html -%}
