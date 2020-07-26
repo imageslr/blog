@@ -55,10 +55,10 @@ layout: default
 </article>
 
 <div class="page-navigation">
-  {% if page.previous.url %}
-  <a class="prev" href="{{page.previous.url}}">&laquo; 上一篇</a>
-  {% endif %} {% if page.next.url %}
-  <a class="next" href="{{page.next.url}}">下一篇 &raquo;</a>
+  {% if page.next.url %}
+  <a class="prev" href="{{page.next.url}}">&laquo; 上一篇</a>
+  {% endif %} {% if page.previous.url %}
+  <a class="next" href="{{page.previous.url}}">下一篇 &raquo;</a>
   {% endif %}
 </div>
 

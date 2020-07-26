@@ -36,17 +36,17 @@ details {
 
 .page-navigation {
   display: block;
-  width: auto;
+  width: 100%;
   overflow: hidden;
 }
 
 .page-navigation a {
   display: block;
-  width: 50%;
   float: left;
   margin: 1em 0;
 }
 
 .page-navigation .next {
   text-align: right;
+  float: right;
 }
