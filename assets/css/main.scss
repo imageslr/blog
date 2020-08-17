@@ -5,6 +5,25 @@ sitemap: false
 @import "moving";
 @import url("https://fonts.googleapis.com/css?family=Bitter&display=swap");
 
+// start 通用 css
+.bold {
+  font-weight: bold;
+}
+
+.bolder {
+  font-weight: bolder;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.italic {
+  font-style: italic;
+}
+
+// end
+
 .busuanzi_container_site {
   margin-left: 8px;
   // opacity: 0;

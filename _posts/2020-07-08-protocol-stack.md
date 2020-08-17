@@ -24,6 +24,96 @@ OSI 从上到下分为 7 层：
 * 网络层（或网际互联层）：对应于 OSI 参考模型的网络层，主要解决主机到主机的路由问题。协议包括 IP、ICMP 等
 * 网络接入层：对应于 OSI 参考模型的物理层和数据链路层，负责相邻的物理节点间的可靠数据传输。协议包括 ARP、IEEE 802.2 等
 
+## TCP/IP 参考模型各层常见协议
+将“网络接入层”进一步分为“数据链路层”与“物理层”，得到五层协议模型。各层的常见协议如下：
+
+<table class="no-wrap-table">
+<thead>
+  <tr>
+    <th>TCP/IP 协议层</th>
+    <th>协议</th>
+    <th>作用</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td rowspan="6">应用层</td>
+    <td class="bold">HTTP</td>
+    <td>超文本传输协议（HyperText Transfer Protocol）</td>
+  </tr>
+  <tr>
+    <td class="bold">FTP</td>
+    <td>文件传输协议（File Transfer Protocol）用于在客户端和服务器之间进行文件传输</td>
+  </tr>
+  <tr>
+    <td>SMTP</td>
+    <td>简单邮件传输协议（Simple Mail Transfer Protocol）是一个在网络上传输电子邮件的标准</td>
+  </tr>
+  <tr>
+    <td>TELNET</td>
+    <td>Telnet 是服务器远程登录控制的标准协议与主要方式</td>
+  </tr>
+  <tr>
+    <td class="bold">DNS</td>
+    <td>域名系统（Domain Name System）是域名和 IP 地址相互映射的分布式数据库</td>
+  </tr>
+  <tr>
+    <td class="bold">SSH</td>
+    <td>安全外壳协议（Secure Shell）是一种加密的网络传输协议，可在不安全的网络中为网络服务提供安全的传输环境</td>
+  </tr>
+  <tr>
+    <td rowspan="2">传输层</td>
+    <td class="bold">TCP</td>
+    <td>传输控制协议（Transmission Control Protocol）是一种面向连接的、可靠的、基于字节流的传输层通信协议</td>
+  </tr>
+  <tr>
+    <td class="bold">UDP</td>
+    <td>用户数据报协议（User Datagram Protocol）是一个简单的、无连接的、不可靠的、面向数据报的通信协议</td>
+  </tr>
+  <tr>
+    <td rowspan="6">网络层</td>
+    <td class="bold">IP</td>
+    <td>网际协议（Internet Protocol）是用于分组交换数据网络的一种协议，功能包括寻址、路由、尽最大努力交付数据包</td>
+  </tr>
+  <tr>
+    <td>ICMP</td>
+    <td>互联网控制消息协议（Internet Control Message Protocol）用于返回通信环境的错误消息。traceroute 和 ping 都是基于 ICMP 消息实现的，traceroute 是通过发送含有特殊 TTL 的包，然后接收 ICMP 超时消息和目标不可达消息来实现的；ping 则是用 ICMP 的“Echo request (8)”和“Echo reply (0)”消息来实现的</td>
+  </tr>
+  <tr>
+    <td>IGMP</td>
+    <td>因特网组管理协议（Internet Group Management Protocol ）管理 IP 协议多播组成员</td>
+  </tr>
+  <tr>
+    <td>RIP</td>
+    <td>路由信息协议（Routing Information Protocol）是一种内部网关协议（IGP），是距离向量路由协议的一种实现</td>
+  </tr>
+  <tr>
+    <td>OSFP</td>
+    <td>开放式最短路径优先（Open Shortest Path First）是一种内部网关协议（IGP），使用 Dijkstra 算法计算最短路径，是链路状态路由协议的一种实现</td>
+  </tr>
+  <tr>
+    <td>BGP</td>
+    <td>边界网关协议（Border Gateway Protocol）是互联网上一个核心的去中心化自治路由协议，属于矢量路由协议。BGP 用于互联网上，将自治系统视作一个整体；每个自治系统使用 IGP（代表实现有 RIP 和 OSPF）进行路由</td>
+  </tr>
+  <tr>
+    <td rowspan="2">数据链路层</td>
+    <td class="bold">ARP*</td>
+    <td>地址解析协议（Address Resolution Protocol）通过 IP 寻找 MAC 地址</td>
+  </tr>
+  <tr>
+    <td>ARQ</td>
+    <td>自动重传请求（Automatic Repeat-reQuest）是一种错误纠正协议</td>
+  </tr>
+  <tr>
+    <td>物理层</td>
+    <td>IEEE802</td>
+    <td>IEEE 802 指 IEEE 标准中关于局域网和城域网的一系列标准，其中最广泛使用的有以太网、令牌环、无线局域网等</td>
+  </tr>
+</tbody>
+</table>
+
+* ARP 协议：ARP 协议应该属于哪一层？一种说法是属于网络层，因为 IP 协议使用 ARP 协议；另一种说法是属于数据链路层，因为 MAC 地址是数据链路层的内容。在 OSI 模型中，ARP 协议属于链路层；而在 TCP/IP 模型中，ARP 协议属于网络层。
+
 ## 比较 TCP/IP 参考模型与 OSI 参考模型
 共同点：
 * 都采用了层次结构的概念
