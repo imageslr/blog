@@ -52,6 +52,7 @@ permalink: 2020/07/08/tech-interview.html
     * OSI 协议栈
     * TCP/IP 协议栈
     * 每一层的作用
+    * 每一层的常见协议与作用
 * 两台主机间的通信过程
 * TCP 的三次握手和四次挥手 [答案]({% post_url 2020-07-08-tcp-shake-wave %})
     * 三次握手、四次挥手过程
