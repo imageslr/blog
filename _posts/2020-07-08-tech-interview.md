@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 🗂【面试题】技术面试题汇总 🔥
-date: 2020/8/9 18:00
+date: 2020/8/22 22:00
 permalink: 2020/07/08/tech-interview.html
 ---
 
