@@ -13,8 +13,8 @@ Mac 是大多数程序员的主力机器。如今各个互联网公司都会给�
 
 本文部分内容参考了 [Github - bestswifter/macbootstrap](https://github.com/bestswifter/macbootstrap)。
 
-<div id="system-config"></div>
 ## 系统设置
+{: #system-config}
 
 ### 触控板设置
 **开启轻点点按**：“系统偏好设置-触控板-光标与点按-轻点来点按”，打开该选项。这样无需按下触控板即可点击。

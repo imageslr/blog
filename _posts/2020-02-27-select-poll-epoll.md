@@ -90,8 +90,9 @@ int FD_SET(int fd, fd_set *fd_set);  // 将 fd_set 某一位置 1
 int FD_ISSET(int fd, fd_set *fdset); // 检测 fd_set 某一位是否为 1
 ```
 
-<div id="selectdemo"></div>
 ### select 使用示例
+{: #selectdemo}
+
 下图的代码说明：
 1. 先声明一个 `fd_set` 类型的变量 `readFDs`
 2. 调用 `FD_ZERO`，将 `readFDs` 所有位置 0
