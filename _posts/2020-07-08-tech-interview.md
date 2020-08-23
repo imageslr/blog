@@ -68,16 +68,16 @@ permalink: 2020/07/08/tech-interview.html
     * 发送端如何控制自己的发送速率
     * 为什么快速重传不需要像超时重传那样，重新开始慢启动？
     * 如何计算理论场景的最大吞吐量
+* HTTP 原理 [答案]({% post_url 2020-08-22-http%})
+    * HTTP 请求方法、GET 和 POST 的区别？
+    * HTTP 状态码、301/302 原理、304 缓存原理
+    * HTTP/1.1、2.0 引入的变化
+    * HTTP 请求报文、响应报文的格式
+    * Cookie 和 Session 的区别
 * HTTPS 原理
     * HTTPS 四次握手过程
     * 访问的网站是如何自动切换到 HTTPS 的
     * 什么是中间人攻击？如何预防？
-* HTTP 原理
-    * HTTP 每个方法的作用？GET 和 POST 的区别？ 
-    * HTTP 长连接和短连接
-    * HTTP 1.1、2.0 引入的变化
-    * HTTP 缓存原理
-    * Session 和 Cookie 的区别
 * DNS 的解析过程
 * IP 原理
     * IP 号分类规则
