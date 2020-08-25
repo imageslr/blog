@@ -69,9 +69,9 @@ permalink: 2020/07/07/process-thread.html
 可以参考图 1。
 
 ## 线程的实现方式
-使用线程控制块 TCB 记录线程信息，和进程控制块 PCB 类似。
-
 线程也像进程一样有多个状态：运行、就绪、阻塞...
+
+从 Linux 内核的角度来看，线程和进程并没有被区别对待。无论线程还是进程，都是用 `task_struct` 结构表示的，只不过线程的 `mm`（内存空间）和 `files`（打开的文件）结构体是共享的，见[进程、线程和文件描述符 - labuladong](https://github.com/labuladong/fucking-algorithm/blob/master/%E6%8A%80%E6%9C%AF/linux%E8%BF%9B%E7%A8%8B.md)。
 
 线程实现的方式有三种：
 * 在内核实现

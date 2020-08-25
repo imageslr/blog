@@ -132,7 +132,7 @@ permalink: 2020/07/08/tech-interview.html
 * 大端法、小端法及其判断 [答案]({% post_url 2019-11-30-csapp-2%}#big-end)
 
 ## 多线程编程
-* 两个线程交替打印奇偶数
+* 两个线程交替打印奇偶数 [Bilibili 视频课](https://www.bilibili.com/video/BV1Lv411v71U)
 
 ## 开发与运维
 * Linux 常用命令
