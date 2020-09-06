@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 🗂【面试题】技术面试题汇总 🔥
-date: 2020/8/22 22:00
+date: 2020/9/6 17:00
 permalink: 2020/07/08/tech-interview.html
 ---
 
@@ -46,6 +46,7 @@ permalink: 2020/07/08/tech-interview.html
 * 内存地址空间、堆和栈在内存中是如何分配的
 * I/O 模型、同步 I/O 和异步 I/O
 * I/O 多路复用，select / poll / epoll 的区别 [答案]({% post_url 2020-02-27-select-poll-epoll %})
+* 写时复制 Copy-on-write [答案]({% post_url 2020-09-06-copy-on-write %})
 
 ## 计算机网络
 * 协议栈 [答案]({% post_url 2020-07-08-protocol-stack %})
