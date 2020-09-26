@@ -1,8 +1,0 @@
-{
-  "files.associations": {
-    "*.overrides": "less",
-    "*.variables": "less",
-    "*.ttml": "xml",
-    "*.ttss": "css"
-  }
-}
