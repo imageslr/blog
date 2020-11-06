@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 🗂【面试题】技术面试题汇总 🔥
-date: 2020/11/3 15:00
+date: 2020/11/6 17:00
 permalink: 2020/07/08/tech-interview.html
 toc: false
 # redirect_to: http://www.github.com
@@ -196,6 +196,8 @@ toc: false
 - 杀掉进程：一次**终止**一个进程，直至消除死锁环路（破坏“循环等待”）
 
 </details>
+
+<div id="allocate_method"></div>
 
 ### 物理内存管理
 
@@ -501,9 +503,19 @@ C 语言使用运行时栈来存储过程信息。每个函数的信息存储在
 ### 进程的内存管理
 
 - `malloc`、`free` 的原理
-- `tcmalloc` 的原理
 - Golang 的内存分配原理
 - 线程、协程的栈空间实现
+
+<details markdown="1">
+<summary>答案</summary>
+
+- `malloc`、`free` 的原理：[答案]({% post_url 2020-11-04-malloc%})
+  - `malloc`、`free` 实现思路、简单实现代码
+  - `malloc` 分配的内存块的格式
+  - 为什么 `free` 只需要传递一个指针就可以释放内存
+  - tcmalloc 简单了解
+
+</details>
 
 ### I/O 模型
 
