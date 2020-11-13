@@ -37,7 +37,7 @@ OSI 从上到下分为 7 层：
 </thead>
 <tbody>
   <tr>
-    <td rowspan="6">应用层</td>
+    <td rowspan="7">应用层</td>
     <td class="bold">HTTP</td>
     <td>超文本传输协议（HyperText Transfer Protocol）</td>
   </tr>
@@ -60,6 +60,10 @@ OSI 从上到下分为 7 层：
   <tr>
     <td class="bold">SSH</td>
     <td>安全外壳协议（Secure Shell）是一种加密的网络传输协议，可在不安全的网络中为网络服务提供安全的传输环境</td>
+  </tr>
+  <tr>
+    <td class="bold">DHCP</td>
+    <td>动态主机配置协议（Dynamic Host Configuration Protocol）的主要作用是集中管理、动态分配 IP 地址，提升地址的使用率</td>
   </tr>
   <tr>
     <td rowspan="2">传输层</td>
