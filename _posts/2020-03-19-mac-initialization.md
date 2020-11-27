@@ -148,6 +148,13 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 当 oh-my-zsh 安装成功后，我们会看到终端的文本不再是单调的白色，而是有了不同的颜色。这是因为 oh-my-zsh 提供了很多主题，可以通过编辑 `~/.zshrc` 中的 `ZSH_THEME` 字段修改，默认是 `robbyrussell`。
 > oh-my-zsh 提供了一个 `~/.zshrc` 模板，安装后会替换默认的 `~/.zshrc`。下面以安装 oh-my-zsh 后的 `~/.zshrc` 为准。
 
+安装完成后，oh-my-zsh 会自动设置为默认 shell 工具。如果设置失败，手动执行：
+```
+sudo chsh -s $(which zsh) $(whoami)
+```
+
+此时再重新登录 shell，就可以看到效果了！
+
 **安装 zsh-autosuggestion 与 autojump：**
 ```
 # zsh-autosuggestion
@@ -381,6 +388,7 @@ code ~/.zshrc // 在  VS Code 中打开 .zshrc 文件，类似于 vim ~/.zshrc
 * 绘图：[draw.io](https://github.com/jgraph/drawio-desktop/releases)
 * 截图工具：[Snip](https://zh.xnipapp.com/)
 * 类似于 Moom 的窗口管理工具：[Amethyst](https://github.com/ianyh/Amethyst)
+* 键盘清理工具：[KeyboardCleanTool](https://sspai.com/post/45406)，可以在清理键盘的时候锁定键盘
 
 ## 附件
 [百度云](https://pan.baidu.com/s/1SPGJTFN3y6QzzlmAtwgQ1A)，提取码: u4gg
