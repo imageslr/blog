@@ -200,7 +200,7 @@ git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 ```
 
-为常用 git 命令设置更短的别名：
+为常用 git 命令设置更短的别名（`~/.gitconfig`）：
 ```
 [alias]
         last = log -1
@@ -295,7 +295,12 @@ SnippetsLab 支持 iCloud 同步，这意味着当我们切换到新 Mac 后，�
     5. `⌘ Command` + `↩︎ Enter` 将当前选择的代码片段粘贴到屏幕最前方的应用中
 
 
-### 记录剪切板历史：Paste
+### 记录剪切板历史：Paste（Deprecated）
+
+使用 Alfred 即可达到相同的功能，无需再安装 Paste。设置路径：“Preference - Features - Clipboard History”，勾选“Keep Plain Text”、“Keep Images”、“Keep File Lists”。
+
+---
+
 Paste 可以记录剪切板历史。Paste 同样支持 iCloud 同步。
 ![-w1192](/media/15846159741374.jpg)
 
@@ -367,6 +372,14 @@ code ~/.zshrc // 在  VS Code 中打开 .zshrc 文件，类似于 vim ~/.zshrc
 
 ### 视频播放：IINA
 [官网下载](https://iina.io/)
+
+### 单词翻译：Bob
+[Github](https://github.com/ripperhe/Bob)
+
+### 其他
+
+* 绘图：[draw.io](https://github.com/jgraph/drawio-desktop/releases)
+* 截图工具：[Snip](https://zh.xnipapp.com/)
 
 ## 附件
 [百度云](https://pan.baidu.com/s/1SPGJTFN3y6QzzlmAtwgQ1A)，提取码: u4gg
