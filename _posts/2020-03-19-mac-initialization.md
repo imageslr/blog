@@ -380,6 +380,7 @@ code ~/.zshrc // 在  VS Code 中打开 .zshrc 文件，类似于 vim ~/.zshrc
 
 * 绘图：[draw.io](https://github.com/jgraph/drawio-desktop/releases)
 * 截图工具：[Snip](https://zh.xnipapp.com/)
+* 类似于 Moom 的窗口管理工具：[Amethyst](https://github.com/ianyh/Amethyst)
 
 ## 附件
 [百度云](https://pan.baidu.com/s/1SPGJTFN3y6QzzlmAtwgQ1A)，提取码: u4gg
