@@ -200,6 +200,13 @@ source $ZSH/oh-my-zsh.sh
 
 ![-w569](/media/15846317408700.jpg)
 
+**同步 bash 配置：**
+在 `~/.zshrc` 的开头加入这两行（有的文件可能不存在，自行删除对应行）：
+```
+source ~/.bash_profile
+source /etc/profile
+```
+
 ### Git 配置
 `git commit` 要求设置用户名和邮箱，通过以下命令设置，省略 `--global` 只对当前仓库设置：
 ```
