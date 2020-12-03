@@ -286,6 +286,7 @@ Mac 效率神器，不多作介绍。快捷键：
 * 有道翻译：[Github - wensonsmith/YoudaoTranslate](https://github.com/wensonsmith/YoudaoTranslate)
 * MWeb 文档搜索：[Github - tianhao/alfred-mweb-workflow](https://github.com/tianhao/alfred-mweb-workflow)
 * 颜色代码转换：[Github](https://github.com/g1eny0ung/Alfred-Colors-workflow)，16 进制/RGB/HSL 互转，对于前端开发者比较有用
+* 自定义快捷搜索，如百度搜索、字节搜索等
 
 ### 代码片段：SnippetsLab
 SnippetsLab 可以用来分类整理各个代码片段，在写代码时随时取用。
