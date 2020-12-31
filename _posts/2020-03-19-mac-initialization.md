@@ -247,7 +247,7 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize
 * `quicklook-json`：预览 JSON 文件
 * `qlimagesize`：预览图片时，显示图片大小与分辨率
 
-其他插件请在 [Github - sindresorhus/quick-look-plugins](https://github.com/sindresorhus/quick-look-plugins) 自行选用。
+其他插件请在 [Github - sindresorhus/quick-look-plugins](https://github.com/sindresorhus/quick-look-plugins) 自行选用，Catalina 系统的安装方法见 [README](https://github.com/sindresorhus/quick-look-plugins)。
 
 ### 快速调整窗口大小：Moom
 Mac 的一款窗口布局工具，可以快速缩放应用/移动位置，比如将应用布局成以下状态，只需分别点击三下，如果此时将桌面布局保存为一个快照，之后就可以一键恢复布局。
@@ -281,7 +281,7 @@ Mac 效率神器，不多作介绍。快捷键：
 6. `⌥ Alt` + `↩︎ Enter`、`⌘ Command` + `↩︎ Enter` 会对当前高亮项执行特殊操作，按下 `⌥` / `⌘` 就会显示功能提示
 
 常见使用场景：
-* Google 搜索：`google {query}`
+* Google 搜索：`google {query}`，或者直接输入 `{query}`
 * 计算器
 * 有道翻译：[Github - wensonsmith/YoudaoTranslate](https://github.com/wensonsmith/YoudaoTranslate)
 * MWeb 文档搜索：[Github - tianhao/alfred-mweb-workflow](https://github.com/tianhao/alfred-mweb-workflow)
@@ -393,7 +393,7 @@ code ~/.zshrc // 在  VS Code 中打开 .zshrc 文件，类似于 vim ~/.zshrc
 
 ### 其他
 
-* 绘图：[draw.io](https://github.com/jgraph/drawio-desktop/releases)
+* 绘图工具：[draw.io desktop](https://github.com/jgraph/drawio-desktop/releases)
 * 截图工具：[Snip](https://zh.xnipapp.com/)
 * 类似于 Moom 的窗口管理工具：[Amethyst](https://github.com/ianyh/Amethyst)
 * 键盘清理工具：[KeyboardCleanTool](https://sspai.com/post/45406)，可以在清理键盘的时候锁定键盘
