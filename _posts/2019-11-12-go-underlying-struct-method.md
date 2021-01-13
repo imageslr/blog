@@ -63,11 +63,12 @@ foo(*b) // *b 和 *(a.inner_value) 其实都表示同一个结构体
 ```go
 type Inter interface {
     foo()
+    bar()
 }
 type S struct {}
 func (s *S) foo() { // 接收者为值类型的方法
     s.bar = 100 // 修改接收者的字段
-} 
+}
 
 var a Inter = S{1} // 声明一个值类型的结构体
 a.foo() // 调用 foo 方法
@@ -77,6 +78,8 @@ a.foo() // 调用 foo 方法
 var b S = a.inner_value // a、b 是不同的变量，指向不同的结构体
 // 然后将 b 的地址传递给 foo：
 foo(&b) // foo 实际上修改的是临时变量 b 的字段
+b.ar == 100 // true
+a.bar == 100 // false!
 ```
 我们在通过值类型调用 `foo` 方法的时候，明明代码里修改了接收者的某个字段的值，实际上却完全没有生效。这显然与我们的预期不符，因此在值类型上调用指针接收者方法不会编译成功。
 
