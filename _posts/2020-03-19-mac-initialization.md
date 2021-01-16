@@ -398,6 +398,15 @@ code ~/.zshrc // 在  VS Code 中打开 .zshrc 文件，类似于 vim ~/.zshrc
 * 类似于 Moom 的窗口管理工具：[Amethyst](https://github.com/ianyh/Amethyst)
 * 键盘清理工具：[KeyboardCleanTool](https://sspai.com/post/45406)，可以在清理键盘的时候锁定键盘
 * 番茄钟：[Stretchly](https://hovancik.net/stretchly/downloads/)，既能充当番茄钟，还能用弹窗提醒你起来活动活动，对程序员来说是很有用的，[介绍文章](https://www.appinn.com/stretchly/)
+* 屏幕取色：自带的数码取色器（显示为十六进制），或者 [Sip](https://xclient.info/s/sip.html)，对于前端开发很有帮助
 
 ## 附件
 [百度云](https://pan.baidu.com/s/1J9ytW_efBmusut7QiG0mYw)，提取码: 6641
+
+如果安装时提示“已损坏”，在终端执行：
+```
+# 允许打开“任何来源”的软件
+sudo spctl --master-disable
+# 如果还不行
+sudo xattr -r -d com.apple.quarantine <把应用程序拖到终端>
+```
