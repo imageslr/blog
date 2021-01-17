@@ -394,10 +394,10 @@ code ~/.zshrc // 在  VS Code 中打开 .zshrc 文件，类似于 vim ~/.zshrc
 ### 其他
 
 * 绘图工具：[draw.io desktop](https://github.com/jgraph/drawio-desktop/releases)
-* 截图工具：[Snip](https://zh.xnipapp.com/)
+* 截图工具：[Xnip](https://zh.xnipapp.com/)
 * 类似于 Moom 的窗口管理工具：[Amethyst](https://github.com/ianyh/Amethyst)
 * 键盘清理工具：[KeyboardCleanTool](https://sspai.com/post/45406)，可以在清理键盘的时候锁定键盘
-* 番茄钟：[Stretchly](https://hovancik.net/stretchly/downloads/)，既能充当番茄钟，还能用弹窗提醒你起来活动活动，对程序员来说是很有用的，[介绍文章](https://www.appinn.com/stretchly/)
+* 番茄钟：[Stretchly](https://hovancik.net/stretchly/downloads/)，既能充当番茄钟，还能用弹窗提醒你起来活动活动，对程序员来说很有用，[介绍文章](https://www.appinn.com/stretchly/)
 * 屏幕取色：~~Mac 自带的数码取色器（可以显示为十六进制，但不能复制到剪贴板）~~，或者 [Sip](https://xclient.info/s/sip.html)，或者 [uTools](https://u.tools/) 自带的取色工具，前端开发经常用到
 
 ## 附件
