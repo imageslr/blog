@@ -166,7 +166,9 @@ cd autojump
 ./install.py
 ```
 
-zsh-autosuggestion 可以根据当前输入的内容，自动提示之前执行过的命令。autojump 可以快速跳转到某个目录，比如当我们执行过 `cd ~/some-file` 后，执行 `j some`、`j so`、`j sf` 都可以跳转到 `~/some-file` 目录下。
+zsh-autosuggestion 可以根据当前输入的内容，自动提示之前执行过的命令。补全命令的快捷键是 `→`，如果觉得方向键离键盘热区较远，也可以使用 `End`（Mac 下是 `Fn + End`）。
+
+autojump 可以快速跳转到某个目录，比如当我们执行过 `cd ~/some-file` 后，执行 `j some`、`j so`、`j sf` 都可以跳转到 `~/some-file` 目录下。
 
 **安装 zsh-syntax-highlighting：**
 ```
