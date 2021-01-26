@@ -402,6 +402,7 @@ code ~/.zshrc // 在  VS Code 中打开 .zshrc 文件，类似于 vim ~/.zshrc
 * 番茄钟：[Stretchly](https://hovancik.net/stretchly/downloads/)，既能充当番茄钟，还能用弹窗提醒你起来活动活动，对程序员来说很有用，[介绍文章](https://www.appinn.com/stretchly/)
 * 屏幕取色：~~Mac 自带的数码取色器（可以显示为十六进制，但不能复制到剪贴板）~~，或者 [Sip](https://xclient.info/s/sip.html)，或者 [uTools](https://u.tools/) 自带的取色工具，前端开发经常用到
 * 状态栏管理：Bartender 3，可以自定义隐藏状态栏的图标，或者更新时显示 15s 再隐藏，按住 Command 可以自由拖动排列顺序
+* 壁纸应用：[pap.er](http://paper.meiyuan.in/?utm_source=zh)，专为 Mac 设计的壁纸应用，简洁易用，图片质量也很高
 
 ## 附件
 [百度云](https://pan.baidu.com/s/1J9ytW_efBmusut7QiG0mYw)，提取码: 6641
