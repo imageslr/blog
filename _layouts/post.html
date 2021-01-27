@@ -4,6 +4,7 @@ layout: default
 
 <article
   class="post h-entry"
+  id="post"
   itemscope
   itemtype="http://schema.org/BlogPosting"
 >
@@ -61,5 +62,9 @@ layout: default
   <a class="next" href="{{page.previous.url}}">下一篇 &raquo;</a>
   {% endif %}
 </div>
+
+<script>
+  new Viewer(document.getElementById('post'));
+</script>
 
 {%- include gitalk.html -%}

@@ -46,13 +46,6 @@ details[open] summary {
   margin: 0 1rem 0 0;
 }
 
-// kramdown markdown 语法 修饰类
-.no-wrap-table {
-  display: block;
-  white-space: nowrap;
-  overflow-x: scroll;
-}
-
 .page-navigation {
   display: block;
   width: 100%;
@@ -69,3 +62,16 @@ details[open] summary {
   text-align: right;
   float: right;
 }
+
+.post img {
+  cursor: zoom-in;
+}
+
+// kramdown markdown 语法 修饰类
+.no-wrap-table {
+  display: block;
+  white-space: nowrap;
+  overflow-x: scroll;
+}
+
+// kramdown markdown 语法 修饰类 end
