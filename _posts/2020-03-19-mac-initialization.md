@@ -341,9 +341,6 @@ Paste 可以记录剪切板历史。Paste 同样支持 iCloud 同步。
 ### 微信小助手
 [Github - MustangYM/WeChatExtension-ForMac](https://github.com/MustangYM/WeChatExtension-ForMac)
 
-### 快速连接 AirPods：ToothFairy
-菜单栏一键连接 AirPods
-
 ### 录屏软件
 macOS Catalina 10.15.2 下，系统自带的 QuickTime Player 已经足够好用。
 
@@ -403,6 +400,8 @@ code ~/.zshrc // 在  VS Code 中打开 .zshrc 文件，类似于 vim ~/.zshrc
 * 屏幕取色：~~Mac 自带的数码取色器（可以显示为十六进制，但不能复制到剪贴板）~~，或者 [Sip](https://xclient.info/s/sip.html)，或者 [uTools](https://u.tools/) 自带的取色工具，前端开发经常用到
 * 状态栏管理：Bartender 3，可以自定义隐藏状态栏的图标，或者更新时显示 15s 再隐藏，按住 Command 可以自由拖动排列顺序
 * 壁纸应用：[pap.er](http://paper.meiyuan.in/?utm_source=zh)，专为 Mac 设计的壁纸应用，简洁易用，图片质量也很高
+* 触控板增强：BetterTouchTool（[介绍视频](https://www.bilibili.com/video/BV1a7411W7s3)），[论坛](https://community.folivora.ai/c/setup-preset-sharing/5/l/top)里提供了很多预设，可以直接导入使用。我个人认为按住 Command 显示 Dock 栏程序图标是比较有用的，但功能太复杂，所以放弃了，喜欢配置的话可以尝试一下。
+* 快速连接 AirPods：~~ToothFairy，菜单栏一键连接 AirPods~~。直接通过蓝牙图标连接，更稳定快捷
 
 ## 附件
 [百度云](https://pan.baidu.com/s/1J9ytW_efBmusut7QiG0mYw)，提取码: 6641
