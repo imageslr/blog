@@ -327,16 +327,7 @@ Paste 可以记录剪切板历史。Paste 同样支持 iCloud 同步。
 ### 科学上网
 在终端安装 Homebrew、或者执行 `git clone` 时，一般情况下很慢（~100KB/s），需要安装科学上网工具，然后在终端科学上网。
 
-一般互联网公司的 VPN 都自带科学上网功能。如果公司不提供 VPN，可以考虑安装 vxxxy。
-
-<details markdown="1">
-1. [Github](https://github.com/Cenmrev/V2RayX) 下载软件并打开
-2. “Configure...-Advanced...-Subscription”，粘贴订阅链接（需要自己找）
-3. “Server-Update subscription”，选择一个服务器
-4. “Load core”，此时浏览器可以科学上网
-5. 如果终端需要科学上网：“Copy HTTP Proxy Shell Export Line”，粘贴到终端执行。验证：`curl ip.sb`
-
-</details>
+一般互联网公司的 VPN 都自带科学上网功能。如果公司不提供 VPN，可以参考[这篇文章](https://portal.shadowsocks.nz/knowledgebase/182/Windows-or-macOSClash-for-Windows-%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%B3%95.html)。
 
 ### 微信小助手
 [Github - MustangYM/WeChatExtension-ForMac](https://github.com/MustangYM/WeChatExtension-ForMac)
