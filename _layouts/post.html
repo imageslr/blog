@@ -55,6 +55,18 @@ layout: default
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
 
+<p class="post-meta">
+  <b>Last Updated: &nbsp;</b>
+  <time
+    class="dt-published"
+    datetime="{{ page.last_modified_at | date_to_xmlschema }}"
+    itemprop="dateUpdated"
+  >
+    {%- assign date_format = "%b %-d, %Y" -%} {{ page.last_modified_at | date:
+    date_format }}
+  </time>
+</p>
+
 <div class="page-navigation">
   {% if page.next.url %}
   <a class="prev" href="{{page.next.url}}">&laquo; 上一篇</a>
