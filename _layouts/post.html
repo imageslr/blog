@@ -55,6 +55,7 @@ layout: default
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
 
+{%- if page.last_modified_at -%}
 <p class="post-meta">
   <b>Last Updated: &nbsp;</b>
   <time
@@ -66,6 +67,7 @@ layout: default
     date_format }}
   </time>
 </p>
+{%- endif %}
 
 <div class="page-navigation">
   {% if page.next.url %}
