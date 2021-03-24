@@ -13,7 +13,7 @@ permalink: /:categories/:year/:title:output_ext
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 moving:
   avatar_url: "https://i.loli.net/2020/02/17/vY49QcyqRlbtB78.jpg" # avatar in about page
-  about_you: Hungry. Foolish. Simply. Naive.
+  about_you: Hungry. Foolish. Simple. Naive.
   date_format: "%b %d" # date format of posts in home page
   back_to: "Home" # In the post page, you have a back button above the title, you can custom the text by yourself.
 

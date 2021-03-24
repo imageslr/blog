@@ -47,7 +47,7 @@ toc: false
   - [从输入一个 URL 到页面加载完成的过程](#从输入一个-url-到页面加载完成的过程)
   - [两台主机间的通信过程](#两台主机间的通信过程)
   - [常用的负载均衡软件](#常用的负载均衡软件)
-  - [套接字接口](#套接字接口)
+  - [Socket 通信](#socket-通信)
 - [数据库](#数据库)
   - [数据库的存储引擎](#数据库的存储引擎)
   - [数据库的索引](#数据库的索引)
@@ -796,15 +796,23 @@ TODO：同局域网、不同局域网的情况。ARP、IP 协议。
 ### 常用的负载均衡软件
 TODO：第四层 LVS、第七层 Nginx。
 
-### 套接字接口
+### Socket 通信
 
-- 创建服务端的流程：`socket()`、`bind()`、`listen()`、`accept()`、`read()/write()`、`close()`
-- 创建客户端的流程：`socket()`、`connect()`、`read()/write()`、`close()`
+- Socket 通信流程图（服务端、客户端）
+- 创建服务端：`socket()` / `bind()` / `listen()` / `accept()` / `read()/write()` / `close()`
+- 创建客户端：`socket()` / `connect()` / `read()/write()` / `close()`
 - 上述各个系统调用的作用
 - TCP 和 UDP 可以同时监听同一个端口吗？
 
 <details markdown="1">
 <summary>答案</summary>
+
+参考文章：
+- https://www.cnblogs.com/skynet/archive/2010/12/12/1903949.html
+
+流程图 [[来源](https://zhuanlan.zhihu.com/p/257126863)]：
+
+![](/media/16165826766488.jpg)
 
 TCP 和 UDP 可以同时监听同一个端口，操作系统根据五元组 `{传输协议，源IP，目的IP，源端口，目的端口}` 判断数据的接收者。
 
