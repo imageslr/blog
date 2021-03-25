@@ -2,7 +2,7 @@
 layout: post
 title: 🗂【面试题】技术面试题汇总 🔥
 date: 2020/11/6 17:00
-last_modified_at: 2021/3/23 18:00
+last_modified_at: 2021/3/25 12:00
 permalink: 2020/07/08/tech-interview.html
 toc: false
 # redirect_to: http://www.github.com
@@ -25,9 +25,9 @@ toc: false
   - [物理内存管理](#物理内存管理)
   - [虚拟内存管理](#虚拟内存管理)
   - [虚拟地址空间的组成部分](#虚拟地址空间的组成部分)
+  - [进程的内存管理](#进程的内存管理)
   - [大端法、小端法](#大端法小端法)
   - [缓冲区溢出问题](#缓冲区溢出问题)
-  - [进程的内存管理](#进程的内存管理)
   - [I/O 模型](#io-模型)
   - [协程](#协程)
   - [写时复制 Copy-on-write](#写时复制-copy-on-write)
@@ -457,6 +457,25 @@ TLB 基于局部性原理实现：
 
 </details>
 
+### 进程的内存管理
+
+- `malloc`、`free` 的原理
+- 线程、协程的栈空间实现
+- 不同语言的内存分配与垃圾回收机制（C++、Golang、Java）
+
+<details markdown="1">
+<summary>答案</summary>
+
+- `malloc`、`free` 的原理：[答案]({% post_url 2020-11-04-malloc%})
+  - `malloc`、`free` 实现思路、简单实现代码
+  - `malloc` 分配的内存块的格式
+  - 为什么 `free` 只需要传递一个指针就可以释放内存
+  - tcmalloc 简单了解
+
+推荐阅读：[内存管理设计精要 - Draveness](https://mp.weixin.qq.com/s/lx0vX-4wlQWxxfj017T9HA)。
+
+</details>
+
 ### 大端法、小端法
 
 - 什么是大端法、小端法？
@@ -523,23 +542,6 @@ C 语言使用运行时栈来存储过程信息。每个函数的信息存储在
 **(3) 限制可执行代码区域**
 
 内存页的访问形式有三种：可读、可写、可执行。只有编译器产生的那部分代码所处的内存才是可执行的，其他页应当限制为只允许读和写。以前 x86 将读和执行视为一个标志位，可读就可执行，为了限制某些页可读但不可执行，往往会带来严重的性能损失。现在新的处理器在硬件上引入新的位，将读和执行分开，由硬件来检查页是否可执行，效率上没有损失。
-
-</details>
-
-### 进程的内存管理
-
-- `malloc`、`free` 的原理
-- Golang 的内存分配原理
-- 线程、协程的栈空间实现
-
-<details markdown="1">
-<summary>答案</summary>
-
-- `malloc`、`free` 的原理：[答案]({% post_url 2020-11-04-malloc%})
-  - `malloc`、`free` 实现思路、简单实现代码
-  - `malloc` 分配的内存块的格式
-  - 为什么 `free` 只需要传递一个指针就可以释放内存
-  - tcmalloc 简单了解
 
 </details>
 
