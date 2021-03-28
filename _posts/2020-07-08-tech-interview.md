@@ -1079,6 +1079,10 @@ sizeof( str ) = _____
 - 如何提升服务稳定性？
 - 如何优化服务性能？
 
+<details markdown="1">
+<summary>答案</summary>
+如何优化服务性能？火焰图是一个常用的工具。各类语言还有 profile 工具（比如 Golang 的 pprof），profile 就是定时采样，收集 CPU、内存等信息，进而给出性能优化指导。也可参考[知乎的这个问题](https://www.zhihu.com/question/448362493/answer/1770329163)。
+</details>
 
 ### Linux 常用命令
 
