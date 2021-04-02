@@ -5,6 +5,7 @@ url: https://imageslr.github.io # this is your site's root address.
 description: > # this means to ignore newlines until "show_excerpts:"
   Software | Elon Z
 favicon: "./favicon.ico" # set the favicon of the site
+google_analytics: G-W0CHZQFRKZ
 
 show_excerpts: false # set to true to show excerpts on the homepage
 permalink: /:categories/:year/:title:output_ext
