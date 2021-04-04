@@ -282,7 +282,20 @@ Mac 效率神器，不多作介绍。快捷键：
 5. `⌘ Command` + `数字` 快速选择某一项
 6. `⌥ Alt` + `↩︎ Enter`、`⌘ Command` + `↩︎ Enter` 会对当前高亮项执行特殊操作，按下 `⌥` / `⌘` 就会显示功能提示
 
-常见使用场景：
+#### 文件搜索
+
+* `open` + 文件名：按 `↩︎ Enter` 打开文件，按下 `⌘ Command` 再按 `↩︎ Enter` 会打开文件所在的文件夹
+* `空格` + 文件名：同上
+* `find` + 文件名：打开文件所在的文件夹
+* `in` + 字符串：搜索包含指定字符串的文件
+
+#### 目录导航
+
+* `/`：进入根目录
+* `~`：进入用户目录
+* `*`：在当前目录下模糊搜索，如 `*top` 可以搜到 `Desktop`
+
+#### 常见使用场景
 * Google 搜索：`google {query}`，或者直接输入 `{query}`
 * 计算器
 * 有道翻译：[Github - wensonsmith/YoudaoTranslate](https://github.com/wensonsmith/YoudaoTranslate)
