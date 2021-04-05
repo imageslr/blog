@@ -2,13 +2,13 @@
 layout: post
 title: 🗂【面试题】技术面试题汇总 🔥
 date: 2020/11/6 17:00
-last_modified_at: 2021/3/25 12:00
+last_modified_at: 2021/4/5
 permalink: 2020/07/08/tech-interview.html
 toc: false
 # redirect_to: http://www.github.com
 ---
 
-<details markdown="1" open style="margin-top: -2rem">
+<details markdown="1" style="margin-top: -2rem">
 <summary>
 <h3 style="display: inline-block; margin: 0;">目录</h3>
 </summary>
@@ -91,10 +91,13 @@ toc: false
 </details>
 
 ## 前言
-
-这是我用来准备后端开发校招面试的笔记汇总。这些题目或多或少都在不同公司的面试过程中出现过，因此将其总结起来，可以用作复习阶段的**知识点梳理**，也可以用作面试前的**快速回顾**。
+这是我用来准备后端开发校招面试的笔记汇总。这些题目或多或少都在不同公司的面试过程中出现过，因此将其总结起来，可以用作复习阶段的**知识点梳理**，也可以用作面试前的**快速回顾**。点击展开上方目录，可以查看全部题目索引。
 
 本文采用「题目 - 子问题 - 答案」的形式，答案默认折叠。大部分问题都是简答，可以直接采用。但是深入了解细节，才能应对面试官进一步的问题，因此我也将部分问题整理为单独的文章，之后还会持续更新。
+
+```plaintext
+上次更新时间：{{ page.last_modified_at}}
+```
 
 ## 操作系统
 
