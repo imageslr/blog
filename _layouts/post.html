@@ -44,6 +44,11 @@ layout: default
         </span>
       </span>
     </p>
+  {%- if page.last_modified_at -%}
+    {{ "```
+上次更新时间：" | append: page.last_modified_at | append: "
+  ```" | markdownify }}
+  {%- endif %}
   </header>
 
   {% include toc.html html=content %}
