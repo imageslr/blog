@@ -860,10 +860,28 @@ TCP 和 UDP 可以同时监听同一个端口，操作系统根据五元组 `{�
 - 事务可能存在的并发问题
 - 事务的隔离级别，各个隔离级别可能发送的问题
 
+<details markdown="1">
+<summary>答案</summary>
+
+* [『浅入深出』MySQL 中事务的实现](https://draveness.me/mysql-transaction/)
+* [数据库内核杂谈 (十)：事务、隔离、并发（1）](https://www.infoq.cn/article/teJA7X43BO2alp6rLCWk)
+* [MySQL的四种事务隔离级别](https://www.cnblogs.com/huanongying/p/7021555.html)
+
+</details>
+
 ### 数据库的并发控制
 
 * 乐观锁、悲观锁、MVCC 的原理
 * 不同机制的适用场景
+
+<details markdown="1">
+<summary>答案</summary>
+
+* [数据库内核杂谈 (十一)：事务、隔离、并发（2）](https://www.infoq.cn/article/KyZjpzySYHUYDJa2e1fS)
+* [数据库内核杂谈 (十二)：事务、隔离、并发（3）](https://www.infoq.cn/article/gaOh3me9PmJBiQFD2j15)
+* [浅谈数据库并发控制 - 锁和 MVCC](https://draveness.me/database-concurrency-control/)
+
+</details>
 
 ### 数据库分库、分表、主从、读写分离
 
@@ -913,6 +931,16 @@ ORM 的缺点是效率低，另外有些场景只能用原生 SQL 实现。
 - Redis 单个 key 能够承受的最大 QPS（10W）
 - Redis 实现分布式锁
 - Redis 与数据库的同步问题
+
+<details markdown="1">
+<summary>答案</summary>
+
+* [《吊打面试官》系列 — Redis 基础](https://juejin.im/post/5db66ed9e51d452a2f15d833)
+* [《吊打面试官》系列 — 缓存雪崩、击穿、穿透](https://juejin.im/post/5dbef8306fb9a0203f6fa3e2)
+* [《吊打面试官》系列 — Redis 哨兵、持久化、主从](https://juejin.im/post/5dc3a9fbf265da4d3c072eab)
+* [Redis 设计与实现](https://redisbook.readthedocs.io/en/latest/index.html)
+
+</details>
 
 ## 数据结构
 
