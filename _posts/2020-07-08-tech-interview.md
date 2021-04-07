@@ -2,7 +2,7 @@
 layout: post
 title: 🗂【面试题】技术面试题汇总 🔥
 date: 2020/11/6 17:00
-last_modified_at: 2021/4/5
+last_modified_at: 2021/4/7
 permalink: 2020/07/08/tech-interview.html
 toc: false
 # redirect_to: http://www.github.com
@@ -1066,6 +1066,25 @@ void func ( char str[100])
 sizeof( str ) = _____ 
 }
 ```
+
+<details markdown="1">
+<summary>答案</summary>
+
+1. 析构函数：基类 -> 成员类 -> 自身；析构函数相反。因为子类在构造函数和析构函数中可以访问父类（基类）。
+2. 动态联编（运行时绑定）[TODO: 不确定的回答]
+3. [TODO: 不会]
+4. [TODO: 不会]
+5. 
+
+    ```
+    6    // 字符数组的大小，5 + 1 (末尾的 \0)
+    8    // 字符指针大小，8 字节
+    8    // 字符指针数组的指针大小，8 字节
+    8    // 指针大小，8 字节，64 位机器的指针大小都是 8 字节
+    4    // int 在 32 位和 64 位系统都是 4 字节，long 在 32 位系统是 4 字节，在 64 位系统是 8 字节
+    100  // 字符数组的大小
+    ```
+</details>
 
 ## 开发与运维
 
