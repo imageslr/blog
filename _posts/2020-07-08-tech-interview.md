@@ -285,6 +285,7 @@ toc: false
 </details>
 
 ### 虚拟内存管理
+{: #virtual-memory}
 
 - 虚拟内存的思想 / 实现方式
 - 暂时不在内存中的数据存在哪里？
@@ -503,6 +504,7 @@ TLB 基于局部性原理实现：
 </details>
 
 ### 缓冲区溢出问题
+{: #stackoverflow}
 
 - 什么是缓存区溢出？
 - 缓冲区溢出攻击的方式
@@ -793,6 +795,8 @@ DNS 查询共有两类：递归查询和迭代查询。**递归查询**是指，
 ### 两台主机间的通信过程
 
 TODO：同局域网、不同局域网的情况。ARP、IP 协议。
+
+[什么是 ARP 协议](https://github.com/wolverinn/Waking-Up/blob/master/Computer%20Network.md#%E4%BB%80%E4%B9%88%E6%98%AFarp%E5%8D%8F%E8%AE%AE-address-resolution-protocol)
 
 ### 常用的负载均衡软件
 TODO：第四层 LVS、第七层 Nginx。
