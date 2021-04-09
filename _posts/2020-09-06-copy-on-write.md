@@ -48,6 +48,8 @@ y += ", World!";    // 写时复制，此时 y 使用一个新的 buffer
 
 Golang、PHP 中的 string、array 也是写时复制。在修改这些类型时，如果其引用计数非零，则会复制一个副本。因此我们在 golang、php 中可以将字符串、数组*当作*值类型（values type）进行传递，即不会有传值复制的开销，也能保证其 immutable 的特性。
 
+## [🗂 技术面试题汇总]({%post_url 2020-07-08-tech-interview%})
+
 ---
 
 参考资料：

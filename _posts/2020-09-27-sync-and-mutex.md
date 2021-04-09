@@ -218,10 +218,11 @@ void getforks() {
 }
 ```
 
+## [🗂 技术面试题汇总]({%post_url 2020-07-08-tech-interview%})
+
 ---
 
 参考资料：
-
 - [维基百科-生产者消费者问题][wiki_producer_consumer]
 
 [wiki_producer_consumer]: https://zh.wikipedia.org/wiki/%E7%94%9F%E4%BA%A7%E8%80%85%E6%B6%88%E8%B4%B9%E8%80%85%E9%97%AE%E9%A2%98

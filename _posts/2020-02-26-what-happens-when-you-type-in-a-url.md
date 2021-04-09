@@ -5,6 +5,8 @@ date: 2020/2/26 14:00
 permalink: 2020/02/26/what-happens-when-you-type-in-a-url.html
 ---
 
+> 更多面试题总结请看：[🗂【面试题】技术面试题汇总]({%post_url 2020-07-08-tech-interview%})
+
 ## 前言
 从输入一个 URL、按下回车到显示页面，中间发生了什么？这道题既有广度，又有深度，很能考验一个人的**知识体系**。
 
@@ -144,6 +146,7 @@ HTTP 2 引入了**多路复用**，允许通过同一个连接发起多个请求
 * [skyline75489 的文章 - github](https://github.com/skyline75489/what-happens-when-zh_CN) - 前端的视角
 * [nwind 的文章](http://fex.baidu.com/blog/2014/05/what-happen/) - 硬件的视角
 
+## [🗂 技术面试题汇总]({%post_url 2020-07-08-tech-interview%})
 ---
 
 TODO：“进一步阅读”是某个专题的更详细具体的笔记。这些链接还无法点击，我在后期会整理补充。

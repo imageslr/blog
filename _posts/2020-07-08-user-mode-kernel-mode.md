@@ -36,3 +36,5 @@ OS 会在中断描述符表中，找到处理 page fault exception 的中断向�
 
 > [参考 - StackOverflow](https://stackoverflow.com/questions/12645647/what-happens-in-os-when-we-dereference-a-null-pointer-in-c)  
 >  the CPU raises a page fault error which **traps into** a predefined point at the kernel, the kernel examines what happened, and reacts accordingly 
+
+## [🗂 技术面试题汇总]({%post_url 2020-07-08-tech-interview%})

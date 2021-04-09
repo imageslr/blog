@@ -167,6 +167,8 @@ Linux 内核给 `0x80` 中断注册了名为 `ia32_syscall` 的中断执行程�
 
 这就是通过陷阱指令实现系统调用的原理。陷阱指令不是一个指令，而是一类指令(?)。
 
+## [🗂 技术面试题汇总]({%post_url 2020-07-08-tech-interview%})
+
 ## 参考资料
 * [80386 的异常号与描述](https://wizardforcel.gitbooks.io/intel-80386-ref-manual/10.html)
 * [Linux 系统调用指南](https://zcfy.cc/article/the-definitive-guide-to-linux-system-calls-670.html?t=new)
