@@ -36,7 +36,7 @@ toc: false
   - [TCP 文章推荐](#tcp-文章推荐)
   - [TCP 的流量控制和拥塞控制](#tcp-的流量控制和拥塞控制)
   - [TCP 的三次握手和四次挥手](#tcp-的三次握手和四次挥手)
-  - [TCP 的粘包问题](#tcp-的粘包问题)
+  - [~~TCP 的粘包问题~~](#tcp-的粘包问题)
   - [TCP 协议（其他）](#tcp-协议其他)
   - [TCP、UDP 对比](#tcpudp-对比)
   - [HTTP 原理](#http-原理)
@@ -643,10 +643,33 @@ C 语言使用运行时栈来存储过程信息。每个函数的信息存储在
 
 [答案]({% post_url 2020-07-08-tcp-shake-wave %})
 
-### TCP 的粘包问题
+### ~~TCP 的粘包问题~~
 * 什么是粘包？
 * 粘包的产生原因
 * 如何解决粘包问题？
+
+<details markdown="1">
+<summary>答案</summary>
+
+TCP 是基于字节流的，数据块是没有边界、没有结构的字节流，因此可能产生粘包：
+1. 发送方为了将多个发往接收端的包，更有效的发到对方，使用了优化方法（Nagle算法），将多次间隔较小、数据量小的数据包，合并成一个大的数据包一次性发送。
+2. 接收方不能及时读取数据，导致缓冲区中的多个包粘连。
+
+**解决方法**：
+1. 发送方关闭 Nagle 算法
+2. 应用层定义消息边界，最常见的两种解决方案就是基于长度或者基于终结符（Delimiter）
+    1. 基于长度的实现有两种方式，一种是使用固定长度；另一种方式是使用不固定长度，但是需要在应用层协议的协议头中增加表示负载长度的字段，HTTP 协议的消息边界就是基于长度实现的
+    2. HTTP 协议除了使用基于长度的方式实现边界，也会使用基于终结符的策略，当 HTTP 使用块传输（Chunked Transfer）机制时，HTTP 头中就不再包含 Content-Length 了，它会使用负载大小为 0 的 HTTP 消息作为终结符表示消息的边界
+
+除了这两种方式之外，我们可以基于特定的规则实现消息的边界，例如：使用 TCP 协议发送 JSON 数据，接收方可以根据接收到的数据是否能够被解析成合法的 JSON 判断消息是否终结。
+
+但值得注意的是，**粘包并不是 TCP 协议本身的“问题”，而是一个“现象”**。TCP 本身面向字节流的特性，导致会有所谓的“粘包”问题，需要应用层进行拆分。所以也有一种说法是“TCP 粘包是一个伪命题”。
+
+**为什么 UDP 协议没有粘包问题？**UDP 是面向报文的，应用层交给 UDP 多长的报文，UDP 就照样发送，既不合并，也不拆分，而是保留这些报文的边界。
+
+参考资料：[为什么 TCP 协议有粘包问题 - draveness](https://draveness.me/whys-the-design-tcp-message-frame/)。
+
+</details>
 
 ### TCP 协议（其他）
 
@@ -921,7 +944,7 @@ ORM 定义的**模型是强类型**的，能够编写类型友好的代码。而
 此外 ORM 能够**抽象表与表之间的关系**，可以让开发者专注于逻辑的编写。ORM 是面向对象的，利于管理和组织代码。
 
 ORM 的缺点是效率低，另外有些场景只能用原生 SQL 实现。
-</details>>
+</details>
 
 ### Redis 相关
 
@@ -970,6 +993,7 @@ ORM 的缺点是效率低，另外有些场景只能用原生 SQL 实现。
 <summary>答案</summary>
 
 排序算法总结：
+<!-- https://pk0cmqeu9s.feishu.cn/sheets/shtcnnfXLZYlreU12E8usPFjM1g?table=tblWkPEn8WaxEHFS&sheet=OaaZFW&view=vewgbNOE1J -->
 
 ![sort](/media/sort.jpg)
 
@@ -1103,47 +1127,47 @@ int partition(vector<int>& nums, int start, int end) {
 
 ```c++
 void mergeSort (vector<int>& nums) {
-    mergeSort(nums, 0, nums.size() - 1);
+  mergeSort(nums, 0, nums.size() - 1);
 }
 
 void mergeSort(vector<int>& nums, int left, int right) {
-	if (left >= right) {
-		return;
-	}
-	int mid = (left + right) / 2;
-	mergeSort(nums, left, mid);
-	mergeSort(nums, mid + 1, right);
-	merge(nums, left, mid, right);
+  if (left >= right) {
+    return;
+  }
+  int mid = (left + right) / 2;
+  mergeSort(nums, left, mid);
+  mergeSort(nums, mid + 1, right);
+  merge(nums, left, mid, right);
 }
 
 // 合并 [left, mid]，[mid+1, right] 两部分有序数组
 void merge(vector<int>& nums, int left, int mid, int right) {
-	vector<int> newNums(right - left + 1);
-    int c = 0, i = left, j = mid + 1;
-	while (i <= mid && j <= right) {
-		if (nums[i] < nums[j]) {
-			newNums[c] = nums[i];
-			c++;
-			i++;
-		} else {
-			newNums[c] = nums[j];
-			c++;
-			j++;
-		}
-	}
-	while (i <= mid) {
-		newNums[c] = nums[i];
-		c++;
-		i++;
-	}
-	while (j <= right) {
-		newNums[c] = nums[j];
-		c++;
-		j++;
-	}
-	for(i = left; i <= right; i++) {
-		nums[i] = newNums[i-left];
-	}
+  vector<int> newNums(right - left + 1);
+  int c = 0, i = left, j = mid + 1;
+  while (i <= mid && j <= right) {
+    if (nums[i] < nums[j]) {
+      newNums[c] = nums[i];
+      c++;
+      i++;
+    } else {
+      newNums[c] = nums[j];
+      c++;
+      j++;
+    }
+  }
+  while (i <= mid) {
+    newNums[c] = nums[i];
+    c++;
+    i++;
+  }
+  while (j <= right) {
+    newNums[c] = nums[j];
+    c++;
+    j++;
+  }
+  for(i = left; i <= right; i++) {
+    nums[i] = newNums[i-left];
+  }
 }
 ```
 </details>
