@@ -9,5 +9,6 @@ layout: about
 
 ## 项目
 
+- [Simplest Mock Server](https://github.com/imageslr/simplest-mock-server)：一个开箱即用的本地 mock 服务
 - [在线借书平台小程序](https://github.com/imageslr/weapp-library)：微信小程序项目，三十多个页面，十几个通用组件，完整的文档
 - [Taro 图书馆示例项目](https://github.com/imageslr/taro-library)：简单的 Taro 小程序项目，帮助理解 Taro 与 Redux 的配合方式与 Taro 的基本使用
