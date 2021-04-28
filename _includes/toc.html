@@ -33,7 +33,7 @@ generate the table of contents and will NOT output the markdown given to it
 {% capture my_toc %}{% endcapture %}
 {% assign orderedList = include.ordered | default: false %}
 {% assign minHeader = include.h_min | default: 1 %}
-{% assign maxHeader = include.h_max | default: 6 %}
+{% assign maxHeader = page.toc_h_max | default: include.h_max | default: 6 %}
 {% assign nodes = include.html | split: '<h' %}
 {% assign firstHeader = true %}
 {% capture listModifier %}{% if orderedList %}1.{% else %}-{% endif %}{% endcapture %}
