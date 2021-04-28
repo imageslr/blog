@@ -362,6 +362,8 @@ macOS Catalina 10.15.2 下，系统自带的 QuickTime Player 已经足够好用
 
 ## 其他软件
 ### 记笔记：MWeb
+{: #mweb}
+
 MWeb 是一款非常优秀的 Markdown 笔记软件。在尝试过印象笔记、Typora、Bear、Ulysses 等多款软件后，个人认为没有一款软件可以替代 MWeb，后者对 Markdown 与 LaTex 的支持相当完善，同时保持了良好的使用体验。此外，MWeb 也有 iOS 应用，在不内购的情况下可以阅读、编辑笔记，无法新建笔记，足以满足日常需求。
 
 ![](/media/15846229381899.jpg)
