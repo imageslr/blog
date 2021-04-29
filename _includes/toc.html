@@ -18,7 +18,9 @@ Optional Parameters:
 * class (string) : '' - a CSS class assigned to the TOC
 * id (string) : '' - an ID to assigned to the TOC
 * h_min (int) : 1 - the minimum TOC header level to use; any header lower than this value will be ignored
+    可以在文档 meta 中设置 toc_h_min，优先级高于 include.h_min
 * h_max (int) : 6 - the maximum TOC header level to use; any header greater than this value will be ignored
+    可以在文档 meta 中设置 toc_h_max，优先级高于 include.h_max
 * ordered (bool) : false - when set to true, an ordered list will be outputted instead of an unordered list
 * item_class (string) : '' - add custom class(es) for each list item; has support for '%level%' placeholder, which is
 the current heading level
@@ -32,7 +34,7 @@ generate the table of contents and will NOT output the markdown given to it
 
 {% capture my_toc %}{% endcapture %}
 {% assign orderedList = include.ordered | default: false %}
-{% assign minHeader = include.h_min | default: 1 %}
+{% assign minHeader = page.toc_h_min | default: include.h_min | default: 1 %}
 {% assign maxHeader = page.toc_h_max | default: include.h_max | default: 6 %}
 {% assign nodes = include.html | split: '<h' %}
 {% assign firstHeader = true %}

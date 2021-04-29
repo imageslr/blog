@@ -5,25 +5,38 @@ sitemap: false
 @import "moving";
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600&display=swap");
 
-// start 通用 css
+/* start util */
 .bold {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 .bolder {
-  font-weight: bolder;
+  font-weight: bolder !important;
 }
 
 .underline {
-  text-decoration: underline;
+  text-decoration: underline !important;
 }
 
 .italic {
-  font-style: italic;
+  font-style: italic !important;
 }
 
-// end
+.mb-2 {
+  margin-bottom: 16px !important;
+}
 
+/* end */
+
+/* start html tag override */
+
+details[open] summary {
+  margin-bottom: 12px;
+}
+
+/* end */
+
+/* start page element */
 .busuanzi_container_site {
   margin-left: 8px;
   // opacity: 0;
@@ -32,10 +45,6 @@ sitemap: false
   //   cursor: pointer;
   //   opacity: 1;
   // }
-}
-
-details[open] summary {
-  margin-bottom: 12px;
 }
 
 .about-page .about-header .about-avatar {
@@ -67,11 +76,315 @@ details[open] summary {
   cursor: zoom-in;
 }
 
-// kramdown markdown 语法 修饰类
+/* end */
+
+/* start component style */
 .no-wrap-table {
   display: block;
   white-space: nowrap;
   overflow-x: scroll;
 }
 
-// kramdown markdown 语法 修饰类 end
+.outline-box {
+  border: 1px solid #e8e8e8;
+
+  &-head {
+    padding: 8px 12px;
+    color: rgba(0,0,0,.85);
+    box-sizing: border-box;
+    border-bottom: 1px solid #f0f0f0;
+
+    > h3, > h4, > h5 {
+      margin: 0 !important;
+    }
+  }
+
+  &-body {
+    padding: 10px 15px;
+
+    > p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+  
+  &-primary {
+    background-color: $brand-color;
+  }
+
+  &-default {
+    background-color: #777;
+  }
+
+  &-secondary {
+    color: #383d41;
+    background-color: #e2e3e5;
+    border-color: #d6d8db;
+  }
+
+  &-warning {
+    background-color: #f0ad4e;
+  }
+
+  &-info {
+    background-color: #5bc0de;
+  }
+}
+
+.alert {
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+
+  &-primary {
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+  }
+
+  &-primary hr {
+    border-top-color: #9fcdff;
+  }
+
+  &-primary &-link {
+    color: #002752;
+  }
+
+  &-secondary {
+    color: #383d41;
+    background-color: #e2e3e5;
+    border-color: #d6d8db;
+  }
+
+  &-secondary hr {
+    border-top-color: #c8cbcf;
+  }
+
+  &-secondary .alert-link {
+    color: #202326;
+  }
+
+  &-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+  }
+
+  &-success hr {
+    border-top-color: #b1dfbb;
+  }
+
+  &-success .alert-link {
+    color: #0b2e13;
+  }
+
+  &-info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+  }
+
+  &-info hr {
+    border-top-color: #abdde5;
+  }
+
+  &-info .alert-link {
+    color: #062c33;
+  }
+
+  &-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+  }
+
+  &-warning hr {
+    border-top-color: #ffe8a1;
+  }
+
+  &-warning &-link {
+    color: #533f03;
+  }
+
+  &-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+  }
+
+  &-danger hr {
+    border-top-color: #f1b0b7;
+  }
+
+  &-danger &-link {
+    color: #491217;
+  }
+
+  &-light {
+    color: #818182;
+    background-color: #fefefe;
+    border-color: #fdfdfe;
+  }
+
+  &-light hr {
+    border-top-color: #ececf6;
+  }
+
+  &-light &-link {
+    color: #686868;
+  }
+
+  &-dark {
+    color: #1b1e21;
+    background-color: #d6d8d9;
+    border-color: #c6c8ca;
+  }
+
+  &-dark hr {
+    border-top-color: #b9bbbe;
+  }
+
+  &-dark &-link {
+    color: #040505;
+  }
+}
+
+.ant-tag {
+  box-sizing: border-box;
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  font-feature-settings: "tnum";
+  display: inline-block;
+  height: auto;
+  margin: 0 8px 0 0;
+  padding: 0 7px;
+  font-size: 12px;
+  line-height: 20px;
+  white-space: nowrap;
+  background: #fafafa;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  opacity: 1;
+  transition: all .3s;
+
+  &-gold {
+    color: #d48806;
+    background: #fffbe6;
+    border-color: #ffe58f;
+  }
+
+  &-magenta {
+    color: #c41d7f;
+    background: #fff0f6;
+    border-color: #ffadd2;
+  }
+
+  &-red {
+    color: #cf1322;
+    background: #fff1f0;
+    border-color: #ffa39e;
+  }
+
+  &-volcano {
+    color: #d4380d;
+    background: #fff2e8;
+    border-color: #ffbb96;
+  }
+
+  &-orange {
+    color: #d46b08;
+    background: #fff7e6;
+    border-color: #ffd591;
+  }
+
+  &-lime {
+    color: #7cb305;
+    background: #fcffe6;
+    border-color: #eaff8f;
+  }
+
+  &-green {
+    color: #389e0d;
+    background: #f6ffed;
+    border-color: #b7eb8f;
+  }
+
+  &-cyan {
+    color: #08979c;
+    background: #e6fffb;
+    border-color: #87e8de;
+  }
+
+  &-blue {
+    color: #096dd9;
+    background: #e6f7ff;
+    border-color: #91d5ff;
+  }
+
+  &-geekblue {
+    color: #1d39c4;
+    background: #f0f5ff;
+    border-color: #adc6ff;
+  }
+
+  &-purple {
+    color: #531dab;
+    background: #f9f0ff;
+    border-color: #d3adf7;
+  }
+}
+
+.ant-alert {
+  box-sizing: border-box;
+  margin: 0;
+  color: rgba(0,0,0,.85);
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5715;
+  list-style: none;
+  font-feature-settings: "tnum";
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+  word-wrap: break-word;
+  border-radius: 2px;
+
+  &-warning {
+    background-color: #fffbe6;
+    border: 1px solid #ffe58f;
+  }
+
+  &-info {
+    background-color: #e6f7ff;
+    border: 1px solid #91d5ff;
+  }
+
+  &-success {
+    background-color: #f6ffed;
+    border: 1px solid #b7eb8f;
+  }
+
+  &-error {
+    background-color: #fff2f0;
+    border: 1px solid #ffccc7;
+  }
+}
+
+/* end */
