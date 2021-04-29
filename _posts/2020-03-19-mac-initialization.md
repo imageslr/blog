@@ -351,11 +351,13 @@ Paste 可以记录剪切板历史。Paste 同样支持 iCloud 同步。
 [Github - MustangYM/WeChatExtension-ForMac](https://github.com/MustangYM/WeChatExtension-ForMac)
 
 ### 录屏软件
-macOS Catalina 10.15.2 下，系统自带的 QuickTime Player 已经足够好用。
+{: #kap}
 
-其他版本的系统，可以使用 Kap。[官网下载](https://getkap.co/)。
+可以使用 [Kap](https://getkap.co/) 或系统自带的 QuickTime Player。
 
 ### 录制系统声音：SoundFlower
+{: #soundflower}
+
 录制屏幕的时候只能录制自己说话的声音，录不了系统声音。安装 SoundFlower 可以录制系统声音。参考这里安装：
 * [macOS 下怎么录屏，能同时保留声音？有哪些较好的解决方案？ - 殊哥的回答 - 知乎](https://www.zhihu.com/question/20251726/answer/94938941)
 * [如何用 QuickTime 对 Mac 屏幕录制，而且录上声音？ - 夯七的回答 - 知乎](https://www.zhihu.com/question/26032781/answer/170489532)
