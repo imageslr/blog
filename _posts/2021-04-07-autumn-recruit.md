@@ -505,6 +505,7 @@ TODO
 * [CyC2018/CS-Notes](https://github.com/CyC2018/CS-Notes?utm_source=gold_browser_extension)
 * [Java-Guide](https://github.com/Snailclimb/JavaGuide)
 * [frank-lam/fullstack-tutorial](https://github.com/frank-lam/fullstack-tutorial)
+* [Github - Search · 面试](https://github.com/search?q=%E9%9D%A2%E8%AF%95&ref=opensearch)
 
 ### LeetCode 题解
 {: #leetcode}
@@ -539,6 +540,7 @@ TODO
 * 你觉得这些工作中最难的一点是什么？你是怎么解决的？
 * 你觉得实习期间相比于实习前，对你的最大提升是什么？
 * 有哪些印象深刻的事故 fix？
+* 实习期间有哪些工作以外的对团队的贡献？
 
 ----
 * 之前三轮面试感觉如何？
@@ -557,6 +559,7 @@ TODO
 * 你实习什么时候可以开始？
 * 你们老师平时项目多吗？管的严吗？
 * 你是什么专业？为什么不做算法而做开发？你如何看待很多本科生毕业后就去找算法岗？
+* 为什么想要读研？
 
 ----
 * 大量工作、有限时间怎么办？
@@ -578,9 +581,14 @@ TODO
 * 兴趣爱好是什么？
 * 你的优点是什么？
 * 你的缺点是什么？
+* 和其他同学相比，你觉得你的优势在哪里？
+* 你认为其他同学如何评价你？/ 你觉得周围人眼中的你是什么样的？如果我问他们会得到一个什么样的评价？
 * 你最有成就感的事是什么？生活 or 实习？
 * 你遇到的最大的挫折是什么 / 最遗憾的事？
 * 大学期间，最大的收获是什么？
+* 有哪些帮助别人的经历？
+* 你实习、生活中遇到的最难忘的人是谁？TA 有哪些特质？
+* TA 身上的这些优秀特质，你最想提升自己的哪一方面？
 
 ----
 * 对加班的看法
