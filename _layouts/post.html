@@ -45,9 +45,12 @@ layout: default
       </span>
     </p>
   {%- if page.last_modified_at -%}
-    {{ "```
+  <div class="ant-alert">
+    {{ "上次更新时间：" | append: page.last_modified_at }}
+  </div>
+    <!-- {{ "```
 上次更新时间：" | append: page.last_modified_at | append: "
-  ```" | markdownify }}
+  ```" | markdownify }} -->
   {%- endif %}
   </header>
 

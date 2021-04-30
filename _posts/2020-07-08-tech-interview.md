@@ -88,12 +88,16 @@ toc: false
 - [网络安全](#网络安全)
 - [其他](#其他)
 - [面经汇总](#面经汇总)
+- [💡 校招复习 / 面试方法论](#-校招复习--面试方法论--post_url-2021-04-07-autumn-recruit--)
 </details>
 
 ## 前言
 这是我用来准备后端开发校招面试的笔记汇总。这些题目或多或少都在不同公司的面试过程中出现过，因此将其总结起来，可以用作复习阶段的**知识点梳理**，也可以用作面试前的**快速回顾**。点击展开上方目录，可以查看全部题目索引。
 
 本文采用「题目 - 子问题 - 答案」的形式，答案默认折叠。大部分问题都是简答，可以直接采用。但是深入了解细节，才能应对面试官进一步的问题，因此我也将部分问题整理为单独的文章，之后还会持续更新。
+
+推荐阅读：[💡 校招复习 / 面试方法论]({%- post_url 2021-04-07-autumn-recruit -%})
+{: .ant-alert .ant-alert-info}
 
 ## 操作系统
 
@@ -1762,5 +1766,6 @@ cat nginx.log | awk '{print $1}' | sort | uniq -c | sort -nr | head -10 | awk '{
 
 ## 面经汇总
 
-- [wolverinn/Waking-Up](https://github.com/wolverinn/Waking-Up?utm_source=gold_browser_extension)：计算机基础面试题汇总，速问速答
-- [计算机网络太难？了解这一篇就够了](https://juejin.im/post/5d896cccf265da03bd055c87)：计算机网络题目汇总
+[点击查看]({%- post_url 2021-04-07-autumn-recruit -%}#interview)
+
+## [💡 校招复习 / 面试方法论]({%- post_url 2021-04-07-autumn-recruit -%})
