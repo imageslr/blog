@@ -1,7 +1,7 @@
 title: Images' Blog # The title of the blog
 author: Images。 # Your name
 email: elonzzz@163.com # your email shown in the footer
-url: https://imageslr.github.io # this is your site's root address.
+url: https://imageslr.com # this is your site's root address.
 description: > # this means to ignore newlines until "show_excerpts:"
   Software | Elon Z
 favicon: "./favicon.ico" # set the favicon of the site

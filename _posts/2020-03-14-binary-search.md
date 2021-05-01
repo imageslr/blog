@@ -281,4 +281,4 @@ func LowerBound(nums []int, target int) int {
 
 在后续的文章中，我们将继续使用这个模板，解决更多的实际问题，请阅读：[在实际问题中运用二分查找模板代码]({% post_url 2020-03-16-leetcode-875 %})。
 
-本文发表在我的博客 [https://imageslr.github.io/](https://imageslr.github.io/)。我也会分享更多的题解，一起交流，共同进步！
+本文发表在我的博客 [https://imageslr.com/](https://imageslr.com/)。我也会分享更多的题解，一起交流，共同进步！
