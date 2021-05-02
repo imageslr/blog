@@ -1311,10 +1311,7 @@ void heapAdjustDown(vector<int>& nums, int s, int n) {
 
 下面使用 LSD 方法实现基数排序。
 
-
-<details markdown="1">
-<summary>首先举一个例子。</summary>
-
+{% details 首先举一个例子。 %}
 ```
 73, 22, 93, 43, 55, 14, 28, 65, 39, 81
 ```
@@ -1349,17 +1346,12 @@ void heapAdjustDown(vector<int>& nums, int s, int n) {
 ```
 14, 22, 28, 39, 43, 55, 65, 73, 81, 93
 ```
+{% enddetails %}
 
-</details>
-
-<details markdown="1">
-<summary>然后先给出计数排序的代码。</summary>
-
+{% details 然后先给出计数排序的代码。 %}
 计数排序的原理是：对于一个待排序序列中的某一个元素 `x`，一旦确定了该序列中小于 `x` 的元素的个数 `c`，就可以将 `x` 直接放在最终的有序序列的 `c+1` 位置上。计数排序的时间复杂度为 $Ο(n+k)$，空间复杂度为 $O(k)$，其中 $n$ 为序列的元素个数，$k$ 为元素的取值范围。代码如下：
 
-<details markdown="1">
-<summary>查看代码</summary>
-
+{% details 查看代码 %}
 ```c++
 #define K 1000000 // nums[i] 的取值范围，0~K
 vector<int> aux(nums.size()); // 辅助数组，存放最终排序后的结果
@@ -1389,14 +1381,10 @@ for (int i = 0; i < nums.size(); i++) // 复制辅助数组
   2(b)  [0, 0, 2, 3]    [1 _ 2(b) 3]
   2(a)  [0, 0, 1, 3]    [1 2(a) 2(b) 3]
 ```
+{% enddetails %}
+{% enddetails %}
 
-</details>
-
-</details>
-
-<details markdown="1">
-<summary>最后是基数排序的代码。</summary>
-
+{% details 最后是基数排序的代码。 %}
 ```c++
 vector<int> radixSort (vector<int>& nums) {
     int maxVal = *max_element(nums.begin(), nums.end());
@@ -1435,8 +1423,7 @@ vector<int> sortArray(vector<int>& nums) {
     return nums;
 }
 ```
-
-</details>
+{% enddetails %}
 
 **桶排序**：TODO
 
