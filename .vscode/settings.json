@@ -3,5 +3,6 @@
   "workbench.colorTheme": "Default Light+",
   "pasteImage.path": "${projectRoot}/media",
   "pasteImage.basePath": "${projectRoot}",
-  "pasteImage.prefix": "/"
+  "pasteImage.prefix": "/",
+  "markdown.extension.toc.updateOnSave": false
 }

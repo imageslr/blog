@@ -219,7 +219,7 @@ Tips：学习数据结构时，配合可视化网站有奇效。推荐：
 
 ![](/media/04-28-23-04-56.png)
 
-> 上图使用 Sketch 绘制。制作一份这样的简历很简单：首先确定一个主题色，如 <font color="#353535">#353535</font>、<font color="#3F59A8">#3F59A8</font>、<font color="#4F6F8A">#4F6F8A</font>、<font color="#0089B2">#0089B2</font>、<font color="#870509">#870509</font> 等；其次保证行高、行间距、页边距都是 4 的倍数，如上图页边距为 24px、行间距为 4px / 8px/ 12px；矢量图标可以从 [iconfont](https://www.iconfont.cn/) 查找。
+> 上图使用 Sketch 绘制。制作一份这样的简历很简单：首先确定一个主题色，如 <font color="#353535">#353535</font>, <font color="#3F59A8">#3F59A8</font>, <font color="#4F6F8A">#4F6F8A</font>, <font color="#0089B2">#0089B2</font>, <font color="#870509">#870509</font> 等；其次保证行高、行间距、页边距都是 4 的倍数，如上图页边距为 24px、行间距为 4px / 8px/ 12px；矢量图标可以从 [iconfont](https://www.iconfont.cn/) 查找。
 
 简历可以使用在线平台制作，如乔布简历、超级简历 CV 等，也可以使用 Word / PS / Sketch 制作。拒绝花花绿绿、华而不实的风格，关注内容而不是样式。采用 STAR 法则描述自己的项目和实习经历，[知乎的这个问题](https://www.zhihu.com/question/23491167)可以参考，[geekcompany/ResumeSample](https://github.com/geekcompany/ResumeSample) 提供了一系列程序员的简历模板，[resumejob/awesome-resume](https://github.com/resumejob/awesome-resume) 则提供了许多程序员的简历例句。
 
@@ -243,16 +243,21 @@ Tips：
 * 业余生活（博客、Github 开源经历、个人提升等）
 
 个人介绍模板：
-> *（背景介绍）*  
+
+<div class="ant-alert mb-2" markdown="1">
+*（背景介绍）*  
 面试官您好，我叫 XXX。来自 XX 大学 XX 学院，目前研 X 在读，明年 6 月毕业，研究方向是 XXX。本科我就读于 XX 大学，XX 专业。在校期间，我多次获得国家级、校级奖学金。此外，我也参加过许多软件开发竞赛，包括 XX 大赛、XX 大赛等，拿到了 XX 奖项。  
->
-> *（实习经历）*  
-> 去年，我在 XX 公司的 XX 团队实习 X 个月。这个部门主要是做 XXX *(介绍团队业务背景)*，我在其中负责 XXX 工作，包括 XXX、XXX 等。此外，我还输出了 XX 篇文章，整理为部门新人手册。  
->
-> *（业余生活）*  
-> 最后，我业余时间有写博客的习惯，会定期归纳总结自己的笔记。我也有开源经历，在 github 上有几个开源项目。
->   
-> 以上就是我的个人介绍，谢谢您。
+
+*（实习经历）*  
+去年，我在 XX 公司的 XX 团队实习 X 个月。这个部门主要是做 XXX *(介绍团队业务背景)*，我在其中负责 XXX 工作，包括 XXX、XXX 等。此外，我还输出了 XX 篇文章，整理为部门新人手册。  
+
+*（业余生活）*  
+最后，我业余时间有写博客的习惯，会定期归纳总结自己的笔记。我也有开源经历，在 github 上有几个开源项目。
+  
+以上就是我的个人介绍，谢谢您。
+{: .mb-0}
+</div>
+
 
 Tips：
 * 每个部分之间要有连接词。
