@@ -131,7 +131,7 @@ toc_h_max: 3
 
 **推荐使用 Markdown 做笔记**。Markdown 的语法简单，书写过程中无需设置样式，不会打断思路。Markdown 也有较好的扩展性，可以和 HTML 语法结合使用。个人认为，Markdown 是最适合程序员的笔记格式。[我的博客](https://github.com/imageslr/blog/tree/master/_posts)就是用 Markdown 写的。
 
-Mac 系统下，**推荐使用 [MWeb]({%- post_url 2020-03-19-mac-initialization -%}#mweb) 管理笔记**。可选的替代方案有 Typora、VS Code 等。MWeb 界面截图：
+Mac 系统下，**推荐使用 [MWeb]({%- post_url 2020-03-19-mac-initialization -%}#mweb) 管理笔记**。可选的替代方案有[思源笔记](https://b3log.org/siyuan/)、Typora、VS Code 等。MWeb 界面截图：
 
 ![](/media/04-28-18-07-42.png)
 
