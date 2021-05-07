@@ -76,6 +76,10 @@ details[open] summary {
   float: right;
 }
 
+/* end */
+
+/* start theme override */
+
 .post img {
   cursor: zoom-in;
 }
@@ -379,6 +383,7 @@ details[open] summary {
   align-items: center;
   padding: 8px 15px;
   word-wrap: break-word;
+  word-break: break-all;
   border-radius: 2px;
 
   // default

@@ -97,7 +97,11 @@ toc: false
 本文采用「题目 - 子问题 - 答案」的形式，答案默认折叠。大部分问题都是简答，可以直接采用。但是深入了解细节，才能应对面试官进一步的问题，因此我也将部分问题整理为单独的文章，之后还会持续更新。
 
 推荐阅读：[💡 校招复习 / 面试方法论]({%- post_url 2021-04-07-autumn-recruit -%})
-{: .ant-alert .ant-alert-info}
+{: .ant-alert .ant-alert-info .mb-2}
+
+<div class="ant-alert ant-alert-warning" markdown="1">
+[欢迎加入 Ads Infra 团队]({{ site.url }}/ads-infra.html) ｜ 字节跳动校招内推码：**65V7M7W**  ｜  投递链接：[https://jobs.toutiao.com/s/eDRgyVR](https://jobs.toutiao.com/s/eDRgyVR)
+</div>
 
 ## 操作系统
 
