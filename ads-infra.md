@@ -2,12 +2,33 @@
 layout: default
 ---
 
+<style>
+
+.busuanzi_container_page {
+  float: right;
+}
+
+.busuanzi_container_page  > #busuanzi_container_page_pv {
+  visibility: hidden;
+}
+
+.busuanzi_container_page:hover > #busuanzi_container_page_pv {
+  visibility: visible;
+}
+
+</style>
+
 <div class="about-page">
   <head>
     <title>欢迎加入字节跳动 - Ads Infra 团队</title>
   </head>
   <div class="post-back">
     <a class="black-link" href="{{ site.url | relative_url }}"> ← {{ site.moving.back_to }} </a>
+    <span class="busuanzi_container_page">
+      <span id="busuanzi_container_page_pv">
+        <span id="busuanzi_value_page_pv"></span> View
+      </span>
+    </span>
   </div>
   <div class="about-header">
     <div class="about-avatar" style="font-size: 6rem; line-height: 1">🎯</div>
