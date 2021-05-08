@@ -87,6 +87,7 @@ toc_h_max: 3
 * 实现一个编译器，或者正则表达式（子集）的解析器
 * 实现一个基于 TCP 的并发服务器框架，包括路由、Goroutine 池、消息队列等（如 [zinx](https://github.com/aceld/zinx)）
 * 实现一个简单的 RPC 框架，考虑选择什么传输协议和编码协议、以及这样选择的原因
+* [build-your-own-x](https://github.com/danistefanovic/build-your-own-x) 提供了许多实践项目，如 Docker、数据库、命令行工具、Shell、Git、搜索引擎等
 
 这些项目不仅可以解决实际问题，还可以在过程中深入钻研底层原理，或者锻炼自己的算法能力。比起堆积木、搭脚手架，我认为这些项目更值得尝试。
 
