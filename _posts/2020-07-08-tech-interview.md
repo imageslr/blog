@@ -484,8 +484,8 @@ TLB 基于局部性原理实现：
   - `malloc` 分配的内存块的格式
   - 为什么 `free` 只需要传递一个指针就可以释放内存
   - tcmalloc 简单了解
-
-推荐阅读：[内存管理设计精要 - Draveness](https://mp.weixin.qq.com/s/lx0vX-4wlQWxxfj017T9HA)。
+- [解密 Go 协程的栈内存管理](https://mp.weixin.qq.com/s/e6SUHtTTm2xfC7HpxGGUcg)
+* [内存管理设计精要 - Draveness](https://mp.weixin.qq.com/s/lx0vX-4wlQWxxfj017T9HA)
 
 </details>
 
@@ -587,7 +587,8 @@ C 语言使用运行时栈来存储过程信息。每个函数的信息存储在
 - 进程、线程、协程的区别
 - 协程为什么效率高？
 - 协程的实现原理
-- 什么时候用协程、什么时候用线程？
+- 协程切换哪些数据？
+- 什么时候用协程、什么时候用线程？[TODO]
 - 协程的栈空间大小
 
 <details markdown="1">
@@ -595,7 +596,28 @@ C 语言使用运行时栈来存储过程信息。每个函数的信息存储在
 
 协程是一个用户态的线程，用户在**堆**上模拟出协程的栈空间。当需要进行协程上下文切换的时候，主线程只需要交换栈空间和恢复协程的一些相关的寄存器的状态，就可以实现上下文切换。没有了从用户态转换到内核态的切换成本，协程的执行也就更加高效。
 
-线程栈是**固定大小**的，可以使用 `ulimit -a` 查看。默认情况也是 8M（8192 字节），而协程占用的栈空间大小由 runtime **按需进行分配**。
+**(1) 协程的实现原理：**
+
+最基本的协程实现原理可以参考[这篇文章](https://zhuanlan.zhihu.com/p/94018082)，分析了一个简单的 C++ coroutine 的源码实现。协程的实现重点在于：
+1. 在堆上模拟栈，从而实现一个用户态的线程
+2. 调度器，负责协程的调度与上下文切换
+
+Golang 的 goroutine 也是一个有栈协程。Golang 实现了自己的调度器 (GMP 模型)，使用队列管理协程 (运行队列、等待队列)；Golang 封装了系统调用，将阻塞的系统调用改为**非阻塞的系统调用**，从而在系统调用前将陷入“阻塞”的协程“切换”到等待队列，并让出计算资源。从 1.2 版本开始，goroutine 变为[抢占式调度](https://tiancaiamao.gitbooks.io/go-internals/content/zh/05.5.html)。
+
+[进阶内容] 关于 go 语言的调度器原理和 goroutine 实现原理，可以阅读这些文章：
+* [Go 语言调度器与 Goroutine 实现原理 - Draveness](https://draveness.me/golang/docs/part3-runtime/ch06-concurrency/golang-goroutine/)
+* [Scheduling In Go: Part I](https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part1.html)、[Part II](https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part2.html)、[Part III](https://www.ardanlabs.com/blog/2018/12/scheduling-in-go-part3.html)：William Kennedy 的经典文章
+
+**(2) 协程切换哪些数据？** 
+
+[TODO 待验证] 类似于线程的切换，协程切换时需要保存：
+* 寄存器，包括 PC (指令位置) 和 CPU 寄存器 (参数、上下文...)
+* 栈指针
+* 返回值
+
+**(3) 协程的栈空间大小：**
+
+线程栈是**固定大小**的，可以使用 `ulimit -a` 查看。默认情况也是 8M（8192 字节），而协程占用的栈空间大小由 runtime 按需进行分配 (初始时很小，随后动态扩展)，可以查看[这篇文章](https://juejin.cn/post/6844903969253244936)。
 
 </details>
 
@@ -609,11 +631,17 @@ C 语言使用运行时栈来存储过程信息。每个函数的信息存储在
 [答案]({% post_url 2020-09-06-copy-on-write %})
 
 ### 其他
-[TODO]
 - 动态链接、静态链接的区别
 - 字符集和字符编码的含义
 - 文字乱码的原因
 - Unicode 和 UTF-8 的区别
+
+{% details 答案 %}
+
+* Google 有详细的回答
+* [字符编码笔记：ASCII，Unicode 和 UTF-8 - 阮一峰](http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html)
+
+{% enddetails %}
 
 ## 计算机网络
 
