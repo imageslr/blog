@@ -2,7 +2,7 @@
 layout: post
 title: 🗂【面试题】技术面试题汇总 🔥
 date: 2020/11/6 17:00
-last_modified_at: 2021/4/11
+last_modified_at: 2021/5/10
 permalink: 2020/07/08/tech-interview.html
 toc: false
 # redirect_to: http://www.github.com
@@ -31,6 +31,7 @@ toc: false
   - [I/O 模型](#io-模型)
   - [协程](#协程)
   - [写时复制 Copy-on-write](#写时复制-copy-on-write)
+  - [其他](#其他)
 - [计算机网络](#计算机网络)
   - [协议栈](#协议栈)
   - [TCP 文章推荐](#tcp-文章推荐)
@@ -42,20 +43,20 @@ toc: false
   - [HTTP 原理](#http-原理)
   - [HTTPS 原理](#https-原理)
   - [HTTP 的缓存机制](#http-的缓存机制)
-  - [DNS 的解析过程](#dns-的解析过程)
+  - [DNS 原理](#dns-原理)
   - [IP 原理](#ip-原理)
   - [从输入一个 URL 到页面加载完成的过程](#从输入一个-url-到页面加载完成的过程)
   - [两台主机间的通信过程](#两台主机间的通信过程)
   - [常用的负载均衡软件](#常用的负载均衡软件)
   - [Socket 通信](#socket-通信)
 - [数据库](#数据库)
+  - [数据库基础](#数据库基础)
   - [数据库的存储引擎](#数据库的存储引擎)
   - [数据库的索引](#数据库的索引)
   - [数据库的事务](#数据库的事务)
   - [数据库的并发控制](#数据库的并发控制)
   - [数据库分库、分表、主从、读写分离](#数据库分库分表主从读写分离)
   - [数据库的优化方法](#数据库的优化方法)
-  - [数据库内连接、外连接的含义](#数据库内连接外连接的含义)
   - [ORM 和原生 SQL 的区别](#orm-和原生-sql-的区别)
   - [Redis 相关](#redis-相关)
 - [数据结构](#数据结构)
@@ -86,8 +87,8 @@ toc: false
   - [分布式组件](#分布式组件)
   - [分布式算法](#分布式算法)
 - [网络安全](#网络安全)
-- [其他](#其他)
 - [面经汇总](#面经汇总)
+- [Q & A](#q--a)
 - [💡 校招复习 / 面试方法论]({%post_url 2021-04-07-autumn-recruit%})
 </details>
 
@@ -151,6 +152,7 @@ toc: false
 
 - 了解哪些类型的锁？
 - 互斥锁的实现方式
+- 读写锁的实现方式
 
 <details markdown="1">
 <summary>答案</summary>
@@ -173,6 +175,8 @@ toc: false
 - 同步和互斥的概念
 - 临界区的管理原则
 - 信号量和 P / V 操作
+- 原子操作的原理 [TODO]
+- volatile 解决什么问题
 - 一些常见的并发问题
   - 生产者与消费者问题
   - 读者写者问题
@@ -303,6 +307,7 @@ toc: false
   - 倒排页表
   - 散列表
 - TLB 的原理
+- 虚拟地址到物理地址的翻译过程 [TODO: MMU + TLB]
 - 缺页中断的处理
 - 什么是页面淘汰？
 - 不同的淘汰算法及其适用场景
@@ -603,6 +608,13 @@ C 语言使用运行时栈来存储过程信息。每个函数的信息存储在
 
 [答案]({% post_url 2020-09-06-copy-on-write %})
 
+### 其他
+[TODO]
+- 动态链接、静态链接的区别
+- 字符集和字符编码的含义
+- 文字乱码的原因
+- Unicode 和 UTF-8 的区别
+
 ## 计算机网络
 
 ### 协议栈
@@ -685,6 +697,7 @@ TCP 是基于字节流的，数据块是没有边界、没有结构的字节流�
 
 - TCP 为什么是面向连接的？
 - TCP 如何保证传输的可靠性？
+- TCP / UDP 协议头 [TODO]
 
 <details markdown="1">
 <summary>答案</summary>
@@ -782,6 +795,9 @@ TCP 如何保证传输的可靠性？
 - HTTP 请求报文、响应报文的格式
 - Cookie 和 Session 的区别
 - HTTP 分块传输编码
+- Header 中 Content-Type / Content-Length / Content-Encoding 等字段的含义
+- [进阶] 断点续传原理 [TODO]
+- [进阶] QUIC、HTTP 3.0
 
 [答案]({% post_url 2020-08-22-http%})
 
@@ -800,7 +816,12 @@ TCP 如何保证传输的可靠性？
 - 用户行为与缓存是否刷新的关系
 - 缓存策略的选择思路
 
-### DNS 的解析过程
+### DNS 原理
+
+- DNS 记录格式
+- DNS 的解析过程
+- DNS 劫持原理与防范 [TODO]
+- [进阶] 主流的公有云的 DNS 服务端架构
 
 <details markdown="1">
 <summary>答案</summary>
@@ -820,6 +841,7 @@ DNS 查询共有两类：递归查询和迭代查询。**递归查询**是指，
 - 什么是 ARP 协议
 - 集线器、网桥、交换机、路由器位于哪一层
 - 为什么局域网的 IP 普遍是 192.168 开头
+- IPv6 的基本概念 / 为什么引入 IPv6
 
 ### 从输入一个 URL 到页面加载完成的过程
 
@@ -827,12 +849,12 @@ DNS 查询共有两类：递归查询和迭代查询。**递归查询**是指，
 
 ### 两台主机间的通信过程
 
-TODO：同局域网、不同局域网的情况。ARP、IP 协议。
+[TODO] 同局域网、不同局域网的情况。ARP、IP 协议。
 
 [什么是 ARP 协议](https://github.com/wolverinn/Waking-Up/blob/master/Computer%20Network.md#%E4%BB%80%E4%B9%88%E6%98%AFarp%E5%8D%8F%E8%AE%AE-address-resolution-protocol)
 
 ### 常用的负载均衡软件
-TODO：第四层 LVS、第七层 Nginx。
+[TODO] 第四层 LVS、第七层 Nginx。
 
 ### Socket 通信
 
@@ -857,6 +879,12 @@ TCP 和 UDP 可以同时监听同一个端口，操作系统根据五元组 `{�
 </details>
 
 ## 数据库
+
+### 数据库基础
+- 数据库三个范式的定义 [TODO]
+- 内连接、外连接的含义
+- 主键、联合主键
+- 游标的原理
 
 ### 数据库的存储引擎
 
@@ -937,9 +965,6 @@ TCP 和 UDP 可以同时监听同一个端口，操作系统根据五元组 `{�
 - 数据库拆分
 - 系统配置的优化、硬件的优化
 
-### 数据库内连接、外连接的含义
-
-TODO
 ### ORM 和原生 SQL 的区别
 
 <details markdown="1">
@@ -1526,6 +1551,10 @@ TODO
 - Channel、互斥锁、读写锁的适用场景
 - 动态 interface 和静态 interface
 - Golang 里返回一个 MyError 类型的 nil，可以用 err != nil 判断吗？[答案]({% post_url 2019-11-12-go-underlying-nil-detail %})
+- 其他资源
+  - [lifei6671/interview-go](https://github.com/lifei6671/interview-go)
+  - [xiaobaiTech/golangFamily](https://github.com/xiaobaiTech/golangFamily)
+  - [Search · golang 面试](https://github.com/search?q=golang+%E9%9D%A2%E8%AF%95)
 
 <details markdown="1">
 <summary>答案</summary>
@@ -1542,23 +1571,27 @@ M 为了保证自己不被释放，所以自旋。这样一旦有 G 需要处理
 - 编写一个 string 类，实现构造函数、析构函数、拷贝构造函数、`operator =`、`c_str` 方法（返回 `const char*`）
 - 64 位机器上执行以下代码的输出
 
-```c++
-char str[] = "Hello";
-char* pstr = str;
-const char* str_list[] = {"Hello", "World"};
-void* pbuf = malloc(100);
-int n = 10;
+  ```c++
+  char str[] = "Hello";
+  char* pstr = str;
+  const char* str_list[] = {"Hello", "World"};
+  void* pbuf = malloc(100);
+  int n = 10;
 
-sizeof (str ) = ________，
-sizeof ( pstr ) = _____ ，
-sizeof ( str_list ) = _____ ，
-sizeof ( pbuf ) = _____ ，
-sizeof ( n ) = _________
-void func ( char str[100])
-{
-sizeof( str ) = _____ 
-}
-```
+  sizeof (str ) = ________，
+  sizeof ( pstr ) = _____ ，
+  sizeof ( str_list ) = _____ ，
+  sizeof ( pbuf ) = _____ ，
+  sizeof ( n ) = _________
+  void func ( char str[100])
+  {
+  sizeof( str ) = _____ 
+  }
+  ```
+
+- 其他资源
+  - [chankeh/cpp-backend-reference](https://github.com/chankeh/cpp-backend-reference/blob/master/back-end.md)
+  - [huihut/interview](https://github.com/huihut/interview#cc)
 
 <details markdown="1">
 <summary>答案</summary>
@@ -1703,8 +1736,15 @@ cat nginx.log | awk '{print $1}' | sort | uniq -c | sort -nr | head -10 | awk '{
 
 ## 系统设计题
 
+- 短网址系统
+- 分布式 ID 生成器
+- 定时任务调度器，要求：对外表现的颗粒度为秒级；能处理**海量**定时任务；单机、单线程实现；具有 `Schedule()` 和 `Cancel()` 两个接口。
 - 如果后端有许多台服务器，如何保存用户的 session？
-- 设计一个定时器，要求：对外表现的颗粒度为秒级；能处理**海量**定时任务；单机、单线程实现；具有 `Schedule()` 和 `Cancel()` 两个接口。
+- 其他资源
+  - [soulmachine/system-design](https://github.com/soulmachine/system-design) / [在线阅读](https://soulmachine.gitbooks.io/system-design/content/cn/)
+  - [donnemartin/system-design-primer](https://github.com/donnemartin/system-design-primer/blob/master/README-zh-Hans.md)
+  - [checkcheckzz/system-design-interview](https://github.com/checkcheckzz/system-design-interview)
+  - [Search · system design](https://github.com/search?q=system+design)
 
 
 ## 多线程编程
@@ -1721,6 +1761,8 @@ cat nginx.log | awk '{print $1}' | sort | uniq -c | sort -nr | head -10 | awk '{
 - RPC 框架的组成部分与实现原理（客户端、服务端、序列化协议、传输协议）
 - 常见的 RPC 序列化协议及对比
 - 常见的 RPC 传输协议及对比
+  - Protobuf
+  - Thrift
 - RPC 传输可以使用 HTTP 协议吗？
 - 了解哪些不同的 RPC 框架？对比
 
@@ -1752,17 +1794,13 @@ cat nginx.log | awk '{print $1}' | sort | uniq -c | sort -nr | head -10 | awk '{
 - 浏览器的同源策略、CORS
 - OAuth2.0 原理：[答案](http://www.ruanyifeng.com/blog/2019/04/oauth_design.html)
 
-## 其他
-
-- 字符集和字符编码的含义；文字乱码是为什么？
-
 ## 面经汇总
 
 [点击查看]({%- post_url 2021-04-07-autumn-recruit -%}#interview)
 
 ## [💡 校招复习 / 面试方法论]({%post_url 2021-04-07-autumn-recruit%})
 
-----
+## Q & A
 
 Q：如何展开所有答案？
 {: #open-all}

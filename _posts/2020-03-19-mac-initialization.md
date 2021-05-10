@@ -330,11 +330,11 @@ SnippetsLab 支持 iCloud 同步，这意味着当我们切换到新 Mac 后，�
     5. `⌘ Command` + `↩︎ Enter` 将当前选择的代码片段粘贴到屏幕最前方的应用中
 
 
-### 记录剪切板历史：Paste（Deprecated）
+### ~~记录剪切板历史：Paste（Deprecated）~~
 
-使用 Alfred 即可达到相同的功能，无需再安装 Paste。设置路径：“Preference - Features - Clipboard History”，勾选“Keep Plain Text”、“Keep Images”、“Keep File Lists”。
+使用 Alfred 即可实现相同的功能，无需再安装 Paste。设置路径：“Preference - Features - Clipboard History”，勾选“Keep Plain Text”、“Keep Images”、“Keep File Lists”。
 
----
+----
 
 Paste 可以记录剪切板历史。Paste 同样支持 iCloud 同步。
 ![-w1192](/media/15846159741374.jpg)
@@ -374,10 +374,10 @@ MWeb 可以通过 iCloud 实现同步，只需要将文档库保存在 iCloud �
 ![-w619](/media/15846233668366.jpg)
 
 ### 待办事项管理：OmniFocus
-OmniFocus 是一个 GTD 工具，我使用它来安排我的待办事项。OmniFocus 支持多端同步，数据存储在 OmniFocus 服务器中。
+OmniFocus 是一个 GTD 工具，我使用它来安排我的待办事项。OmniFocus 支持多端同步，数据存储在 OmniFocus 服务器中，或者个人 [WebDAV 服务器](https://sspai.com/post/60540)。
 
 ### 每日计划：OmniOutliner
-OmniOutliner 是一款简介、专注的大纲制作软件，我使用它来安排我的每日计划。将 OmniOutliner 文件存储在 iCloud 云盘中，可以实现多端同步。
+OmniOutliner 是一款简洁、专注的大纲制作软件，我使用它来安排我的每日计划。将 OmniOutliner 文件存储在 iCloud 云盘中，可以实现多端同步。
 
 ![](/media/15846254446005.jpg)
 
@@ -401,7 +401,7 @@ code ~/.zshrc // 在  VS Code 中打开 .zshrc 文件，类似于 vim ~/.zshrc
 [官网下载](https://iina.io/)
 
 ### 单词翻译：Bob
-[Github](https://github.com/ripperhe/Bob)
+[Github 下载](https://github.com/ripperhe/Bob)。快捷键十分好用，支持截图翻译。有了它以后，就不需要在 Chrome 里安装划词翻译插件了。
 
 ### 其他
 
