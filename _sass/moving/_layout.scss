@@ -284,10 +284,9 @@
 
 .social-media-list {
   margin-top: -1rem;
-  display: flex;
   @include relative-font-size(1);
   li {
-    float: left;
+    display: inline-block;
     a {
       padding-right: $spacing-unit / 5;
     }

@@ -70,8 +70,12 @@ layout: default
 
 <div class="about-content e-content" itemprop="articleBody" markdown="1">
 
-<div class="ant-alert ant-alert-warning" markdown="1">
+<div class="ant-alert ant-alert-warning mb-2" markdown="1">
 字节跳动校招 / 实习内推码：**65V7M7W**  ｜  投递链接：[https://jobs.toutiao.com/s/eDRgyVR](https://jobs.toutiao.com/s/eDRgyVR)
+</div>
+
+<div class="ant-alert ant-alert-info" markdown="1">
+想了解在 Ads Infra 的实习体验？[点击查看！]({% post_url 2021-04-07-autumn-recruit %}#ads-infra)
 </div>
 
 ## TL;DR
