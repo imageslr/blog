@@ -70,12 +70,32 @@ layout: default
 
 <div class="about-content e-content" itemprop="articleBody" markdown="1">
 
-<div class="ant-alert ant-alert-warning mb-2" markdown="1">
-字节跳动校招 / 实习内推码：**65V7M7W**  ｜  投递链接：[https://jobs.toutiao.com/s/eDRgyVR](https://jobs.toutiao.com/s/eDRgyVR)
+<div class="ant-alert ant-alert-info mb-2" markdown="1">
+想了解在 Ads Infra 的实习体验？[点击查看！]({% post_url 2021-04-07-autumn-recruit %}#ads-infra)
 </div>
 
-<div class="ant-alert ant-alert-info" markdown="1">
-想了解在 Ads Infra 的实习体验？[点击查看！]({% post_url 2021-04-07-autumn-recruit %}#ads-infra)
+<div class="ant-alert ant-alert-warning" markdown="1">
+
+<details markdown="1" open>
+<summary>找我内推 👉  
+<span style="float: right; font-size: 12px; font-style: italic; color: #d48806">不限岗位</span>
+</summary>
+
+方式：
+{: .m0}
+* 将简历发送至我的邮箱：[elonzzz@163.com](mailto://elonzzz@163.com)，备注意向岗位
+* 内推链接：[https://jobs.toutiao.com/s/eDRgyVR](https://jobs.toutiao.com/s/eDRgyVR)
+* 内推码：**65V7M7W**，在 [字节跳动 - 校园招聘](https://jobs.bytedance.com/campus/) 页面选择岗位并投递，输入内推码
+
+**推荐使用邮箱投递**，方便我们双向沟通，及时同步。典型场景是：你的简历被其他部门锁定，我需要联系你确认意向，才能帮忙申请解锁。如果你通过内推链接投递，我是无法看到你的联系方式的。
+
+我可以：
+{: .m0}
+* 面试前：帮改简历、分享面试经验、写推荐语 (最好先自己编辑一段)、问题答疑 (非涉密信息)
+* 面试中：同步面试进展、催 HR 推进流程
+* 面试后：询问面试反馈；(如果未通过) 一起复盘、校招季再次投递
+{: .mb-0}
+</details>
 </div>
 
 ## TL;DR
@@ -92,8 +112,10 @@ layout: default
 
 > 北京、上海均有实习岗位，如果系统中没有展示，请将简历发送到我的邮箱：[elonzzz@163.com](mailto://elonzzz@163.com)
 
-如果你是社招人员，这里有最前沿的技术和最优秀的人才，**接受内部活水**。欢迎加入：
+如果你是社招人员，这里有最前沿的技术和最优秀的人才，欢迎加入：
 * 公网内推投递：[https://job.toutiao.com/s/eDRghG2](https://job.toutiao.com/s/eDRghG2)
+
+如果你是字节员工，我们**接受内部活水 (正式 / 实习)**，请在内网访问：
 * 内网内推投递：[http://go/joinadsinfra](http://go/joinadsinfra)
 
 ## 团队介绍
