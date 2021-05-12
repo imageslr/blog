@@ -1,3 +1,4 @@
 # global context
-[build]
-  environment = { JEKYLL_ENV = "production" }
+[build.environment]
+  JEKYLL_ENV = "production"
+  TZ = "UTC+8:00"
