@@ -2,6 +2,17 @@
 layout: default
 ---
 
+<style>
+.busuanzi_container  > .busuanzi_container_site {
+  opacity: 0;
+  transition: opacity 0.1s linear; 
+}
+
+.busuanzi_container:hover > .busuanzi_container_site {
+  opacity: 1;
+}
+</style>
+
 <div class="home">
   <head>
       <title>{{ site.title }}</title>
@@ -9,10 +20,12 @@ layout: default
   <div class="home-title">
     <p class="home-heading">{{ site.title }}</p>
     <p class="home-sub-heading">{{- site.description | escape -}}
-      <span class="busuanzi_container_site">
-        <span id="busuanzi_container_site_pv">PV: <span id="busuanzi_value_site_pv"></span></span> 
-        | 
-        <span id="busuanzi_container_site_uv">UV: <span id="busuanzi_value_site_uv"></span></span>
+      <span class="busuanzi_container">
+        <span class="busuanzi_container_site">
+          <span id="busuanzi_container_site_pv">PV: <span id="busuanzi_value_site_pv"></span></span> 
+          | 
+          <span id="busuanzi_container_site_uv">UV: <span id="busuanzi_value_site_uv"></span></span>
+        </span>
       </span>
     </p>
   </div>
