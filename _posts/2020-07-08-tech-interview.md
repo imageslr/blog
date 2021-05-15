@@ -8,10 +8,20 @@ toc: false
 # redirect_to: http://www.github.com
 ---
 
-<details markdown="1" style="margin-top: -2rem">
-<summary>
-<h3 style="display: inline-block; margin: 0;">目录</h3>
-</summary>
+<style>
+.post-content {
+  margin-top: 0 !important;
+}
+</style>
+
+## 前言
+
+这是我用来准备后端开发校招面试的笔记汇总。这些题目或多或少都在不同公司的面试过程中出现过，因此将其总结起来，可以用作复习阶段的**知识点梳理**，也可以用作面试前的**快速回顾**。如何复习？推荐阅读[💡 校招复习 / 面试方法论]({%- post_url 2021-04-07-autumn-recruit -%})。
+
+本文采用「题目 - 子问题 - 答案」的形式，答案默认折叠 [[?](#open-all)]。大部分问题都是简答，可以直接采用。但是深入了解细节，才能应对面试官进一步的问题，因此我也将部分问题整理为单独的文章，之后还会持续更新。点击展开下方目录，可以查看全部题目、快速跳转。
+
+<details markdown="1" class="mb-2 ant-alert">
+<summary><span>点击展开 / 关闭目录</span></summary>
 - [前言](#前言)
 - [操作系统](#操作系统)
   - [内核态和用户态](#内核态和用户态)
@@ -93,15 +103,7 @@ toc: false
 - [💡 校招复习 / 面试方法论]({%post_url 2021-04-07-autumn-recruit%})
 </details>
 
-## 前言
-这是我用来准备后端开发校招面试的笔记汇总。这些题目或多或少都在不同公司的面试过程中出现过，因此将其总结起来，可以用作复习阶段的**知识点梳理**，也可以用作面试前的**快速回顾**。点击展开上方目录，可以查看全部题目索引。
-
-本文采用「题目 - 子问题 - 答案」的形式，答案默认折叠 [[How 全部展开?](#open-all)]。大部分问题都是简答，可以直接采用。但是深入了解细节，才能应对面试官进一步的问题，因此我也将部分问题整理为单独的文章，之后还会持续更新。
-
-推荐阅读：[💡 校招复习 / 面试方法论]({%- post_url 2021-04-07-autumn-recruit -%})
-{: .ant-alert .ant-alert-info .mb-2}
-
-<div class="ant-alert ant-alert-warning" markdown="1">
+<div class="ant-alert ant-alert-info mb-2" markdown="1">
 [欢迎加入 Ads Infra 团队]({{ site.url }}/ads-infra.html) ｜ 字节跳动校招内推码：**65V7M7W**  ｜  投递链接：[https://jobs.toutiao.com/s/eDRgyVR](https://jobs.toutiao.com/s/eDRgyVR)
 </div>
 
