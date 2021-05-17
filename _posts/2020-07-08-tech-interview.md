@@ -2,7 +2,7 @@
 layout: post
 title: 🗂【面试题】技术面试题汇总 🔥
 date: 2020/11/6 17:00
-last_modified_at: 2021/5/12
+last_modified_at: 2021/5/18
 permalink: 2020/07/08/tech-interview.html
 toc: false
 # redirect_to: http://www.github.com
@@ -99,6 +99,7 @@ toc: false
   - [分布式算法](#分布式算法)
 - [网络安全](#网络安全)
 - [面经汇总](#面经汇总)
+- [学习资源](#学习资源)
 - [Q & A](#q--a)
 - [💡 校招复习 / 面试方法论]({%post_url 2021-04-07-autumn-recruit%})
 </details>
@@ -917,6 +918,9 @@ TCP 和 UDP 可以同时监听同一个端口，操作系统根据五元组 `{�
 - 主键、联合主键
 - 游标的原理
 
+推荐学习：[马士兵 MySQL 教程](https://www.bilibili.com/video/BV1eK411T7Ue)
+{: .ant-alert .ant-alert-info}
+
 ### 数据库的存储引擎
 
 - MySQL 支持哪些存储引擎
@@ -1383,6 +1387,12 @@ cat nginx.log | awk '{print $1}' | sort | uniq -c | sort -nr | head -10 | awk '{
 ## 面经汇总
 
 [点击查看]({%- post_url 2021-04-07-autumn-recruit -%}#interview)
+
+## 学习资源
+
+强烈推荐以下两个课程：
+* [TCP、IP、IO、Netty - 马士兵](https://www.bilibili.com/video/BV1Af4y117ZK)
+* [MySQL 教程 - 马士兵](https://www.bilibili.com/video/BV1eK411T7Ue)
 
 ## [💡 校招复习 / 面试方法论]({%post_url 2021-04-07-autumn-recruit%})
 
