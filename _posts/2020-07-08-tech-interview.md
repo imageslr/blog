@@ -584,6 +584,10 @@ C 语言使用运行时栈来存储过程信息。每个函数的信息存储在
 - I/O 阻塞和非阻塞的区别在于：进程发起系统调用后，是会被挂起直到收到数据后在返回、还是立即返回成功或错误
 ![](/media/16010947228749.jpg)
 - I/O 多路复用 [答案]({% post_url 2020-02-27-select-poll-epoll %})
+
+推荐学习：[操作系统中的各类 I/O 模型 - 马士兵](https://www.bilibili.com/video/BV1Af4y117ZK?p=2)
+{: .ant-alert .ant-alert-info}
+
 </details>
 
 ### 协程
@@ -881,12 +885,25 @@ DNS 查询共有两类：递归查询和迭代查询。**递归查询**是指，
 
 ### 两台主机间的通信过程
 
-[TODO] 同局域网、不同局域网的情况。ARP、IP 协议。
+[TODO] 
 
-[什么是 ARP 协议](https://github.com/wolverinn/Waking-Up/blob/master/Computer%20Network.md#%E4%BB%80%E4%B9%88%E6%98%AFarp%E5%8D%8F%E8%AE%AE-address-resolution-protocol)
+推荐学习：[TCP 通信基础 - 马士兵](https://www.bilibili.com/video/BV1Af4y117ZK)
+{: .ant-alert .ant-alert-info}
 
 ### 常用的负载均衡软件
-[TODO] 第四层 LVS、第七层 Nginx。
+
+- 什么是负载均衡？
+- 常用的负载均衡软件
+- 负载均衡的实现
+
+{% details 答案 %}
+
+常见的负载均衡软件：第四层 LVS、第七层 Nginx。
+
+[负载均衡系列专题 1-4 - houbb](https://houbb.github.io/2020/06/19/load-balance-01-basic)
+
+{% enddetails %}
+
 
 ### Socket 通信
 
@@ -952,6 +969,11 @@ TCP 和 UDP 可以同时监听同一个端口，操作系统根据五元组 `{�
 * 相反，二叉搜索树的高度高，所以需要的 I/O 次数更多
 
 如果是内存数据库，不涉及磁盘 I/O，可以直接用二叉搜索树。
+
+推荐阅读：
+* [MySQL 索引设计概要 - Draveness](https://draveness.me/sql-index-intro/)
+* [马士兵 MySQL 索引视频课](https://www.bilibili.com/video/BV1eK411T7Ue)
+
 </details>
 
 ### 数据库的事务
@@ -1359,9 +1381,22 @@ cat nginx.log | awk '{print $1}' | sort | uniq -c | sort -nr | head -10 | awk '{
 
 ### 分布式原理
 
+[进阶]
+
 - 分布式概念（服务注册、服务监控、负载均衡等）
-- 分布式系统一致性、CAP、BASE 理论（低频）
+- 分布式系统一致性、CAP、BASE 理论
 - 你参与的业务满足 CAP 理论中的 CP 还是 AP？
+
+<details markdown="1">
+<summary>答案</summary>
+
+* [分布式系统一致性问题 - 赵坤](https://kunzhao.org/posts/consistency-problem-of-the-distrubuted-system/)
+* [分布式系统的 CAP 理论 - hollischuang](https://www.hollischuang.com/archives/666)
+* [分布式一致性与共识算法 - Draveness](https://draveness.me/consensus/)
+* [分布式事务的实现原理 - Draveness](https://draveness.me/distributed-transaction-principle/)
+* [分布式系统与消息的投递 - Draveness](https://draveness.me/message-delivery/)
+
+</details>
 
 ### 分布式组件
 
@@ -1390,8 +1425,9 @@ cat nginx.log | awk '{print $1}' | sort | uniq -c | sort -nr | head -10 | awk '{
 
 ## 学习资源
 
-强烈推荐以下两个课程：
 * [TCP、IP、IO、Netty - 马士兵](https://www.bilibili.com/video/BV1Af4y117ZK)
+  * 第一个视频 - 网络通信过程，强烈推荐
+  * 第二个视频 - I/O，强烈推荐
 * [MySQL 教程 - 马士兵](https://www.bilibili.com/video/BV1eK411T7Ue)
 
 ## [💡 校招复习 / 面试方法论]({%post_url 2021-04-07-autumn-recruit%})
