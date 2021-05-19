@@ -6,6 +6,8 @@ last_modified_at: 2021/5/18
 permalink: 2020/07/08/tech-interview.html
 toc: false
 # redirect_to: http://www.github.com
+typora-root-url: ../
+typora-copy-images-to: ../media
 ---
 
 <style>
@@ -58,7 +60,7 @@ toc: false
   - [从输入一个 URL 到页面加载完成的过程](#从输入一个-url-到页面加载完成的过程)
   - [两台主机间的通信过程](#两台主机间的通信过程)
   - [常用的负载均衡软件](#常用的负载均衡软件)
-  - [Socket 通信](#socket-通信)
+  - [Socket 通信](#socket)
 - [数据库](#数据库)
   - [数据库基础](#数据库基础)
   - [数据库的存储引擎](#数据库的存储引擎)
@@ -906,6 +908,7 @@ DNS 查询共有两类：递归查询和迭代查询。**递归查询**是指，
 
 
 ### Socket 通信
+{: #socket}
 
 - Socket 通信流程图（服务端、客户端）
 - 创建服务端：`socket()` / `bind()` / `listen()` / `accept()` / `read()/write()` / `close()`
@@ -915,9 +918,11 @@ DNS 查询共有两类：递归查询和迭代查询。**递归查询**是指，
 
 <details markdown="1">
 <summary>答案</summary>
+* 建议直接阅读 man page：[socket()](https://man7.org/linux/man-pages/man2/socket.2.html), [bind()](https://man7.org/linux/man-pages/man2/bind.2.html), [listen](https://man7.org/linux/man-pages/man2/listen.2.html), [accept()](https://man7.org/linux/man-pages/man2/accept.2.html), [connect()](https://man7.org/linux/man-pages/man2/connect.2.html)
+- [Linux Socket 编程](https://www.cnblogs.com/skynet/archive/2010/12/12/1903949.html)
+- [Socket 的基本操作](https://www.cnblogs.com/straight/articles/7660889.html)
 
-参考文章：
-- https://www.cnblogs.com/skynet/archive/2010/12/12/1903949.html
+
 
 流程图 [[来源](https://zhuanlan.zhihu.com/p/257126863)]：
 

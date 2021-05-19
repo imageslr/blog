@@ -303,7 +303,7 @@ void heapAdjustDown(vector<int>& nums, int s, int n) {
 ## 基数排序
 * 一种非基于比较的排序算法
 * 分别按照每一位进行排序，有最高位优先（Most Significant Digit first，MSD）和最低位优先（Least Significant Digit first，LSD）两种方法
-* 基数排序以计数排序为基础，按照每一位排序时，实际上就是在进行计数排序
+* 基数排序以**计数排序**为基础，按照每一位排序时，实际上就是在进行计数排序
 
 下面使用 LSD 方法实现基数排序。
 

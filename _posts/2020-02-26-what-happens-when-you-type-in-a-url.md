@@ -65,6 +65,8 @@ permalink: 2020/02/26/what-happens-when-you-type-in-a-url.html
 
 
 ### DNS 查询过程
+{: #dns}
+
 DNS 是应用层的协议，作用是将域名转化为 IP，以供传输层建立 TCP 连接。
 
 整体流程：浏览器搜索自身的 DNS 缓存、搜索操作系统的 DNS 缓存、读取本地的 Host 文件和向本地 DNS 服务器进行查询等。
