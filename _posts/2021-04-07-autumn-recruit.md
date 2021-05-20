@@ -248,7 +248,7 @@ Tips：
 
 个人介绍模板：
 
-<div class="ant-alert mb-2" markdown="1">
+<div class="ant-alert" markdown="1">
 *（背景介绍）*  
 面试官您好，我叫 XXX。来自 XX 大学 XX 学院，目前研 X 在读，明年 6 月毕业，研究方向是 XXX。本科我就读于 XX 大学，XX 专业。在校期间，我多次获得国家级、校级奖学金。此外，我也参加过许多软件开发竞赛，包括 XX 大赛、XX 大赛等，拿到了 XX 奖项。  
 
@@ -306,7 +306,7 @@ Tips：
 * 公司福利 / 三餐 / 房补
 
 **注意**：HR 面试时，不要直接问户口、薪资等问题，等收到 Offer 后、在沟通薪资时再问。
-{: .ant-alert .ant-alert-warning .mb-2}
+{: .ant-alert .ant-alert-warning}
 
 **实习生还需要关注这些问题**：
 * 部门有没有转正机会？
@@ -495,7 +495,7 @@ TODO
 ## 广告时间
 {: #ads-infra}
 
-<div class="ant-alert ant-alert-info mb-2" markdown="1">
+<div class="ant-alert ant-alert-info" markdown="1">
 **Note**：  我目前还未毕业，也没有招聘 KPI 压力。因为团队在网上的相关资料较少，所以写了这一小节，希望能够帮助大家了解和做选择。有任何问题 (工作时长、团队氛围等) 均可发邮件询问。[[团队介绍 / 找我内推]({{ site.url }}/ads-infra.html)]
 </div>
 

@@ -176,8 +176,8 @@ TCP 要求在 2MSL 内不使用相同的序列号。客户端在发送完最后�
 | LAST_ACK     | 等待先前发送的连接终止请求的确认，只有在发送连接终止请求前先收到了远程的连接终止请求时，才会进入此状态。 |
 | CLOSED       | socket 已经没有连接状态。                                    |
 
-UDP 协议是一个无状态的协议，在 `netstat` 命令中，UDP socket 的 State 一列将总是 `UDP`。
-{: .ant-alert .ant-alert-info .mb-2}
+UDP 协议是一个无状态的协议，在 `netstat` 命令中，UDP socket 的 State 一列总是 `UDP`。
+{: .ant-alert .ant-alert-info}
 
 参考资料：[TCP connection status - IBM](https://www.ibm.com/docs/en/zos/2.1.0?topic=SSLTBW_2.1.0/com.ibm.zos.v2r1.halu101/constatus.htm)
 

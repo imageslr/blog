@@ -384,6 +384,7 @@ details[open] summary {
 .ant-alert {
   box-sizing: border-box;
   margin: 0;
+  margin-bottom: $spacing-unit / 2;
   color: rgba(0,0,0,.85);
   font-size: 14px;
   font-variant: tabular-nums;
