@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 📔【计算机网络】两台主机的通信过程
-date: 2021/5/18 16:00
-last_modified_at: 2021/5/18
+title: 📔【计算机网络】两台主机的通信过程 🆕
+date: 2021/5/23 22:00
+last_modified_at: 2021/5/23
 typora-root-url: ../
 typora-copy-images-to: ../media
 ---
@@ -16,7 +16,7 @@ typora-copy-images-to: ../media
 本文通过在实际场景中执行命令，来深入了解两台主机之间的通信过程。阅读完本文，我们应当能够回答以下两个问题：
 
 * 通过 HTTP 协议访问一台远程服务器的时候发生了什么？
-* 在局域网内 `ping` 另一台主机的时候发生了什么？
+* 在局域网内 `ping` 一台主机的时候发生了什么？
 
 本文也是[从输入一个 URL 到页面加载完成的过程]({% post_url 2020-02-26-what-happens-when-you-type-in-a-url %})的另一个角度的回答。
 
@@ -131,7 +131,7 @@ exit
 docker start -i ubuntu
 ```
 
-如果容器已启动 (Up)，执行 `exec` 命令 (本文暂时用不到)：
+如果容器已启动 (Up)，执行 `exec` 命令：
 
 ```
 docker exec -it <container> /bin/bash 
@@ -296,7 +296,9 @@ Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 * `Iface`：网卡名
 * [Others...](https://www.cyberciti.biz/faq/what-is-a-routing-table/)
 
-**当 `Gateway` 为 0.0.0.0 时，表示没有网关**。这说明目的机器和当前主机位于同一个局域网内，它们互相连接，任何数据包都不需要路由，可以直接发送到目的机器上。
+当 `Destination` 为 0.0.0.0 时，其 `Gateway` 为当前局域网的路由器 / 网关的 IP 地址。
+
+当 `Gateway` 为 0.0.0.0 时，表示目的机器和当前主机位于同一个局域网内，它们互相连接，任何数据包都不需要路由，可以直接通过 MAC 地址发送到目的机器上。[→](#link-layer)
 
 通过 `Destination` 和 `Genmask` 可以计算出目的地址集。例如对于下面的表项，其含义为“所有目的 IP 地址在 192.168.1.0 ~ 192.168.1.255 范围内的数据包，都应该发给 0.0.0.0 网关“。
 
@@ -305,13 +307,13 @@ Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 192.168.1.0     0.0.0.0         255.255.255.0   U     0      0        0 eth0
 ```
 
-相应的，`Genmask` 为 255.255.255.255 时，代表这条规则的 `Destination` 不再是一个网络地址，而是一个网络中的一台**特定主机**。这样的规则可能对应一条点对点信道 (Point to Point Tunnel)。
+当 `Genmask` 为 255.255.255.255 时，代表这条规则的 `Destination` 不再是一个网络地址，而是一个网络中的一台**特定主机**。这样的规则可能对应一条点对点信道 (Point to Point Tunnel)。
 
-路由表中的规则可以手动指定，也可以使用路由协议来交换周围网络的拓扑信息，并动态更新。
+路由表中的规则可以手动指定，也可以通过路由协议来交换周围网络的拓扑信息、动态更新。
 
 ### 路由决策过程
 
-当一个节点收到一个数据包时，会根据路由表来找到下一跳的地址。具体而言，系统会遍历路由表的每个表项，然后将目的 IP 和子网掩码 `Genmask` 作**二进制与运算**，判断结果和该表项的网络地址 `Destination` 是否匹配：
+当一个节点收到一个数据包时，会根据路由表来找到下一跳的地址。具体而言，系统会遍历路由表的每个表项，然后将目的 IP 和子网掩码 `Genmask` 作**二进制与运算**，得到网络地址，再判断这个地址和表项的 `Destination` 是否匹配：
 
 * 如果只有一个匹配项，直接将数据包发送给该表项的网关 `Gateway`
 * 如果有多个匹配项，则选择子网掩码最长的那个规则，然后发送给对应的网关
@@ -349,18 +351,119 @@ Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 {% enddetails %}
 
 ## 数据链路层
+{: #link-layer}
 
-上文说到 Gateway 为 0.0.0.0 时直接发到特定主机
+### ARP 协议
 
-当网络层选择了一个特定 IP 作为下一跳时，如何将数据包正确的发送给该主机？如果直接修改目的地址
+当网络层选择了一个特定 IP 的主机作为下一跳时，如何将数据包正确的发送给该主机？这里需要在数据包外面加上下一跳的硬件地址 (MAC)。在数据包的整个传输过程中，目的 MAC 地址每一跳都在变，但目的 IP 地址不变。
 
-这里是在数据包外面再包一层
+如何根据 IP 地址找到相对应的 MAC 地址？这需要使用 ARP 协议 (Address Resolution Protocol，地址解析协议)。每台主机都设有一个 ARP 高速缓存表，记录了本局域网内各主机的 IP 地址到 MAC 地址的映射。执行以下命令可以查看主机的 ARP 缓存表：
 
-## 
+```
+arp -a
+```
 
+```
+localhost (192.168.1.1) at bc:5f:f6:df:d8:19 on en0 ifscope [ethernet]
+localhost (192.168.1.102) at 14:7d:da:32:8d:17 on en0 ifscope [ethernet]
+```
 
+ARP 高速缓存是自动更新的。当主机 A 向本局域网的主机 B 发送数据包时，如果 ARP 高速缓存中没有主机 B 的硬件地址，就会自动运行 ARP 协议，找出 B 的硬件地址，并更新高速缓存，过程如下：
+
+1. 主机 A 在局域网内**广播**一个 ARP 请求分组，内容为：“我的 IP 是 IP_A，硬件地址是 MAC_A。我想知道 IP 地址为 IP_B 的主机的硬件地址“；
+2. 主机 B 接受到此请求分组后，如果要查询的 IP 地址和自己的 IP 地址一致，就将主机 A 的 IP 地址和 MAC 地址的对应关系记录到自己的 ARP 缓存表中，同时会发送一个 ARP 应答 (**单播**)，内容为：“我的 IP 地址是 IP_B，硬件地址是 MAC_B”；
+3. 其他主机的 IP 地址和要查询的 IP 地址不一致，因此都丢弃此请求分组；
+4. 主机 A 收到 B 的 ARP 响应分组后，同样将主机 B 的 IP 地址和 MAC 地址的对应关系记录到自己的 ARP 缓存表中。
+
+**注意：**ARP 协议只用于局域网中，不同局域网之间通过 IP 协议进行通信。
+{: .ant-alert .ant-alert-info}
+
+### ARP 协议抓包
+
+首先，我们需要另一个终端来监听容器内的网络请求。假设已经通过 [docker start](#docker-start) 启动了一个容器，我们使用 `docker exec` 命令来创建一个新的终端会话：
+
+```
+docker exec -it ubuntu /bin/bash # 宿主机执行
+```
+
+为了便于表示，将一开始 `docker start` 创建的容器终端记为 **A**，`docker exec` 创建的记为 **B**。在终端 B 内执行以下命令，监听网络请求：
+
+```
+tcpdump -nn -i eth0 port 80 or arp
+```
+
+随后，在终端 A 中执行以下命令，触发 ARP 协议更新：
+
+```
+arp -d <ip> && ping www.baidu.com
+```
+
+其中，`arp -d` 命令可以删除一条 ARP 映射记录。这里需要将 `<ip>` 替换为容器的网关 IP 地址，有许多方法可以获取容器的网关地址：
+
+* [容器内] 执行 `route -n` 命令，查看 `Destination` 为 0.0.0.0 时对应的 `Gateway`
+
+* [宿主机] 执行 `docker network inspect bridge`，查看 `IPAM - Config - Gateway`
+
+在终端 A 中有以下输出，表示 ping 命令执行成功：
+
+```
+PING www.a.shifen.com (110.242.68.3) 56(84) bytes of data.
+64 bytes from 110.242.68.3 (110.242.68.3): icmp_seq=1 ttl=37 time=19.7 ms
+64 bytes from 110.242.68.3 (110.242.68.3): icmp_seq=2 ttl=37 time=22.7 ms
+64 bytes from 110.242.68.3 (110.242.68.3): icmp_seq=3 ttl=37 time=21.8 ms
+```
+
+在终端 B 中，可以看到 ARP 协议包的内容：
+
+```
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+17:04:43.847963 ARP, Request who-has 192.168.1.1 tell 192.168.1.2, length 28
+17:04:43.848058 ARP, Reply 192.168.1.1 is-at 02:43:21:c4:75:58, length 28
+17:04:53.009573 ARP, Request who-has 192.168.1.2 tell 192.168.1.1, length 28
+17:04:53.009746 ARP, Reply 192.168.1.2 is-at 02:43:ac:11:00:02, length 28
+```
+
+可以看到，这里有两次 ARP 请求与应答。第一次是容器 (192.168.1.2) 广播查询网关 (192.168.1.1) 的 MAC 地址，第二次是网关 (192.168.1.1) 广播查询容器 (192.168.1.2) 的 MAC 地址。
+
+## 两台主机的通信过程
+
+### 不同局域网的两台主机
+
+以主机 ping 一个域名为例，过程如下：
+
+1. [主机] [应用层] 通过 DNS 协议获取域名的 IP 地址；
+2. [主机] [网络层] 构造 IP 数据包，源 IP 为本机 IP，目的 IP 为域名 IP；
+3. [主机] [网络层] 根据路由表，选择下一跳的 IP 地址，即当前局域网的网关；
+4. [主机] [链路层] 根据 ARP 表，查找网关 IP 的 MAC 地址；在 IP 数据包外面包一层 MAC 地址；
+5. [局域网] 根据 MAC 地址，上一步的报文最终会发送到当前局域网的网关；
+6. [网关] [网络层] 网关查看数据包的目的 IP 地址，重复上述 2～3 步，继续发给下一跳；
+7. [互联网] 中间经过若干个下一跳主机，最终数据包发送到域名所在的网络中心的网关；
+8. [网关] [网络层] 网络中心的网关查看数据包的目的 IP 地址，根据路由表发现目的 IP 对应的 `Gateway` 为 0.0.0.0 ，这表明目的机器和自己位于同一个局域网内；
+9. [网关] [链路层] 根据 ARP 表，查找目的 IP 的 MAC 地址，构造链路层报文；
+10. [局域网] 根据 MAC 地址，上一步的报文最终会发送到目的主机；
+11. [目的主机] [网络层] 目的主机查看数据包中的目的 IP，发现是给自己的，解析其内容，过程结束。
+
+### 同局域网内的两台主机
+
+TODO
+
+{::comment}
+
+交换机
+
+TODO：MWeb 的笔记
+
+https://www.cnblogs.com/onepixel/articles/10256314.html
+
+{:/comment}
+
+### 同一台主机的两个 IP
+
+TODO
 
 ## 参考资料
 
 * [What is a routing table](https://www.cyberciti.biz/faq/what-is-a-routing-table/)
+* [TCP 通信基础](https://www.bilibili.com/video/BV1Af4y117ZK)
 

@@ -887,7 +887,7 @@ DNS 查询共有两类：递归查询和迭代查询。**递归查询**是指，
 
 ### 两台主机间的通信过程
 
-[TODO] 
+[答案]({% post_url 2021-05-18-computer-communicate%})
 
 推荐学习：[TCP 通信基础 - 马士兵](https://www.bilibili.com/video/BV1Af4y117ZK)
 {: .ant-alert .ant-alert-info}

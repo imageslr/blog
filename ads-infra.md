@@ -70,7 +70,7 @@ layout: default
 
 <div class="about-content e-content" itemprop="articleBody" markdown="1">
 
-<div class="ant-alert ant-alert-info mb-2" markdown="1">
+<div class="ant-alert ant-alert-info" markdown="1">
 想了解在 Ads Infra 的实习体验？[点击查看！]({% post_url 2021-04-07-autumn-recruit %}#ads-infra)
 </div>
 
