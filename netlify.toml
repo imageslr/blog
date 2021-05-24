@@ -1,4 +1,4 @@
 # global context
 [build.environment]
   JEKYLL_ENV = "production"
-  TZ = "UTC+8:00"
+  TZ = "Asia/Shanghai"
