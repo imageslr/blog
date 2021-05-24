@@ -13,12 +13,15 @@ typora-copy-images-to: ../media
 
 ## 前言
 
-本文通过在实际场景中执行命令，来深入了解两台主机之间的通信过程。阅读完本文，我们应当能够回答以下两个问题：
+本文通过在 Docker 容器中执行命令，来深入了解两台主机之间的通信过程。阅读完本文，我们将熟悉以下内容：
+* Docker 的基本操作
+* 创建 socket 并发送 HTTP 请求
+* 路由表、路由决策过程
+* ARP 协议、ARP 表更新过程
 
-* 通过 HTTP 协议访问一台远程服务器的时候发生了什么？
-* 在局域网内 `ping` 一台主机的时候发生了什么？
-
-本文也是[从输入一个 URL 到页面加载完成的过程]({% post_url 2020-02-26-what-happens-when-you-type-in-a-url %})的另一个角度的回答。
+本文也是[输入一个 URL 到页面加载完成]({% post_url 2020-02-26-what-happens-when-you-type-in-a-url %})的另一个角度的回答，我们将解决以下两个问题：
+* 不同局域网的两台主机之间的通信过程
+* 同局域网内的两台主机之间的通信过程
 
 ## 准备 Docker 环境
 
@@ -256,8 +259,8 @@ netstat -natp
 ```
 Active Internet connections (servers and established)
 Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
-tcp        0      0 172.17.0.2:36384        110.242.68.4:80         ESTABLISHED 1/bash
-tcp        0      0 172.17.0.2:44960        202.89.233.100:80       ESTABLISHED 1/bash
+tcp        0      0 192.168.1.2:36384       110.242.68.4:80         ESTABLISHED 1/bash
+tcp        0      0 192.168.1.2:44960       202.89.233.100:80       ESTABLISHED 1/bash
 ```
 
 进一步了解 socket 系统调用和 TCP 的三次握手过程：
@@ -395,7 +398,8 @@ tcpdump -nn -i eth0 port 80 or arp
 随后，在终端 A 中执行以下命令，触发 ARP 协议更新：
 
 ```
-arp -d <ip> && ping www.baidu.com
+# arp -d <ip> && ping www.baidu.com
+arp -d 192.168.1.1 && ping www.baidu.com
 ```
 
 其中，`arp -d` 命令可以删除一条 ARP 映射记录。这里需要将 `<ip>` 替换为容器的网关 IP 地址，有许多方法可以获取容器的网关地址：
@@ -446,21 +450,118 @@ listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
 
 ### 同局域网内的两台主机
 
-TODO
+两台主机通过网线、网桥或者交换机连接，就构成了一个局域网。网桥或交换机的作用是连接多台主机，隔离不同的端口，每个端口形成单独的冲突域。当主机连接到网桥或交换机端口的时候，这些设备会要求主机上报 MAC 地址，并在设备内保存 MAC 地址与端口的对应关系。
 
-{::comment}
+同局域网内的两台主机进行通信时，只需要根据 ARP 协议获取目的主机的 MAC 地址，构造链路层报文。报文会经过网桥或交换机，后两者根据目的 MAC 地址，在 MAC 地址表里查询目的端口，然后将报文从目的端口转发给对应的主机。
 
-交换机
+**注意**：
 
-TODO：MWeb 的笔记
+(1) 交换机是链路层的设备，主要根据 MAC 地址进行转发、隔离冲突域；不具有路由功能，不记录路由表。这类设备也称为**二层交换机**。如果只使用二层交换机、不使用路由器来构建局域网，需要为交换机和每台主机分配同属于一个子网的静态 IP。
 
-https://www.cnblogs.com/onepixel/articles/10256314.html
+(2) 路由器工作在 OSI 的第三层网络层，记录路由表，并以此控制数据传输过程。
 
-{:/comment}
+(3) 有些交换机也具有路由功能，记录了路由表，能够简化路由过程、实现高速转发。这类设备也称为**三层交换机**。
 
-### 同一台主机的两个 IP
+### 同局域网内的两台主机，目的主机有多个 IP
 
-TODO
+问题：如果目的主机 B 为自己新增了一个 IP，同局域网的主机 A ping 主机 B 的这个 IP 能 ping 通吗？
+
+答案是不能，原因是主机 A ping 主机 B 时，根据路由表会将报文发给默认网关，但是网关的路由表里并没有主机 B 新增加的 IP 信息。
+
+可以做实验验证一下。分别启动两个容器 A、B：
+
+```
+docker run -it --name ubuntu --cap-add NET_ADMIN ubuntu # 容器 A
+docker run -it --name ubuntu_2 --cap-add NET_ADMIN ubuntu # 容器 B
+```
+
+> 参数 `--cap-add NET_ADMIN`：打开网络配置权限。
+
+在容器 B 内执行以下命令，新增一个 IP 地址 `192.168.1.55`：
+
+```
+ifconfig lo:3 192.168.1.55/16
+```
+
+查看容器 B 的 IP 配置，可以看到新增了一个 `lo:3` 接口：
+
+```
+ifconfig
+```
+
+```
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500 # 这里是默认 IP
+        inet 192.168.1.2  netmask 255.255.0.0  broadcast 192.168.255.255
+        ether 02:42:ac:11:00:03  txqueuelen 0  (Ethernet)
+        RX packets 9  bytes 726 (726.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo:3: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536 # 这里是新增的 IP
+        inet 192.168.1.55  netmask 255.255.0.0
+        loop  txqueuelen 1000  (Local Loopback)
+```
+
+在容器 A 内尝试 `ping 192.168.1.55`，发现无法 ping 通。
+
+解决办法是修改容器 A 的路由表。执行以下命令，手动新增一行纪录：
+
+```
+# route add -host <destination> gw <gateway>
+route add -host 192.168.1.55 gw 192.168.1.2
+```
+
+其中，`destination` 参数是容器 B 新增的 IP 地址；`gateway` 参数是容器 B 的默认 IP 地址，也就是上面 `ifconfig` 命令输出的 `eth0` 接口的 IP 地址。这行纪录的含义是“所有目的 IP 是 `192.168.1.55` 的数据包都发给 `192.168.1.2`”。
+
+容器 A 内执行 `route -n`，查看路由表：
+
+```
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         192.168.1.1     0.0.0.0         UG    0      0        0 eth0
+192.168.1.0     0.0.0.0         255.255.0.0     U     0      0        0 eth0
+192.168.1.55    192.168.1.2     255.255.255.255 UGH   0      0        0 eth0
+```
+
+这个时候再从容器 A 中 ping 容器 B 的新 IP，就可以 ping 通了：
+
+```
+ping 192.168.1.55
+```
+
+```
+PING 192.168.1.55 (192.168.1.55) 56(84) bytes of data.
+64 bytes from 192.168.1.55: icmp_seq=1 ttl=64 time=0.589 ms
+64 bytes from 192.168.1.55: icmp_seq=2 ttl=64 time=0.291 ms
+64 bytes from 192.168.1.55: icmp_seq=3 ttl=64 time=0.669 ms
+...
+```
+
+如果在执行 ping 命令前，先在容器 B 执行 `tcpdump`，我们会看到如下输出：
+
+```
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
+08:36:28.819409 ARP, Request who-has 192.168.1.1 tell 192.168.1.3, length 28
+08:36:38.987179 ARP, Request who-has 81b3a9d0f060 tell 192.168.1.3, length 28
+08:36:38.987296 ARP, Reply 81b3a9d0f060 is-at 02:43:ac:11:00:03 (oui Unknown), length 28
+08:36:38.987537 IP 192.168.1.3 > 192.168.1.55: ICMP echo request, id 17, seq 1, length 64
+08:36:38.987585 IP 192.168.1.55 > 192.168.1.3: ICMP echo reply, id 17, seq 1, length 64
+08:36:40.019291 IP 192.168.1.3 > 192.168.1.55: ICMP echo request, id 17, seq 2, length 64
+08:36:40.019410 IP 192.168.1.55 > 192.168.1.3: ICMP echo reply, id 17, seq 2, length 64
+...
+```
+
+其中，`192.168.1.1` 是网关 IP，`192.168.1.3` 是容器 A 的 IP，`81b3a9d0f060` 是容器 B 的 `ContainerID`。
 
 ## 参考资料
 
