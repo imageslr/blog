@@ -735,7 +735,7 @@ TCP 是基于字节流的，数据块是没有边界、没有结构的字节流�
 
 - TCP 为什么是面向连接的？
 - TCP 如何保证传输的可靠性？
-- TCP / UDP 协议头 [TODO]
+- TCP / UDP 协议头，每个字段的作用？
 
 <details markdown="1">
 <summary>答案</summary>
@@ -753,6 +753,13 @@ TCP 如何保证传输的可靠性？
 
 - 序列号：解决乱序问题
 - 确认号 / 超时重传机制：解决丢包问题
+
+TCP / UDP 协议头：
+* UDP 协议头包含 4 个字段：源端口、目的端口、长度和校验码，其中每一个字段都占 2 字节，总长度 8 字节，请查看 RFC 文档：[UDP Format - RFC 768](https://datatracker.ietf.org/doc/html/rfc768)
+* TCP 协议头包含以下字段，详情请查看 RFC 文档：[TCP Header Format - RFC 793](https://datatracker.ietf.org/doc/html/rfc793#page-15)
+  ![image-20210524214130965](/media/image-20210524214130965.png)
+
+> 参考资料：[为什么 UDP 头只有 8 个字节 - Draveness](https://draveness.me/whys-the-design-udp-minimum-header/)
 
 </details>
 

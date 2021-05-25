@@ -2,7 +2,7 @@
 layout: post
 title: 📔【计算机网络】两台主机的通信过程 🆕
 date: 2021/5/23 22:00
-last_modified_at: 2021/5/23
+last_modified_at: 2021/5/25
 typora-root-url: ../
 typora-copy-images-to: ../media
 ---
@@ -87,7 +87,7 @@ REPOSITORY        TAG       IMAGE ID       CREATED              SIZE
 ubuntu            latest    a5d22784e35b   About a minute ago   108MB
 ```
 
-可以删除指定的镜像：
+如果有多余的无用镜像，可以删除：
 
 ```plaintext
 # <image> 可以是上面的 REPOSITORY(image_name) 或 IMAGE ID
@@ -139,6 +139,8 @@ docker start -i ubuntu
 ```
 docker exec -it <container> /bin/bash 
 ```
+
+容器是否启动，可以通过 `docker container ls --all` 查看。
 
 ## 应用层
 
@@ -252,7 +254,7 @@ Socket 通过 \<源 IP、源 Port、目的 IP、目的 Port> 的四元组来区�
 
 ```
 exec 3<> /dev/tcp/www.baidu.com/80 # 在容器中手动创建一个 socket
-exec 4<> /dev/tcp/www.bing.com/80  # 同上
+exec 4<> /dev/tcp/www.bing.com/80  # 同上，只是为了演示
 netstat -natp
 ```
 
@@ -334,21 +336,21 @@ Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
 ### 案例分析
 
 1. `ping www.baidu.com` 的路由决策过程
-2. `ping <局域网的另一台主机>` 的路由决策过程
+2. `ping 局域网的另一台主机` 的路由决策过程
 3. 对于以下的路由表，路由器会如何转发目标 IP 为 `128.75.43.16` 和 `192.12.17.10` 的数据包？
 
    ```
    Destination    Gateway    Genmask	   
-   128.75.43.0 	  A          255.255.255.0
-   128.75.43.0 	  B          255.255.255.128
-   192.12.17.5 	  C          255.255.255.255
-   default 	  	  D          0.0.0.0
+   128.75.43.0    A          255.255.255.0
+   128.75.43.0    B          255.255.255.128
+   192.12.17.5    C          255.255.255.255
+   default        D          0.0.0.0
    ```
 
 {% details 答案 %}
 
-1. 目标 IP 位于外部网络，默认会发给本局域网的路由器。路由器连接了外部网络，知道该如何转发数据包。
-2. 同局域网的主机交换数据不需要网关或路由器，直接发给交换机，交换机根据 Mac 地址发送到对应的主机，见下一节。
+1. 目标 IP 位于外部网络，默认会发给本局域网的路由器。路由器连接了外部网络，知道该如何转发数据包，例如交给更高一级的运营商网关。
+2. 同局域网的主机交换数据不需要网关或路由器，直接发给交换机，交换机根据 Mac 地址发送到对应的主机，见[下一节](#link-layer)。
 3. A and D。`128.75.43.16` 匹配了前两条规则，相应的 `Destination` 均为 `128.75.43.0`，数据包会发送给具有最长子网掩码的网关。`192.12.17.10` 没有匹配任何 `Destination`，数据包发送给默认网关。
 
 {% enddetails %}
@@ -513,14 +515,14 @@ lo:3: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536 # 这里是新增的 IP
 
 在容器 A 内尝试 `ping 192.168.1.55`，发现无法 ping 通。
 
-解决办法是修改容器 A 的路由表。执行以下命令，手动新增一行纪录：
+解决办法是修改容器 A 的路由表。执行以下命令，手动新增一条规则：
 
 ```
 # route add -host <destination> gw <gateway>
 route add -host 192.168.1.55 gw 192.168.1.2
 ```
 
-其中，`destination` 参数是容器 B 新增的 IP 地址；`gateway` 参数是容器 B 的默认 IP 地址，也就是上面 `ifconfig` 命令输出的 `eth0` 接口的 IP 地址。这行纪录的含义是“所有目的 IP 是 `192.168.1.55` 的数据包都发给 `192.168.1.2`”。
+其中，`destination` 参数是容器 B 新增的 IP 地址；`gateway` 参数是容器 B 的默认 IP 地址，也就是上面 `ifconfig` 命令输出的 `eth0` 接口的 IP 地址。这条规则的含义是“所有目的 IP 是 `192.168.1.55` 的数据包都发给 `192.168.1.2`”。
 
 容器 A 内执行 `route -n`，查看路由表：
 
@@ -561,7 +563,35 @@ listening on eth0, link-type EN10MB (Ethernet), capture size 262144 bytes
 ...
 ```
 
-其中，`192.168.1.1` 是网关 IP，`192.168.1.3` 是容器 A 的 IP，`81b3a9d0f060` 是容器 B 的 `ContainerID`。
+其中，`192.168.1.1` 是网关 IP，`192.168.1.3` 是容器 A 的 IP，`81b3a9d0f060` 是容器 B 的 `ContainerID`。上面的输出依次表示：容器 A 通过 ARP 协议查询网关的 MAC 地址；容器 A 通过 ARP 协议查询容器 B 的 MAC 地址；容器 B 发出 ARP 应答；容器 A 发送 ICMP 请求、容器 B 应答。
+
+## 总结
+
+Docker：
+* 在 Docker 的各个命令中，`<container_id>` 和 `<container_name>`、`<image_id>` 和 `<image_name>` 可以互换
+* `docker run` 会重新创建一个新的容器，`docker start` 可以进入已经启动的容器
+
+Socket：
+* 每个进程默认都有 0、1、2、255 四个文件描述符
+* 系统用 socket 来表示一个连接，socket 会绑定到进程的一个文件描述符，可以使用 `open`、`write` 系统调用来向远程主机发送请求、读取响应
+* Socket 通过 <源 IP、源 Port、目的 IP、目的 Port> 的四元组来区分，只要有一处不同，就是不同的 socket
+* `netstat -natp`：查看当前系统中的所有 socket
+* [`netstat` 命令 `State` 一列的含义](http://localhost:4000/2020/07/07/tcp-shake-wave.html#state)
+
+路由表：
+* `route -n`：查看路由表
+* `Destination` 为 `0.0.0.0` 时，`Gateway` 为默认网关
+* `Gateway` 为 `0.0.0.0` 时，`Destination` 为当前局域网的网络地址
+* `Genmask` 为 `255.255.255.255` 时，`Destination` 为一个网络中的一台特定主机
+
+ARP 表：
+* `arp -a`：查看 ARP 缓存表
+* `arp -d <ip>`：删除一条 ARP 记录
+
+通信过程：
+* 不同局域网的主机，数据包会在网络层经过若干个下一跳 (当前局域网的默认网关 - 运营商网关 - ... - 目的主机所在的数据中心网关)，最终发送给目的主机所在的局域网
+* 同局域网内的主机，只需要通过 ARP 协议获取目的主机的 MAC 地址，报文在数据链路层经由网桥或交换机转发给目的主机
+* 交换机不具有路由功能，属于二层设备；有些交换机为了提升效率而记录路由表，属于三层设备
 
 ## 参考资料
 
