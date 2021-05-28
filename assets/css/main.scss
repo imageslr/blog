@@ -5,62 +5,10 @@ sitemap: false
 @import "moving";
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600&display=swap");
 
-/* start util */
-.bold {
-  font-weight: bold !important;
-}
+/* page element start */
 
-.bolder {
-  font-weight: bolder !important;
-}
-
-.underline {
-  text-decoration: underline !important;
-}
-
-.italic {
-  font-style: italic !important;
-}
-
-.inline {
-  display: inline;
-}
-
-.inline-block {
-  display: inline-block;
-}
-
-.m0 {
-  margin: 0px !important;
-}
-
-.mb-0 {
-  margin-bottom: 0px !important;
-}
-
-.mb-2 {
-  margin-bottom: 16px !important;
-}
-
-/* end */
-
-/* start html tag override */
-
-details[open] summary {
-  margin-bottom: 12px;
-}
-
-/* end */
-
-/* start page element */
 .busuanzi_container_site {
   margin-left: 8px;
-  // opacity: 0;
-  // transition: all ease-in-out 0.2s;
-  // &:hover {
-  //   cursor: pointer;
-  //   opacity: 1;
-  // }
 }
 
 .about-page .about-header .about-avatar {
@@ -88,17 +36,14 @@ details[open] summary {
   float: right;
 }
 
-/* end */
-
-/* start theme override */
-
 .post img {
   cursor: zoom-in;
 }
 
 /* end */
 
-/* start component style */
+/* component start */
+
 .no-wrap-table {
   display: block;
   white-space: nowrap;
@@ -172,127 +117,6 @@ details[open] summary {
     background-color: #5bc0de;
   }
 }
-
-// bootstrap alert
-// .alert {
-//   position: relative;
-//   padding: 0.75rem 1.25rem;
-//   margin-bottom: 1rem;
-//   border: 1px solid transparent;
-//   border-radius: 0.25rem;
-
-//   &-primary {
-//     color: #004085;
-//     background-color: #cce5ff;
-//     border-color: #b8daff;
-//   }
-
-//   &-primary hr {
-//     border-top-color: #9fcdff;
-//   }
-
-//   &-primary &-link {
-//     color: #002752;
-//   }
-
-//   &-secondary {
-//     color: #383d41;
-//     background-color: #e2e3e5;
-//     border-color: #d6d8db;
-//   }
-
-//   &-secondary hr {
-//     border-top-color: #c8cbcf;
-//   }
-
-//   &-secondary .alert-link {
-//     color: #202326;
-//   }
-
-//   &-success {
-//     color: #155724;
-//     background-color: #d4edda;
-//     border-color: #c3e6cb;
-//   }
-
-//   &-success hr {
-//     border-top-color: #b1dfbb;
-//   }
-
-//   &-success .alert-link {
-//     color: #0b2e13;
-//   }
-
-//   &-info {
-//     color: #0c5460;
-//     background-color: #d1ecf1;
-//     border-color: #bee5eb;
-//   }
-
-//   &-info hr {
-//     border-top-color: #abdde5;
-//   }
-
-//   &-info .alert-link {
-//     color: #062c33;
-//   }
-
-//   &-warning {
-//     color: #856404;
-//     background-color: #fff3cd;
-//     border-color: #ffeeba;
-//   }
-
-//   &-warning hr {
-//     border-top-color: #ffe8a1;
-//   }
-
-//   &-warning &-link {
-//     color: #533f03;
-//   }
-
-//   &-danger {
-//     color: #721c24;
-//     background-color: #f8d7da;
-//     border-color: #f5c6cb;
-//   }
-
-//   &-danger hr {
-//     border-top-color: #f1b0b7;
-//   }
-
-//   &-danger &-link {
-//     color: #491217;
-//   }
-
-//   &-light {
-//     color: #818182;
-//     background-color: #fefefe;
-//     border-color: #fdfdfe;
-//   }
-
-//   &-light hr {
-//     border-top-color: #ececf6;
-//   }
-
-//   &-light &-link {
-//     color: #686868;
-//   }
-
-//   &-dark {
-//     color: #1b1e21;
-//     background-color: #d6d8d9;
-//     border-color: #c6c8ca;
-//   }
-
-//   &-dark hr {
-//     border-top-color: #b9bbbe;
-//   }
-
-//   &-dark &-link {
-//     color: #040505;
-//   }
-// }
 
 .ant-tag {
   box-sizing: border-box;

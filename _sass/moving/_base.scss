@@ -284,3 +284,7 @@ table {
     border: 1px solid $grey-color-light;
   }
 }
+
+details[open] summary {
+  margin-bottom: 12px;
+}

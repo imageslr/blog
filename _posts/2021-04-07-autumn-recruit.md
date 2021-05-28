@@ -355,7 +355,7 @@ Mac 系统默认只能录制麦克风的输入，需要配置 [SoundFlower]({%- 
 > 按照字母顺序排列；仅代表个人经历，不保证今年依然适用。  
 > 技术面重点考察基础知识 / 算法；经理面以[综合面试问题](#common-question)为主；交叉面是其他部门的人来面试。
 
-<div class="outline-box outline-box-hoverable mb-2">
+<div class="outline-box outline-box-hoverable mb-4">
 <div class="outline-box-head"><h4>阿里</h4></div>
 <div class="outline-box-body" markdown="1">
 面试难度：<span class="ant-tag ant-tag-geekblue">☆☆☆☆☆</span>
@@ -368,7 +368,7 @@ Mac 系统默认只能录制麦克风的输入，需要配置 [SoundFlower]({%- 
 
 </div></div>
 
-<div class="outline-box outline-box-hoverable mb-2">
+<div class="outline-box outline-box-hoverable mb-4">
 <div class="outline-box-head"><h4>百度</h4></div>
 <div class="outline-box-body" markdown="1">
 面试难度：<span class="ant-tag ant-tag-geekblue">☆☆☆☆</span>
@@ -381,7 +381,7 @@ Mac 系统默认只能录制麦克风的输入，需要配置 [SoundFlower]({%- 
 
 </div></div>
 
-<div class="outline-box outline-box-hoverable mb-2">
+<div class="outline-box outline-box-hoverable mb-4">
 <div class="outline-box-head"><h4>快手</h4></div>
 <div class="outline-box-body" markdown="1">
 面试难度：<span class="ant-tag ant-tag-geekblue">☆☆☆☆</span>
@@ -393,7 +393,7 @@ Mac 系统默认只能录制麦克风的输入，需要配置 [SoundFlower]({%- 
 评价：基础架构部门问了很多 C/C++ 的问题，很少问上层的网络协议等知识，也没怎么考算法。面试官比较 nice，答错了会一步一步引导。
 </div></div>
 
-<div class="outline-box outline-box-hoverable mb-2">
+<div class="outline-box outline-box-hoverable mb-4">
 <div class="outline-box-head"><h4>美团</h4></div>
 <div class="outline-box-body" markdown="1">
 面试难度：<span class="ant-tag ant-tag-geekblue">☆☆☆</span>
@@ -405,7 +405,7 @@ Mac 系统默认只能录制麦克风的输入，需要配置 [SoundFlower]({%- 
 评价：面试轮数和面试评级没有关联，2 轮也可以拿 SP。
 </div></div>
 
-<div class="outline-box outline-box-hoverable mb-2">
+<div class="outline-box outline-box-hoverable mb-4">
 <div class="outline-box-head"><h4>拼多多</h4></div>
 <div class="outline-box-body" markdown="1">
 面试难度：<span class="ant-tag ant-tag-geekblue">☆☆☆☆</span>
@@ -417,7 +417,7 @@ Mac 系统默认只能录制麦克风的输入，需要配置 [SoundFlower]({%- 
 评价：确实很拼，约了 21:30 面试，面试官有事，等到 22:30 才开始，面完已经 23:30 了。从视频窗口能看出工位确实不大。
 </div></div>
 
-<div class="outline-box outline-box-hoverable mb-2">
+<div class="outline-box outline-box-hoverable mb-4">
 <div class="outline-box-head"><h4>腾讯</h4></div>
 <div class="outline-box-body" markdown="1">
 面试难度：<span class="ant-tag ant-tag-geekblue">☆☆☆☆</span>
@@ -432,7 +432,7 @@ WXG：2 轮技术面 + 2 轮面委会 + 1 轮 HR 面。难度比其他部门高�
 
 </div></div>
 
-<div class="outline-box outline-box-hoverable mb-2">
+<div class="outline-box outline-box-hoverable mb-4">
 <div class="outline-box-head"><h4>小米</h4></div>
 <div class="outline-box-body" markdown="1">
 面试难度：<span class="ant-tag ant-tag-geekblue">☆☆☆</span>
@@ -444,7 +444,7 @@ WXG：2 轮技术面 + 2 轮面委会 + 1 轮 HR 面。难度比其他部门高�
 评价：面试官很耐心，会主动指出没答出的题目是哪个知识点、下来以后可以查一下。基本没有能够联系到 HR / 面试官的方法。感觉招人比较随意，二面完一个月没消息，一直认为自己挂了，结果 9 月底突然打电话，直接给出了薪资方案。
 </div></div>
 
-<div class="outline-box outline-box-hoverable mb-2">
+<div class="outline-box outline-box-hoverable mb-4">
 <div class="outline-box-head"><h4>猿辅导</h4></div>
 <div class="outline-box-body" markdown="1">
 面试难度：<span class="ant-tag ant-tag-geekblue">☆☆☆☆</span>
@@ -458,7 +458,7 @@ WXG：2 轮技术面 + 2 轮面委会 + 1 轮 HR 面。难度比其他部门高�
 </div></div>
 
 
-<div class="outline-box outline-box-hoverable mb-2">
+<div class="outline-box outline-box-hoverable mb-4">
 <div class="outline-box-head"><h4>字节跳动</h4></div>
 <div class="outline-box-body" markdown="1">
 面试难度：<span class="ant-tag ant-tag-geekblue">☆☆☆☆☆</span>

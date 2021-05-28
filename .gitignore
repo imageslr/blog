@@ -8,3 +8,5 @@ Gemfile.lock
 .DS_Store
 .MWebMetaData
 nohup.out
+
+node_modules

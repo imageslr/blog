@@ -38,11 +38,11 @@ OSI 从上到下分为 7 层：
 <tbody>
   <tr>
     <td rowspan="7">应用层</td>
-    <td class="bold">HTTP</td>
+    <td class="font-bold">HTTP</td>
     <td>超文本传输协议（HyperText Transfer Protocol）</td>
   </tr>
   <tr>
-    <td class="bold">FTP</td>
+    <td class="font-bold">FTP</td>
     <td>文件传输协议（File Transfer Protocol）用于在客户端和服务器之间进行文件传输</td>
   </tr>
   <tr>
@@ -54,29 +54,29 @@ OSI 从上到下分为 7 层：
     <td>Telnet 是服务器远程登录控制的标准协议与主要方式</td>
   </tr>
   <tr>
-    <td class="bold">DNS</td>
+    <td class="font-bold">DNS</td>
     <td>域名系统（Domain Name System）是域名和 IP 地址相互映射的分布式数据库</td>
   </tr>
   <tr>
-    <td class="bold">SSH</td>
+    <td class="font-bold">SSH</td>
     <td>安全外壳协议（Secure Shell）是一种加密的网络传输协议，可在不安全的网络中为网络服务提供安全的传输环境</td>
   </tr>
   <tr>
-    <td class="bold">DHCP</td>
+    <td class="font-bold">DHCP</td>
     <td>动态主机配置协议（Dynamic Host Configuration Protocol）的主要作用是集中管理、动态分配 IP 地址，提升地址的使用率</td>
   </tr>
   <tr>
     <td rowspan="2">传输层</td>
-    <td class="bold">TCP</td>
+    <td class="font-bold">TCP</td>
     <td>传输控制协议（Transmission Control Protocol）是一种面向连接的、可靠的、基于字节流的传输层通信协议</td>
   </tr>
   <tr>
-    <td class="bold">UDP</td>
+    <td class="font-bold">UDP</td>
     <td>用户数据报协议（User Datagram Protocol）是一个简单的、无连接的、不可靠的、面向数据报的通信协议</td>
   </tr>
   <tr>
     <td rowspan="6">网络层</td>
-    <td class="bold">IP</td>
+    <td class="font-bold">IP</td>
     <td>网际协议（Internet Protocol）是用于分组交换数据网络的一种协议，功能包括寻址、路由、尽最大努力交付数据包</td>
   </tr>
   <tr>
@@ -101,7 +101,7 @@ OSI 从上到下分为 7 层：
   </tr>
   <tr>
     <td rowspan="2">数据链路层</td>
-    <td class="bold">ARP*</td>
+    <td class="font-bold">ARP*</td>
     <td>地址解析协议（Address Resolution Protocol）通过 IP 寻找 MAC 地址</td>
   </tr>
   <tr>
