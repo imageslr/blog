@@ -1,0 +1,17 @@
+---
+layout: none
+# 不建议添加 post.content，这样结果 JSON 非常大，而且也不准确
+# escape 后面可以补充 | truncate:200
+# post.content | strip_html | strip_newlines | jsonify
+---
+[
+  {% for post in site.posts %}
+    {
+      "title"    : "{{ post.title | escape }}",
+      "category" : "{{ post.category }}",
+      "tags"     : "{{ post.tags | join: ', ' }}",
+      "url"      : "{{ site.baseurl }}{{ post.url }}",
+      "date"     : "{{ post.date }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

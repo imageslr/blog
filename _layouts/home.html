@@ -18,7 +18,9 @@ layout: default
       <title>{{ site.title }}</title>
   </head>
   <div class="home-title">
-    <p class="home-heading">{{ site.title }}</p>
+    <p class="home-heading">{{ site.title }} 
+      <input type="text" id="search-input" placeholder="搜索">
+    </p>
     <p class="home-sub-heading">{{- site.description | escape -}}
       <span class="busuanzi_container">
         <span class="busuanzi_container_site">
@@ -29,6 +31,8 @@ layout: default
       </span>
     </p>
   </div>
+
+  <ul id="results-container"></ul>
 
   {%- if site.posts.size > 0 -%}
   <ul class="post-list">
@@ -64,3 +68,16 @@ layout: default
   </ul>
   {%- endif -%}
 </div>
+
+<script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+<script>
+  var sjs = SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    templateMiddleware: function (prop, value, template) {
+      if (prop === "date") return dateFormat(value, "mmm dd")
+    },
+    searchResultTemplate: '<li><span class="post-meta">{date}</span><a class="black-link post-link-layout" href="{url}">{title}</a></li>',
+    json: '/search.json'
+  })
+</script>
