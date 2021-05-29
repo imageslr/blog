@@ -578,7 +578,7 @@ Socket：
 * 系统用 socket 来表示一个连接，socket 会绑定到进程的一个文件描述符，可以使用 `open`、`write` 系统调用来向远程主机发送请求、读取响应
 * Socket 通过 <源 IP、源 Port、目的 IP、目的 Port> 的四元组来区分，只要有一处不同，就是不同的 socket
 * `netstat -natp`：查看当前系统中的所有 socket
-* [`netstat` 命令 `State` 一列的含义](http://localhost:4000/2020/07/07/tcp-shake-wave.html#state)
+* [`netstat` 命令 `State` 一列的含义]({% post_url 2020-07-08-tcp-shake-wave %}#state)
 
 路由表：
 * `route -n`：查看路由表
