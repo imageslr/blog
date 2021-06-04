@@ -1441,6 +1441,7 @@ cat nginx.log | awk '{print $1}' | sort | uniq -c | sort -nr | head -10 | awk '{
   * 第一个视频 - 网络通信过程，强烈推荐
   * 第二个视频 - I/O，强烈推荐
 * [MySQL 教程 - 马士兵](https://www.bilibili.com/video/BV1eK411T7Ue)
+* [RegexOne 中文](https://imageslr.github.io/regexone-cn)：通过简单的交互式练习来学习正则表达式
 
 ## [💡 校招复习 / 面试方法论]({%post_url 2021-04-07-autumn-recruit%})
 
