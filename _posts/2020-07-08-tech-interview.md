@@ -2,7 +2,7 @@
 layout: post
 title: 🗂【面试题】技术面试题汇总 🔥
 date: 2020/11/6 17:00
-last_modified_at: 2021/5/18
+last_modified_at: 2021/6/6
 permalink: 2020/07/08/tech-interview.html
 toc: false
 # redirect_to: http://www.github.com
@@ -71,11 +71,6 @@ typora-copy-images-to: ../media
   - [数据库的优化方法](#数据库的优化方法)
   - [ORM 和原生 SQL 的区别](#orm-和原生-sql-的区别)
   - [Redis 相关](#redis-相关)
-- [数据结构](#数据结构)
-  - [哈希表](#哈希表)
-  - [Map 的实现](#map-的实现)
-  - [排序算法](#排序算法)
-  - [海量数据问题](#海量数据问题)
 - [计算机组成原理](#计算机组成原理)
   - [引用和指针的区别](#引用和指针的区别)
   - [函数的参数是如何传递的](#函数的参数是如何传递的)
@@ -100,10 +95,15 @@ typora-copy-images-to: ../media
   - [分布式组件](#分布式组件)
   - [分布式算法](#分布式算法)
 - [网络安全](#网络安全)
+- [数据结构与算法](#数据结构与算法)
+  - [哈希表](#哈希表)
+  - [排序算法](#排序算法)
+  - [海量数据问题](#海量数据问题)
+  - [高频算法题](#高频算法题)
 - [面经汇总](#面经汇总)
 - [学习资源](#学习资源)
-- [Q & A](#q--a)
 - [💡 校招复习 / 面试方法论]({%post_url 2021-04-07-autumn-recruit%})
+- [Q & A](#q--a)
 </details>
 
 <div class="ant-alert ant-alert-info" markdown="1">
@@ -1091,73 +1091,6 @@ ORM 的缺点是效率低，另外有些场景只能用原生 SQL 实现。
 
 </details>
 
-## 数据结构
-
-### 哈希表
-
-- 什么是负载因子？
-- 哈希表的实现方式
-- 哈希表冲突解决方法
-- 哈希表如何查找数据
-- 哈希表如何扩容 (Java、Redis) ？
-- Java HashMap 实现原理
-- Redis HashMap 的实现原理
-- Map 使用不同数据结构实现的区别
-- [可选] Go map 的实现原理
-- [进阶] 如何实现一个并发安全的 HashMap？
-
-<details markdown="1">
-<summary>答案</summary>
-
-* [Java HashMap 工作原理及实现 - Yikun](https://cloud.tencent.com/developer/article/1167574)
-* [Java HashMap 的负载因子为什么是 0.75](https://juejin.cn/post/6844904070923157517#heading-4)
-* [Go 语言 map 底层实现](https://i6448038.github.io/2018/08/26/map-secret/)
-
-**Map 使用不同数据结构实现的区别：**
-
-C++ STL 中的 `map` 和 `unordered_map`，分别使用红黑树和哈希表实现。使用红黑树方式实现，和哈希表实现的区别在于：
-1. `map` 始终保证遍历的时候是按 `key` 的大小顺序的，这是一个主要的功能上的差异
-2. `map` 可以做范围查找，而 `unordered_map` 不可以
-3. `map` 节省内存
-4. `map` 查找效率稳定，最差是 `O(logN)`
-5. `unordered_map` 需要为每个 `key` 计算 `hash` 值，而 `map` 则不需要，只需比较 `key` 的前几个字符
-6. `map` 在插入元素时比较耗时
-
-**如何实现一个并发安全的 HashMap？**
-1. 检测：例如 Java 的 `HashMap` 类型，使用了 fail-fast 机制，记录 `modCount` 表示哈希表的修改次数。在一个线程访问一个 map 前，会先记录 `modCount` 的旧值，然后在访问过程中比较旧值和当前值，如果不相等说明有其他线程修改了这个 map，于是**抛出异常**。*可以理解为乐观锁。*
-2. 锁：例如 Java 的 `HashTable` 类型，结构和 `HashMap` 类似，唯独在接口上使用了 `synchronized` 修饰符，保证抢占到内置锁之后才会执行。*可以理解为悲观所，线程竞争激烈的情况下，效率低下。*
-3. 分段锁：例如 Java 的 `ConcurrentHashMap` 类型。分段锁，顾名思义就是将锁分段，将锁的粒度变小，将存储的对象分散到各个分片中，每个分片由一把锁控制，这样使得当需要对在 A 分片上的数据进行读写时不会影响 B 分片的读写，从而提高并发度。
-4. 冗余数据、降低加锁对性能的影响：例如 go1.9 引入的 `sync.Map` 类型，通过冗余的一份只读数据配合原子操作，降低了加锁对性能的影响。详见 [Go 1.9 sync.Map 揭秘](https://colobu.com/2017/07/11/dive-into-sync-Map/)。
-
-</details>
-
-### 排序算法
-
-- 不同排序算法的时间复杂度、空间复杂度、稳定性、代码实现
-- 不同排序算法的适用场景
-- 外部排序的实现原理
-
-[答案]({% post_url 2021-05-12-sort-algorithm %})
-
-### 海量数据问题
-
-- 百万量级的数据排序（任意大小，或者 0～10000）
-- 百万量级的数据查询在不在
-- 百万量级的数据求 TopK
-
-<details markdown="1">
-<summary>答案</summary>
-
-百万量级的数据排序：
-* 任意大小：外排序，先将数据拆分到多个文件中，分别加载到内存中排序，然后再归并到一个文件里。实际上就是 [LeetCode 23. 合并 k 个有序链表](mweblib://15783856405435)，需要用到最小堆。
-* 范围为 [0, 10000]：计数排序。
-
-百万量级的数据查询在不在：可以使用位图，前提是数据范围不超过内存大小。
-
-百万量级的数据求 TopK：数据流的 TopK 问题，维护一个大小为 k 的小根堆，然后分片读入数据，并更新堆。
-
-</details>
-
 ## 计算机组成原理
 
 ### 引用和指针的区别
@@ -1434,7 +1367,6 @@ cat nginx.log | awk '{print $1}' | sort | uniq -c | sort -nr | head -10 | awk '{
 - RPC 传输可以使用 HTTP 协议吗？
 - 了解哪些不同的 RPC 框架？对比
 
-
 ### 分布式原理
 
 [进阶]
@@ -1474,6 +1406,83 @@ cat nginx.log | awk '{print $1}' | sort | uniq -c | sort -nr | head -10 | awk '{
 - CSRF：原理、防御方式
 - 浏览器的同源策略、CORS
 - OAuth2.0 原理：[答案](http://www.ruanyifeng.com/blog/2019/04/oauth_design.html)
+
+
+## 数据结构与算法
+
+### 哈希表
+
+- 什么是负载因子？
+- 哈希表的实现方式
+- 哈希表冲突解决方法
+- 哈希表如何查找数据
+- 哈希表如何扩容 (Java、Redis) ？
+- Java HashMap 实现原理
+- Redis HashMap 的实现原理
+- Map 使用不同数据结构实现的区别
+- [可选] Go map 的实现原理
+- [进阶] 如何实现一个并发安全的 HashMap？
+
+<details markdown="1">
+<summary>答案</summary>
+
+* [Java HashMap 工作原理及实现 - Yikun](https://cloud.tencent.com/developer/article/1167574)
+* [Java HashMap 的负载因子为什么是 0.75](https://juejin.cn/post/6844904070923157517#heading-4)
+* [Go 语言 map 底层实现](https://i6448038.github.io/2018/08/26/map-secret/)
+
+**Map 使用不同数据结构实现的区别：**
+
+C++ STL 中的 `map` 和 `unordered_map`，分别使用红黑树和哈希表实现。使用红黑树方式实现，和哈希表实现的区别在于：
+1. `map` 始终保证遍历的时候是按 `key` 的大小顺序的，这是一个主要的功能上的差异
+2. `map` 可以做范围查找，而 `unordered_map` 不可以
+3. `map` 节省内存
+4. `map` 查找效率稳定，最差是 `O(logN)`
+5. `unordered_map` 需要为每个 `key` 计算 `hash` 值，而 `map` 则不需要，只需比较 `key` 的前几个字符
+6. `map` 在插入元素时比较耗时
+
+**如何实现一个并发安全的 HashMap？**
+1. 检测：例如 Java 的 `HashMap` 类型，使用了 fail-fast 机制，记录 `modCount` 表示哈希表的修改次数。在一个线程访问一个 map 前，会先记录 `modCount` 的旧值，然后在访问过程中比较旧值和当前值，如果不相等说明有其他线程修改了这个 map，于是**抛出异常**。*可以理解为乐观锁。*
+2. 锁：例如 Java 的 `HashTable` 类型，结构和 `HashMap` 类似，唯独在接口上使用了 `synchronized` 修饰符，保证抢占到内置锁之后才会执行。*可以理解为悲观所，线程竞争激烈的情况下，效率低下。*
+3. 分段锁：例如 Java 的 `ConcurrentHashMap` 类型。分段锁，顾名思义就是将锁分段，将锁的粒度变小，将存储的对象分散到各个分片中，每个分片由一把锁控制，这样使得当需要对在 A 分片上的数据进行读写时不会影响 B 分片的读写，从而提高并发度。
+4. 冗余数据、降低加锁对性能的影响：例如 go1.9 引入的 `sync.Map` 类型，通过冗余的一份只读数据配合原子操作，降低了加锁对性能的影响。详见 [Go 1.9 sync.Map 揭秘](https://colobu.com/2017/07/11/dive-into-sync-Map/)。
+
+</details>
+
+### 排序算法
+
+- 不同排序算法的时间复杂度、空间复杂度、稳定性、代码实现
+- 不同排序算法的适用场景
+- 外部排序的实现原理
+
+[答案]({% post_url 2021-05-12-sort-algorithm %})
+
+### 海量数据问题
+
+- 百万量级的数据排序（任意大小，或者 0～10000）
+- 百万量级的数据查询在不在
+- 百万量级的数据求 TopK
+
+<details markdown="1">
+<summary>答案</summary>
+
+百万量级的数据排序：
+* 任意大小：外排序，先将数据拆分到多个文件中，分别加载到内存中排序，然后再归并到一个文件里。实际上就是 [LeetCode 23. 合并 k 个有序链表](mweblib://15783856405435)，需要用到最小堆。
+* 范围为 [0, 10000]：计数排序。
+
+百万量级的数据查询在不在：可以使用位图，前提是数据范围不超过内存大小。
+
+百万量级的数据求 TopK：数据流的 TopK 问题，维护一个大小为 k 的小根堆，然后分片读入数据，并更新堆。
+
+</details>
+
+### 高频算法题
+
+* [LeetCode 470](https://leetcode-cn.com/problems/implement-rand10-using-rand7/)： 用 Rand7() 实现 Rand10()，阿里、腾讯、字节近期真题，[题解]({%- post_url 2020-09-25-probility-lc430 -%})
+* [LeetCode 34](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)、[35](https://leetcode-cn.com/problems/search-insert-position/)：二分查找，必考题，[题解 (1)]({%- post_url 2020-03-14-binary-search -%})、[(2)]({%- post_url 2020-03-16-leetcode-875 -%})
+* [LeetCode 33](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)、[81](https://leetcode-cn.com/problems/search-in-rotated-sorted-array-ii/)、[153](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/)、[154](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array-ii/)：搜索旋转排序数组，同样考察二分查找，[题解]({%- post_url 2020-03-06-leetcode-33 -%})
+* [LeetCode 31](https://leetcode-cn.com/problems/next-permutation/)：下一个排列，[题解](http://localhost:4000/2020/01/29/leetcode-36.html)
+* [LeetCode 72](https://leetcode-cn.com/problems/edit-distance/)：最短编辑距离，动态规划入门题，[题解](http://localhost:4000/2020/02/01/leetcode-72.html)
+* [LeetCode 10](https://leetcode-cn.com/problems/regular-expression-matching/)、[LeetCode 44](https://leetcode-cn.com/problems/wildcard-matching/)：正则表达式 / 通配符匹配，字节很喜欢考察
 
 ## 面经汇总
 
