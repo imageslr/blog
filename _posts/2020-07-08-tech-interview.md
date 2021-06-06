@@ -848,9 +848,27 @@ TCP / UDP 协议头：
 
 ### HTTPS 原理
 
+- 非对称加密、数字签名、数字摘要、CA 证书的概念
 - HTTPS 四次握手过程
-- 访问的网站是如何自动切换到 HTTPS 的
+- 访问的网站是如何自动切换到 HTTPS 的？
 - 什么是中间人攻击？如何预防？
+- HTTP 和 HTTPS 的区别
+- 浏览器如何验证证书是否有效？
+  - 证书是否和当前网站一致
+  - 证书是否可信任
+  - 证书是否在有效期之内 (CRL、CDP、OCSP)
+
+<details markdown="1">
+<summary>答案</summary>
+
+* [数字签名是什么 / 浏览器如何验证证书的有效性？ - 阮一峰](http://www.ruanyifeng.com/blog/2011/08/what_is_a_digital_signature.html)
+* [SSL/TLS协议运行机制的概述 - 阮一峰](http://www.ruanyifeng.com/blog/2014/02/ssl_tls.html)
+* [SSL Handshake explained](https://medium.com/@kasunpdh/ssl-handshake-explained-4dabb87cdce)
+* [你访问的网站是如何自动切换到 HTTPS 的？](https://www.sohu.com/a/136637876_487516)
+* [什么是证书吊销列表 CRL？](https://www.wosign.com/FAQ/CRL_OCSP.htm)
+
+</details>
+
 
 ### HTTP 的缓存机制
 
@@ -1077,15 +1095,41 @@ ORM 的缺点是效率低，另外有些场景只能用原生 SQL 实现。
 
 ### 哈希表
 
+- 什么是负载因子？
 - 哈希表的实现方式
 - 哈希表冲突解决方法
 - 哈希表如何查找数据
-
-### Map 的实现
-
+- 哈希表如何扩容 (Java、Redis) ？
 - Java HashMap 实现原理
-- Go map 原理
-- map 使用不同数据结构实现的区别
+- Redis HashMap 的实现原理
+- Map 使用不同数据结构实现的区别
+- [可选] Go map 的实现原理
+- [进阶] 如何实现一个并发安全的 HashMap？
+
+<details markdown="1">
+<summary>答案</summary>
+
+* [Java HashMap 工作原理及实现 - Yikun](https://cloud.tencent.com/developer/article/1167574)
+* [Java HashMap 的负载因子为什么是 0.75](https://juejin.cn/post/6844904070923157517#heading-4)
+* [Go 语言 map 底层实现](https://i6448038.github.io/2018/08/26/map-secret/)
+
+**Map 使用不同数据结构实现的区别：**
+
+C++ STL 中的 `map` 和 `unordered_map`，分别使用红黑树和哈希表实现。使用红黑树方式实现，和哈希表实现的区别在于：
+1. `map` 始终保证遍历的时候是按 `key` 的大小顺序的，这是一个主要的功能上的差异
+2. `map` 可以做范围查找，而 `unordered_map` 不可以
+3. `map` 节省内存
+4. `map` 查找效率稳定，最差是 `O(logN)`
+5. `unordered_map` 需要为每个 `key` 计算 `hash` 值，而 `map` 则不需要，只需比较 `key` 的前几个字符
+6. `map` 在插入元素时比较耗时
+
+**如何实现一个并发安全的 HashMap？**
+1. 检测：例如 Java 的 `HashMap` 类型，使用了 fail-fast 机制，记录 `modCount` 表示哈希表的修改次数。在一个线程访问一个 map 前，会先记录 `modCount` 的旧值，然后在访问过程中比较旧值和当前值，如果不相等说明有其他线程修改了这个 map，于是**抛出异常**。*可以理解为乐观锁。*
+2. 锁：例如 Java 的 `HashTable` 类型，结构和 `HashMap` 类似，唯独在接口上使用了 `synchronized` 修饰符，保证抢占到内置锁之后才会执行。*可以理解为悲观所，线程竞争激烈的情况下，效率低下。*
+3. 分段锁：例如 Java 的 `ConcurrentHashMap` 类型。分段锁，顾名思义就是将锁分段，将锁的粒度变小，将存储的对象分散到各个分片中，每个分片由一把锁控制，这样使得当需要对在 A 分片上的数据进行读写时不会影响 B 分片的读写，从而提高并发度。
+4. 冗余数据、降低加锁对性能的影响：例如 go1.9 引入的 `sync.Map` 类型，通过冗余的一份只读数据配合原子操作，降低了加锁对性能的影响。详见 [Go 1.9 sync.Map 揭秘](https://colobu.com/2017/07/11/dive-into-sync-Map/)。
+
+</details>
 
 ### 排序算法
 
