@@ -3,6 +3,7 @@ layout: post
 title: 💻【Mac 相关】从零开始配置高效 Mac 开发环境
 date: 2020/3/19 14:00
 permalink: 2020/03/19/mac-initialization.html
+last_modified_at: 2021/06/07
 ---
 
 Mac 是大多数程序员的主力机器。如今各个互联网公司都会给员工配备 Mac 电脑，而拿到新电脑不免要鼓捣一番，安装各种环境、插件、软件等，以让自己用着更顺手。
@@ -332,7 +333,7 @@ SnippetsLab 支持 iCloud 同步，这意味着当我们切换到新 Mac 后，�
 
 ### ~~记录剪切板历史：Paste（Deprecated）~~
 
-使用 Alfred 即可实现相同的功能，无需再安装 Paste。设置路径：“Preference - Features - Clipboard History”，勾选“Keep Plain Text”、“Keep Images”、“Keep File Lists”。
+使用 Alfred 即可实现相同的功能，无需再安装 Paste。设置路径：“Preference - Features - Clipboard History”，勾选“Keep Plain Text”、“Keep Images”、“Keep File Lists”。快捷键推荐设置为 `⌘ Command` + `⇧ Shift` + `V`。
 
 ----
 
