@@ -1480,8 +1480,8 @@ C++ STL 中的 `map` 和 `unordered_map`，分别使用红黑树和哈希表实�
 * [LeetCode 470](https://leetcode-cn.com/problems/implement-rand10-using-rand7/)： 用 Rand7() 实现 Rand10()，阿里、腾讯、字节近期真题，[题解]({%- post_url 2020-09-25-probility-lc430 -%})
 * [LeetCode 34](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)、[35](https://leetcode-cn.com/problems/search-insert-position/)：二分查找，必考题，[题解 (1)]({%- post_url 2020-03-14-binary-search -%})、[(2)]({%- post_url 2020-03-16-leetcode-875 -%})
 * [LeetCode 33](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)、[81](https://leetcode-cn.com/problems/search-in-rotated-sorted-array-ii/)、[153](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/)、[154](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array-ii/)：搜索旋转排序数组，同样考察二分查找，[题解]({%- post_url 2020-03-06-leetcode-33 -%})
-* [LeetCode 31](https://leetcode-cn.com/problems/next-permutation/)：下一个排列，[题解](http://localhost:4000/2020/01/29/leetcode-36.html)
-* [LeetCode 72](https://leetcode-cn.com/problems/edit-distance/)：最短编辑距离，动态规划入门题，[题解](http://localhost:4000/2020/02/01/leetcode-72.html)
+* [LeetCode 31](https://leetcode-cn.com/problems/next-permutation/)：下一个排列，[题解]({%- post_url 2020-01-27-leetcode-36 %})
+* [LeetCode 72](https://leetcode-cn.com/problems/edit-distance/)：最短编辑距离，动态规划入门题，[题解]({%- post_url 2020-02-01-leetcode-72 %})
 * [LeetCode 10](https://leetcode-cn.com/problems/regular-expression-matching/)、[LeetCode 44](https://leetcode-cn.com/problems/wildcard-matching/)：正则表达式 / 通配符匹配，字节很喜欢考察
 
 ## 面经汇总
