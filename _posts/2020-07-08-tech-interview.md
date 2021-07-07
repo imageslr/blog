@@ -2,7 +2,7 @@
 layout: post
 title: 🗂【面试题】技术面试题汇总 🔥
 date: 2020/11/6 17:00
-last_modified_at: 2021/6/6
+last_modified_at: 2021/7/6
 permalink: 2020/07/08/tech-interview.html
 toc: false
 # redirect_to: http://www.github.com
@@ -107,7 +107,11 @@ typora-copy-images-to: ../media
 </details>
 
 <div class="ant-alert ant-alert-info" markdown="1">
-[欢迎加入 Ads Infra 团队]({{ site.url }}/ads-infra.html) ｜ 字节跳动校招内推码：**65V7M7W**  ｜  投递链接：[https://jobs.toutiao.com/s/eDRgyVR](https://jobs.toutiao.com/s/eDRgyVR)
+字节跳动 2021 年校招提前批于 **7 月 8 日**正式开启，欢迎大家投递 [Ads Infra 团队]({{ site.url }}/ads-infra.html)，这里是一些介绍：
+{: .mb-1}
+* [团队与岗位介绍]({{ site.url }}/ads-infra.html)
+* [我的实习感受]({% post_url 2021-04-07-autumn-recruit %}#ads-infra)
+* [找我内推]({{ site.url }}/ads-infra.html)
 </div>
 
 ## 操作系统
@@ -979,8 +983,9 @@ TCP 和 UDP 可以同时监听同一个端口，操作系统根据五元组 `{�
 
 ### 数据库的索引
 
-- 索引类型
-- 索引的实现原理
+- 索引的作用
+- 索引的类型
+- 各类索引的实现原理
 - 索引的优缺点
 - 如何设置索引？
 - 数据库为什么用 B+ 树做索引？如果是内存数据库用什么？
@@ -989,6 +994,20 @@ TCP 和 UDP 可以同时监听同一个端口，操作系统根据五元组 `{�
 
 <details markdown="1">
 <summary>答案</summary>
+
+推荐阅读：
+* [MySQL 索引设计概要 - Draveness](https://draveness.me/sql-index-intro/)
+* [马士兵 MySQL 索引视频课](https://www.bilibili.com/video/BV1eK411T7Ue)
+
+**索引的作用**主要是加快数据检索的速度。索引需要使用额外的存储空间来保存索引项。
+
+**索引的分类**：
+
+按照存储结构：B 树、Hash 等
+按照存储位置：聚集、非聚集
+按照功能：主键、唯一、覆盖
+联合索引
+B 树的索引：普通、唯一、主键
 
 **数据库为什么用 B+ 树做索引？**
 
@@ -999,10 +1018,6 @@ TCP 和 UDP 可以同时监听同一个端口，操作系统根据五元组 `{�
 * 相反，二叉搜索树的高度高，所以需要的 I/O 次数更多
 
 如果是内存数据库，不涉及磁盘 I/O，可以直接用二叉搜索树。
-
-推荐阅读：
-* [MySQL 索引设计概要 - Draveness](https://draveness.me/sql-index-intro/)
-* [马士兵 MySQL 索引视频课](https://www.bilibili.com/video/BV1eK411T7Ue)
 
 </details>
 

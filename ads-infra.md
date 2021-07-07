@@ -70,15 +70,15 @@ layout: default
 
 <div class="about-content e-content" itemprop="articleBody" markdown="1">
 
-<div class="ant-alert ant-alert-info" markdown="1">
-想了解在 Ads Infra 的实习体验？[点击查看！]({% post_url 2021-04-07-autumn-recruit %}#ads-infra)
+<div class="ant-alert ant-alert-warning" markdown="1">
+字节跳动 2021 年校招提前批于 **7 月 8 日**正式开启，欢迎大家踊跃投递。越早投递意味着面试机会越多，大家可以先将简历发送至我的邮箱 [elonzzz@163.com](mailto://elonzzz@163.com)，我会在系统开启后第一时间内推。
 </div>
 
 <div class="ant-alert ant-alert-warning" markdown="1">
 
-<details markdown="1" open>
+<details markdown="1">
 <summary>找我内推 👉  
-<span style="float: right; font-size: 12px; font-style: italic; color: #d48806">不限岗位</span>
+<span style="float: right; font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">不限岗位</span>
 </summary>
 
 方式：
@@ -89,7 +89,7 @@ layout: default
 
 **推荐使用邮箱投递**，方便我们双向沟通，及时同步。典型场景是：你的简历被其他部门锁定，我需要联系你确认意向，才能帮忙申请解锁。如果你通过内推链接投递，我是无法看到你的联系方式的。
 
-我可以：
+**我可以：**
 {: .m-0}
 * 面试前：帮改简历、分享面试经验、写推荐语 (最好先自己编辑一段)、问题答疑 (非涉密信息)
 * 面试中：同步面试进展、催 HR 推进流程
@@ -97,6 +97,12 @@ layout: default
 {: .mb-0}
 </details>
 </div>
+
+<div class="ant-alert ant-alert-info" markdown="1">
+想了解在 Ads Infra 的实习体验？[点击查看！]({% post_url 2021-04-07-autumn-recruit %}#ads-infra)
+</div>
+
+> 中文｜[English]({{ site.url }}/en/ads-infra.html)
 
 ## TL;DR
 
@@ -106,7 +112,9 @@ layout: default
 * **国际化团队**：北京、上海、美国硅谷、西雅图均有岗位
 * **快速成长机会**：应对高并发、低延迟、高可用、海量数据的需求与挑战
 
-如果你是**实习生**，这段实习经历不仅可以提升个人水平、扩展技术视野，还可以让你的简历在众多 CRUD 中脱颖而出，成为校招过程中极具竞争力的加分项。现在投递：
+我们接受**校招 / 提前批 / 实习 / 社招 / 内部转岗**：
+
+如果你是实习生，这段实习经历不仅可以提升个人水平、扩展技术视野，还可以让你的简历在众多 CRUD 中脱颖而出，成为校招过程中极具竞争力的加分项。现在投递：
 * [广告投放架构实习生（可转正）-Ads Infra](https://job.toutiao.com/s/eD8Gnw3)
 * [广告算法架构实习生（可转正）-Ads Infra](https://job.toutiao.com/s/eD8gHQS)
 
@@ -115,8 +123,10 @@ layout: default
 如果你是社招人员，这里有最前沿的技术和最优秀的人才，欢迎加入：
 * 公网内推投递：[https://job.toutiao.com/s/eDRghG2](https://job.toutiao.com/s/eDRghG2)
 
-如果你是字节员工，我们**接受内部活水 (正式 / 实习)**，请在内网访问：
+如果你是字节员工，我们接受内部活水 (正式 / 实习)，请在内网访问：
 * 内网内推投递：[http://go/joinadsinfra](http://go/joinadsinfra)
+
+2021 年**校招提前批**将于 7 月 8 日开启，可以先将简历发送至我的邮箱：[elonzzz@163.com](mailto://elonzzz@163.com)，备注意向岗位，我会在系统开启后第一时间内推。
 
 ## 团队介绍
 
