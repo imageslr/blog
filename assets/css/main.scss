@@ -11,6 +11,10 @@ details > summary {
   cursor: pointer;
 }
 
+p:last-child {
+  margin-bottom: 0;
+}
+
 /* end */
 
 /* page element start */

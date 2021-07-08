@@ -70,8 +70,17 @@ layout: default
 
 <div class="about-content e-content" itemprop="articleBody" markdown="1">
 
-<div class="ant-alert ant-alert-warning" markdown="1">
-字节跳动 2021 年校招提前批于 **7 月 8 日**正式开启，欢迎大家踊跃投递。越早投递意味着面试机会越多，大家可以先将简历发送至我的邮箱 [elonzzz@163.com](mailto://elonzzz@163.com)，我会在系统开启后第一时间内推。
+<div class="ant-alert ant-alert-warning">
+<details markdown="1">
+<summary><b>校招提前批</b>请看这里 👉 
+<span style="float: right; font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">截止到 8 月 1 日</span>
+</summary>
+
+字节跳动 2021 年校招提前批于 7 月 8 日 ～ 8 月 1 日开启，欢迎大家踊跃投递。提前批投递越早意味着面试机会越多，并且不影响正式批。大家可以**先将简历发送至我的邮箱** [elonzzz@163.com](mailto://elonzzz@163.com)，我会帮你评估和修改简历，然后定向投递到我们部门。
+
+如果你想投递其他岗位，也可以通过下方“找我内推”中的**内推码**或**内推链接**，在字节跳动官网自行投递，同样能够获得提前批免笔试与内推优先处理的优势！（如果想要获得面试进度反馈，请给我发封邮件）
+
+</details>
 </div>
 
 <div class="ant-alert ant-alert-warning" markdown="1">
@@ -87,7 +96,7 @@ layout: default
 * 内推链接：[https://jobs.toutiao.com/s/eDRgyVR](https://jobs.toutiao.com/s/eDRgyVR)
 * 内推码：**65V7M7W**，在 [字节跳动 - 校园招聘](https://jobs.bytedance.com/campus/) 页面选择岗位并投递，输入内推码
 
-**推荐使用邮箱投递**，方便我们双向沟通，及时同步。典型场景是：你的简历被其他部门锁定，我需要联系你确认意向，才能帮忙申请解锁。如果你通过内推链接投递，我是无法看到你的联系方式的。
+**推荐使用邮箱投递**，方便我们双向沟通，及时同步。典型场景是：如果你想定向投递我们部门，但简历其他部门锁定，我需要联系你确认意向，才能帮忙申请解锁。如果你通过内推链接投递，我是无法看到你的联系方式的。
 
 **我可以：**
 {: .m-0}
@@ -126,7 +135,7 @@ layout: default
 如果你是字节员工，我们接受内部活水 (正式 / 实习)，请在内网访问：
 * 内网内推投递：[http://go/joinadsinfra](http://go/joinadsinfra)
 
-2021 年**校招提前批**将于 7 月 8 日开启，可以先将简历发送至我的邮箱：[elonzzz@163.com](mailto://elonzzz@163.com)，备注意向岗位，我会在系统开启后第一时间内推。
+2021 年**校招提前批**已于 7 月 8 日开启，请查看页面上方的“校招提前批”投递指引。
 
 ## 团队介绍
 
