@@ -76,9 +76,17 @@ layout: default
 <span style="float: right; font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">截止到 8 月 1 日</span>
 </summary>
 
-字节跳动 2021 年校招提前批于 7 月 8 日 ～ 8 月 1 日开启，欢迎大家踊跃投递。提前批投递越早意味着面试机会越多，并且不影响正式批。大家可以**先将简历发送至我的邮箱** [elonzzz@163.com](mailto://elonzzz@163.com)，我会帮你评估和修改简历，然后定向投递到我们部门。
+字节跳动 2021 年校招提前批于 7 月 8 日 ～ 8 月 1 日开启，欢迎大家踊跃投递。提前批投递越早意味着面试机会越多，并且不影响正式批。大家可以**先将简历发送至我的邮箱** [elonzzz@163.com](mailto://elonzzz@163.com)，我会帮你评估和修改简历，然后定向投递到我们部门 —— Ads Infra。
 
-如果你想投递其他岗位，也可以通过下方“找我内推”中的**内推码**或**内推链接**，在字节跳动官网自行投递，同样能够获得提前批免笔试与内推优先处理的优势！（如果想要获得面试进度反馈，请给我发封邮件）
+如果你想自行投递，可以通过**[内推链接](https://jobs.toutiao.com/s/eDRgyVR)**在校招官网进行投递，同样能够获得提前批免笔试与内推优先处理的优势。**注意**！请务必确保使用了我的内推码，并且投递以下指定岗位，才能定向到我们部门。
+* 系统架构工程师 - 商业化技术（[北京](https://jobs.toutiao.com/s/egGLtWm) & [上海](https://jobs.toutiao.com/s/egGNqdc)）
+* 后端开发工程师 - 商业化技术（[北京](https://jobs.toutiao.com/s/egsCey1) & [上海](https://jobs.toutiao.com/s/egsHdhu)）
+* 大数据开发工程师 - 商业化技术（[北京](https://jobs.toutiao.com/s/egsWnmR)）
+* 运维开发工程师 - 商业化技术（[北京](https://jobs.toutiao.com/s/egsvkfX)）
+
+投递完成后，请给我*发一封邮件*，我会及时与你同步面试进展。
+
+如果你想投递其他岗位，也可以使用上面的内推链接进行投递。有任何问题，欢迎随时与我联系！
 
 </details>
 </div>
