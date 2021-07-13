@@ -40,6 +40,9 @@
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
   {%- include google-analytics.html -%}
   {%- endif -%}
+  {%- if jekyll.environment == 'production' -%}
+  {%- include baidu-seo.html -%}
+  {%- endif -%}
   <!-- utils -->
   <!-- <script src="{{ site.baseurl }}/assets/js/date.format.js"></script> -->
   <link href="https://unpkg.com/tailwindcss@^2/dist/utilities.min.css" rel="stylesheet">
