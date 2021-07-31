@@ -2,7 +2,7 @@
 layout: post
 title: 💡【方法论】校招碎碎念 🔥
 date: 2021/4/28 21:00
-last_modified_at: 2021/7/12
+last_modified_at: 2021/7/31
 toc_h_max: 3
 ---
 
@@ -480,9 +480,9 @@ WXG：2 轮技术面 + 2 轮面委会 + 1 轮 HR 面。难度比其他部门高�
 
 ## 收获 offer
 
-TODO：
-* 如何选择 offer？
-* 如何和 HR 谈条件？
+* 如何选择 offer？TODO
+* 如何拒绝 offer？[拒 Offer！- 内推熊](https://mp.weixin.qq.com/s/O4FjuJA7amflekcoSsuPsA)
+* 如何和 HR 谈条件？TODO
 
 {::comment}
 
