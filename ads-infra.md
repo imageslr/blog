@@ -72,21 +72,26 @@ layout: default
 
 <div class="ant-alert ant-alert-warning">
 <details markdown="1">
-<summary><b>校招提前批</b>请看这里 👉 
-<span style="float: right; font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">截止到 8 月 1 日</span>
+<summary><b>校招正式批</b>请看这里 👉 
+<span style="float: right; font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">8 月 12 日开始</span>
 </summary>
 
-字节跳动校招提前批已开启，欢迎大家踊跃投递，投递越早意味着面试机会越多，并且不影响正式批。大家可以**先将简历发送至我的邮箱** [elonzzz@163.com](mailto://elonzzz@163.com)，我会帮你评估和修改简历，然后定向投递到我们部门 —— Ads Infra。
+字节跳动校招正式批即将开启，欢迎大家踊跃投递。**通过我内推，现在就可以进入面试流程，先人一步拿 offer！**
 
-如果你想自行投递，可以通过**[内推链接](https://jobs.toutiao.com/s/eDRgyVR)**在校招官网进行投递，同样能够获得提前批免笔试与内推优先处理的优势。**注意**！请务必确保使用了我的内推码，并且投递以下指定岗位，才能定向到我们部门。
+大家可以先将简历发送至我的邮箱 [elonzzz@163.com](mailto://elonzzz@163.com)，备注意向城市 (北京 / 上海)。我会帮你评估和修改简历，然后定向投递到我们部门 —— Ads Infra。
+
+<!-- 
+如果你想自行投递，可以通过**[内推链接](https://jobs.toutiao.com/s/eDRgyVR)**在校招官网进行投递。**注意**！请务必确保使用了我的内推码，并且投递以下指定岗位，才能定向到我们部门。
 * 系统架构工程师 - 商业化技术（[北京](https://jobs.toutiao.com/s/egGLtWm) & [上海](https://jobs.toutiao.com/s/egGNqdc)）
 * 后端开发工程师 - 商业化技术（[北京](https://jobs.toutiao.com/s/egsCey1) & [上海](https://jobs.toutiao.com/s/egsHdhu)）
 * 大数据开发工程师 - 商业化技术（[北京](https://jobs.toutiao.com/s/egsWnmR)）
 * 运维开发工程师 - 商业化技术（[北京](https://jobs.toutiao.com/s/egsvkfX)）
 
-投递完成后，请给我*发一封邮件*，我会及时与你同步面试进展，并拉你进入**校招交流群**。
+投递完成后，请给我*发一封邮件*，我会及时与你同步面试进展，并拉你进入**校招交流群**。 -->
 
-如果你想投递其他岗位，也可以使用上面的内推链接进行投递。有任何问题，欢迎随时与我联系！
+<!-- 如果你想投递其他岗位，也可以使用上面的内推链接进行投递。 -->
+
+有任何问题，欢迎随时与我联系！
 
 </details>
 </div>
@@ -104,10 +109,10 @@ layout: default
 <div class="ant-alert ant-alert-warning" markdown="1">
 
 <details markdown="1">
-<summary>找我内推 👉 
+<summary>找我内推 👉 <span style="float: right; font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">实习 / 校招</span>
 </summary>
 
-<span style="font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">长期有效，不限岗位，不限批次 (日常实习/提前批/正式批)</span>
+<span style="font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">长期有效，不限岗位，不限批次 (实习 / 校招)</span>
 
 方式：
 {: .m-0}
@@ -140,7 +145,7 @@ layout: default
 * 国际化团队：北京、上海、美国硅谷、西雅图均有岗位
 * 快速成长机会：应对高并发、低延迟、高可用、海量数据的需求与挑战
 
-我们接受**校招 / 提前批 / 实习 / 社招 / 内部转岗**：
+我们接受**校招 / 实习 / 社招 / 内部转岗**：
 
 如果你是实习生，这段实习经历不仅可以提升个人水平、扩展技术视野，还可以让你的简历在众多 CRUD 中脱颖而出，成为校招过程中极具竞争力的加分项。现在投递：
 * [广告投放架构实习生（可转正）-Ads Infra](https://job.toutiao.com/s/eD8Gnw3)
@@ -154,7 +159,7 @@ layout: default
 如果你是字节员工，我们接受内部活水 (正式 / 实习)，请在内网访问：
 * 内网内推投递：[http://go/joinadsinfra](http://go/joinadsinfra)
 
-2021 年**校招提前批**已于 7 月 8 日开启，请查看页面上方的“校招提前批”投递指引。
+2021 年校招已经正式启动，请查看页面上方的投递指引。
 
 ## 团队介绍
 
