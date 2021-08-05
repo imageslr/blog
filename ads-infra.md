@@ -73,7 +73,7 @@ layout: default
 <div class="ant-alert ant-alert-warning">
 <details markdown="1">
 <summary><b>校招正式批</b>请看这里 👉 
-<span style="float: right; font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">8 月 12 日开始</span>
+<span style="float: right; font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">8 月 16 日开始</span>
 </summary>
 
 字节跳动校招正式批即将开启，欢迎大家踊跃投递。**通过我内推，现在就可以进入面试流程，先人一步拿 offer！**
