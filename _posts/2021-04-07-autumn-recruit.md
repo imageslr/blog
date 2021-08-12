@@ -4,6 +4,8 @@ title: 💡【方法论】校招碎碎念 🔥
 date: 2021/4/28 21:00
 last_modified_at: 2021/7/31
 toc_h_max: 3
+typora-root-url: ../
+typora-copy-images-to: ../media
 ---
 
 ## 前言
@@ -265,7 +267,7 @@ Tips：
 
 *（业余生活）*  
 最后，我业余时间有写博客的习惯，会定期归纳总结自己的笔记。我也有开源经历，在 github 上有几个开源项目。
-  
+
 以上就是我的个人介绍，谢谢您。
 {: .mb-0}
 </div>
