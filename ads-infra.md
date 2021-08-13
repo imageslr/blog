@@ -81,16 +81,14 @@ layout: default
 * 内推码：**65V7M7W**
 * 内推链接：[https://jobs.toutiao.com/s/eDRgyVR](https://jobs.toutiao.com/s/eDRgyVR)
 
-----
-
-如果希望定向投递到我们部门 —— Ads Infra，推荐先将简历发送至我的邮箱 [elonzzz@163.com](mailto://elonzzz@163.com)，备注意向城市 (北京 / 上海)。我会帮你评估和修改简历、分享更详细的 Ads Infra 工作内容介绍 / 广告架构背景知识 / 校招常见 Q&A、拉你进入校招交流群、随时查询状态与答疑。
+如果希望定向投递到我们部门 —— Ads Infra，推荐先将简历发送至我的邮箱 [elonzzz@163.com](mailto://elonzzz@163.com)，备注意向城市 (北京 / 上海)。我会帮你评估和修改简历，并拉你进入 Ads Infra 校招交流群。
 
 Ads Infra 的校招岗位：
 {: .mb-0}
-* [后端开发工程师 - 商业化技术 - 北京](https://jobs.toutiao.com/s/eohdShU) (等同于*广告系统架构*岗位)
-* [广告系统架构工程师 - 商业化技术 - 上海](https://jobs.toutiao.com/s/eorGJ1o)
+* [系统架构工程师 - 商业化技术 - 北京](https://jobs.toutiao.com/s/eou5WwR) / [上海](https://jobs.toutiao.com/s/eorGJ1o)
+* [后端开发工程师 - 商业化技术 - 北京](https://jobs.toutiao.com/s/eohdShU)
 * [大数据开发工程师 - 商业化技术 - 北京](https://jobs.toutiao.com/s/eorKvkx)
-* 运维开发工程师 - 商业化技术 - 北京 (投递链接待定)
+* [运维开发工程师 - 商业化技术 - 北京](https://jobs.toutiao.com/s/eouPStK)
 
 <!-- 
 如果你想自行投递，可以通过**[内推链接](https://jobs.toutiao.com/s/eDRgyVR)**在校招官网进行投递。**注意**！请务必确保使用了我的内推码，并且投递以下指定岗位，才能定向到我们部门。
@@ -109,7 +107,7 @@ Ads Infra 的校招岗位：
 <summary>Ads Infra 2021 校招交流群 👉 
 </summary>
 
-*无论是否通过我内推*，均可加入 Ads Infra 校招交流群，群内会有经验分享、答疑解惑、进度查询、信息同步等。联系邮箱 [elonzzz@163.com](mailto://elonzzz@163.com) 获取进群方式。
+*无论是否通过我内推*，均可加入 Ads Infra 校招交流群，群内会有工作内容介绍、面试经验分享、答疑解惑、进度查询、信息同步等。联系邮箱 [elonzzz@163.com](mailto://elonzzz@163.com) 获取进群方式。
 
 </details>
 </div>
