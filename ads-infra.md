@@ -72,20 +72,28 @@ layout: default
 
 <div class="ant-alert ant-alert-warning">
 <details markdown="1">
-<summary><b>校招正式批</b>请看这里 👉 
-<span style="float: right; font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">8 月 16 日开始</span>
+<summary><b>2021 校招正式批</b> 投递入口 👉 
+<span style="float: right; font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">8.12～10.31</span>
 </summary>
 
-字节跳动校招正式批即将开启，欢迎大家踊跃投递。**通过我内推，现在就可以进入面试流程，先人一步拿 offer！**
+字节跳动 2021 校招正式批已经开启，欢迎大家踊跃投递。每人可投递 **2 个**岗位。内推方式：
+{: .mb-0}
+* 内推码：**65V7M7W**
+* 内推链接：[https://jobs.toutiao.com/s/eDRgyVR](https://jobs.toutiao.com/s/eDRgyVR)
 
-大家可以先将简历发送至我的邮箱 [elonzzz@163.com](mailto://elonzzz@163.com)，备注意向城市 (北京 / 上海)。我会帮你评估和修改简历，然后定向投递到我们部门 —— Ads Infra。
+----
+
+如果希望定向投递到我们部门 —— Ads Infra，推荐先将简历发送至我的邮箱 [elonzzz@163.com](mailto://elonzzz@163.com)，备注意向城市 (北京 / 上海)。我会帮你评估和修改简历、分享更详细的 Ads Infra 工作内容介绍 / 广告架构背景知识 / 校招常见 Q&A、拉你进入校招交流群、随时查询状态与答疑。
+
+Ads Infra 的校招岗位：
+{: .mb-0}
+* [后端开发工程师 - 商业化技术 - 北京](https://jobs.toutiao.com/s/eohdShU) (等同于*广告系统架构*岗位)
+* [广告系统架构工程师 - 商业化技术 - 上海](https://jobs.toutiao.com/s/eorGJ1o)
+* [大数据开发工程师 - 商业化技术 - 北京](https://jobs.toutiao.com/s/eorKvkx)
+* 运维开发工程师 - 商业化技术 - 北京 (投递链接待定)
 
 <!-- 
 如果你想自行投递，可以通过**[内推链接](https://jobs.toutiao.com/s/eDRgyVR)**在校招官网进行投递。**注意**！请务必确保使用了我的内推码，并且投递以下指定岗位，才能定向到我们部门。
-* 系统架构工程师 - 商业化技术（[北京](https://jobs.toutiao.com/s/egGLtWm) & [上海](https://jobs.toutiao.com/s/egGNqdc)）
-* 后端开发工程师 - 商业化技术（[北京](https://jobs.toutiao.com/s/egsCey1) & [上海](https://jobs.toutiao.com/s/egsHdhu)）
-* 大数据开发工程师 - 商业化技术（[北京](https://jobs.toutiao.com/s/egsWnmR)）
-* 运维开发工程师 - 商业化技术（[北京](https://jobs.toutiao.com/s/egsvkfX)）
 
 投递完成后，请给我*发一封邮件*，我会及时与你同步面试进展，并拉你进入**校招交流群**。 -->
 
