@@ -421,7 +421,7 @@ MWeb 可以通过 iCloud 实现同步，只需要将文档库保存在 iCloud �
 
 [2021.08.24 更新]
 
-MWeb 对我而言，更重要的角色是文档库。它的文件夹、标签等功能，使我可以系统整理所有文档。配合 MWeb 的 [alfred workflow](https://github.com/tianhao/alfred-mweb-workflow)，可以根据关键字快速搜索和查看文档。
+MWeb 支持文件夹形式的文档管理功能，对我而言，它更重要的角色是作为文档库，整理我的所有文档。日常使用中，我会配合  [mweb alfred workflow](https://github.com/tianhao/alfred-mweb-workflow) 插件，根据关键字，快速搜索和查看某篇文档。
 
 最近发现，Typora 所见即所得的风格非常适合 Markdown 写作，不需要频繁切到预览模式。因此在需要输出长文的情况下，我会选择 Typora。这个场景和 MWeb 的适用场景并不冲突。
 
