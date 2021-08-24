@@ -3,7 +3,9 @@ layout: post
 title: 💻【Mac 相关】从零开始配置高效 Mac 开发环境
 date: 2020/3/19 14:00
 permalink: 2020/03/19/mac-initialization.html
-last_modified_at: 2021/06/07
+last_modified_at: 2021/08/25
+typora-root-url: ../
+typora-copy-images-to: ../media
 ---
 
 Mac 是大多数程序员的主力机器。如今各个互联网公司都会给员工配备 Mac 电脑，而拿到新电脑不免要鼓捣一番，安装各种环境、插件、软件等，以让自己用着更顺手。
@@ -276,7 +278,7 @@ Mac 的一款窗口布局工具，可以快速缩放应用/移动位置，比如
 
 ### 效率神器：Alfred
 Mac 效率神器，不多作介绍。快捷键：
-1. `⌥ Alt` + `Space` 打开 Alfred（我改成了双击 `⌘ Command`）
+1. `⌥ Alt` + `Space` 打开 Alfred（我改成了双击 `⌥ Alt`）
 2. `↑`、`↓` 切换高亮项
 3. `⇧ Shift` 使用「预览程序」预览当前高亮项
 4. `↩︎ Enter` 选择当前高亮项
@@ -307,7 +309,48 @@ Mac 效率神器，不多作介绍。快捷键：
 * 有道翻译：[Github - wensonsmith/YoudaoTranslate](https://github.com/wensonsmith/YoudaoTranslate)
 * MWeb 文档搜索：[Github - tianhao/alfred-mweb-workflow](https://github.com/tianhao/alfred-mweb-workflow)
 * 颜色代码转换：[Github](https://github.com/g1eny0ung/Alfred-Colors-workflow)，16 进制/RGB/HSL 互转，对于前端开发者比较有用
-* 自定义快捷搜索，如百度搜索、字节搜索等
+
+#### 自定义网页搜索
+
+Alfred 内置了许多搜索网站，如百度、Google 等。使用 Alfred 搜索的正确姿势：
+
+1. 快捷键激活 Alfred
+2. 输入要搜索的内容
+3. 按下 `Command + 1`、`Command + 2` 等快捷键，选择一个搜索网站
+
+<img src="/media/image-20210824101522940.png" alt="image-20210824101522940" style="zoom:50%;" />
+
+这会直接打开搜索结果页。相比于「打开浏览器 - 打开网站 - 聚焦到输入框 - 输入关键字 - 搜索」的过程，使用 Alfred 搜索效率更高。
+
+工作场景下，我会将公司内网搜索配置到 Alfred。配置方法：进入 Alfred 的 Preference 页面，按照下图 1、2、3、4 的步骤设置。
+
+![image-20210824103424554](/media/image-20210824103424554.png)
+
+其中，第 4 步是公司内网搜索结果页的 URL，形如：
+
+```
+https://{域名}/search?query={搜索内容}
+```
+
+`{query}` 是一个占位符，表示你输入的搜索内容。
+
+如何获取这个 URL？只需要打开内网搜索页，搜索任意内容，查看结果页的 URL。比如我在百度搜索“测试”，会得到这样一个 URL：
+
+```
+https://www.baidu.com/s?ie=utf-8&wd=测试
+```
+
+那么百度搜索的 Search URL 就是：
+
+```
+https;//www.baidu.com/s?wd={query}
+```
+
+同理，Google 的 Search URL 是：
+
+```
+https://www.google.com/search?q={query}
+```
 
 ### 代码片段：SnippetsLab
 SnippetsLab 可以用来分类整理各个代码片段，在写代码时随时取用。
@@ -374,7 +417,22 @@ MWeb 是一款非常优秀的 Markdown 笔记软件。在尝试过印象笔记�
 MWeb 可以通过 iCloud 实现同步，只需要将文档库保存在 iCloud 云盘下即可。每个设备都使用云盘中的文件夹作为 MWeb 的文档库。
 ![-w619](/media/15846233668366.jpg)
 
+---
+
+[2021.08.24 更新]
+
+MWeb 对我而言，更重要的角色是文档库。它的文件夹、标签等功能，使我可以系统整理所有文档。配合 MWeb 的 [alfred workflow](https://github.com/tianhao/alfred-mweb-workflow)，可以根据关键字快速搜索和查看文档。
+
+最近发现，Typora 所见即所得的风格非常适合 Markdown 写作，不需要频繁切到预览模式。因此在需要输出长文的情况下，我会选择 Typora。这个场景和 MWeb 的适用场景并不冲突。
+
+我制作的一些 MWeb、Typora 主题：
+
+* [https://github.com/imageslr/mweb-themes](https://github.com/imageslr/mweb-themes)
+* [https://github.com/imageslr/typora-theme-bear](https://github.com/imageslr/typora-theme-bear)
+* [https://github.com/imageslr/typora-theme-lark](https://github.com/imageslr/typora-theme-lark)
+
 ### 待办事项管理：OmniFocus
+
 OmniFocus 是一个 GTD 工具，我使用它来安排我的待办事项。OmniFocus 支持多端同步，数据存储在 OmniFocus 服务器中，或者个人 [WebDAV 服务器](https://sspai.com/post/60540)。
 
 ### 每日计划：OmniOutliner
@@ -411,7 +469,8 @@ code ~/.zshrc // 在  VS Code 中打开 .zshrc 文件，类似于 vim ~/.zshrc
 * 类似于 Moom 的窗口管理工具：[Amethyst](https://github.com/ianyh/Amethyst)
 * 键盘清理工具：[KeyboardCleanTool](https://sspai.com/post/45406)，可以在清理键盘的时候锁定键盘。
 * 番茄钟：[Stretchly](https://hovancik.net/stretchly/downloads/)，既能充当番茄钟，还能用弹窗提醒你起来活动活动，对程序员来说很有用，[介绍文章](https://www.appinn.com/stretchly/)。类似的工具还有 [Just Focus](https://getjustfocus.com/mac.html)。
-* 屏幕取色：~~Mac 自带的数码取色器（可以显示为十六进制，但不能复制到剪贴板）~~，或者 [Sip](https://xclient.info/s/sip.html)，或者 [uTools](https://u.tools/) 自带的取色工具，前端开发经常用到。
+  * Stretchly 的弹窗提醒会随机展示一句舒展身体的 idea，[我翻译的中文版](https://gist.github.com/imageslr/8f22b699c6a769d971a098fd5d614994)
+* 屏幕取色：[Sip](https://xclient.info/s/sip.html)，或者 [uTools](https://u.tools/) 自带的取色工具，前端开发经常用到。(Mac 自带的数码取色器可以显示为十六进制，但不能复制到剪贴板)
 * 状态栏管理：Bartender 3，可以自定义隐藏状态栏的图标，或者更新时显示 15s 再隐藏，按住 Command 可以自由拖动排列顺序；另一个应用是 Hidden Ba‪r‬，App Store 免费下载，同样好用，我用来和 Bartender 配合，隐藏一些不受后者控制的图标。
 * 壁纸应用：[pap.er](http://paper.meiyuan.in/?utm_source=zh)，专为 Mac 设计的壁纸应用，简洁易用，图片质量也很高。
 * 触控板增强：BetterTouchTool（[介绍视频](https://www.bilibili.com/video/BV1a7411W7s3)），[论坛](https://community.folivora.ai/c/setup-preset-sharing/5/l/top)里提供了很多预设，可以直接导入使用。我个人认为按住 Command 显示 Dock 栏程序图标是比较有用的，但功能太复杂，所以放弃了，喜欢配置的话可以尝试一下。
