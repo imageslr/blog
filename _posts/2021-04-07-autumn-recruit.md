@@ -2,7 +2,7 @@
 layout: post
 title: 💡【方法论】校招碎碎念 🔥
 date: 2021/4/28 21:00
-last_modified_at: 2021/7/31
+last_modified_at: 2021/8/28
 toc_h_max: 3
 typora-root-url: ../
 typora-copy-images-to: ../media
@@ -482,26 +482,7 @@ WXG：2 轮技术面 + 2 轮面委会 + 1 轮 HR 面。难度比其他部门高�
 
 ## 收获 offer
 
-* 如何选择 offer？TODO
-* 如何拒绝 offer？[拒 Offer！- 内推熊](https://mp.weixin.qq.com/s/O4FjuJA7amflekcoSsuPsA)
-* 如何和 HR 谈条件？TODO
-
-{::comment}
-
-秋招薪资评定：基础能过=白菜，基础+实践动手=SP，基础超强=SP
-
-头条加面有两种情况，一是三轮评级都是 4 可以评 SSP，二是面试官评价差别很大，再面一轮决定是否录用。
-
-如何对比 offer：
-脉脉
-列表格
-
-分享：牛客写面经
-
-低调：身边还有同学正在参加；如果你没有拿到满意的offer，也不要慌张，时间还很充裕，机会总是留给有准备的人、坚持不懈的人。身边有很多逆袭的案例。
-
-
-{:/comment}
+[💡【方法论】校招碎碎念 - 收获 Offer 篇]({% post_url 2021-08-21-autumn-recruit-offer %})
 
 ## 广告时间
 {: #ads-infra}
