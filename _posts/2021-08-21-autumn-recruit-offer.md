@@ -25,7 +25,7 @@ typora-copy-images-to: ../media
 💡<span class="mr-2"></span>校招通常不会有 HR 面，可能会有技术向的加面。加面和评级没有必然联系。
 {: .ant-alert .ant-alert-warning }
 
-面试之后的流程大约是：offer 审批 -> offer call + 意向书 -> 正式 offer。
+面试之后的流程大约是：offer 审批 → offer call + 意向书 → 正式 offer。
 
 1. 当你顺利通过所有面试后，HR 会为你发起 offer 审批流程。这个过程用时不确定，一般是最后一面结束的一周～一个月内。
 2. 当 offer 审批完成后，HR 会打电话通知你被录用，这也是我们常说的 Offer Call (或者 OC)。这是一个口头 offer，在你确认接受后，会发一封意向书的邮件。
