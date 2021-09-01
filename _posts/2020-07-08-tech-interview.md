@@ -2,7 +2,7 @@
 layout: post
 title: 🗂【面试题】技术面试题汇总 🔥
 date: 2020/11/6 17:00
-last_modified_at: 2021/7/13
+last_modified_at: 2021/9/1
 permalink: 2020/07/08/tech-interview.html
 toc: false
 # redirect_to: http://www.github.com
@@ -1091,7 +1091,7 @@ TCP 和 UDP 可以同时监听同一个端口，操作系统根据五元组 `{�
 
 - 事务的特性
 - 事务可能存在的并发问题
-- 事务的隔离级别，各个隔离级别可能发送的问题
+- 事务的隔离级别，各个隔离级别可能发生的问题
 
 <details markdown="1">
 <summary>答案</summary>
@@ -1122,8 +1122,22 @@ TCP 和 UDP 可以同时监听同一个端口，操作系统根据五元组 `{�
 - 库内分表、分库分表、分表策略
 - 垂直分库的关键问题：跨节点 Join、事务
 - 分库分表的关键问题：事务、查询、跨分片 Join、跨节点聚合、唯一 ID、分页排序
-- 主从复制的原理（binary log）
-- 读写分离
+- 主从复制、读写分离的原理
+- 主从复制、读写分离的优点与缺点
+
+<details markdown="1">
+<summary>答案</summary>
+
+* [分库分表的几种常见形式以及可能遇到的难题 - 丁浪](https://www.infoq.cn/article/key-steps-and-likely-problems-of-split-table)
+* [水平分库分表的关键步骤以及可能遇到的问题 - 丁浪](https://www.infoq.cn/article/key-steps-and-likely-problems-of-horizontal-split-table)
+* [分库分表需要考虑的问题及思路 - jackcooper](https://juejin.cn/post/6844903478171533320)
+* [大众点评订单系统分库分表实践 - 美团技术团队](https://tech.meituan.com/2016/11/18/dianping-order-db-sharding.html)
+* [读写分离、分库分表 - JavaGuide](https://github.com/Snailclimb/JavaGuide/blob/master/docs/system-design/%E8%AF%BB%E5%86%99%E5%88%86%E7%A6%BB&%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8.md)
+* 主从复制、读写分离
+  * 优点：提升系统的吞吐量、可用性
+  * 缺点：数据不一致问题；类似于分库分表，提升了操作和运维的复杂性
+
+</details>
 
 ### 数据库的优化方法
 
