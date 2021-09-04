@@ -2,7 +2,7 @@
 layout: post
 title: 🗂【面试题】技术面试题汇总 🔥
 date: 2020/11/6 17:00
-last_modified_at: 2021/9/1
+last_modified_at: 2021/9/4
 permalink: 2020/07/08/tech-interview.html
 toc: false
 # redirect_to: http://www.github.com
@@ -1147,6 +1147,16 @@ TCP 和 UDP 可以同时监听同一个端口，操作系统根据五元组 `{�
 - 数据库拆分
 - 系统配置的优化、硬件的优化
 
+<details markdown="1">
+<summary>答案</summary>
+
+* [MySql查询性能优化 - poype - segmentfault](https://segmentfault.com/a/1190000011330649)
+* [最全 MySQL 优化方法，从此优化不再难 - Wayne](https://zhuanlan.zhihu.com/p/59818056)
+* [优化 SQL 数据库的 6 种方式 - Chirag Thumar](https://jaxenter.com/6-ways-optimize-sql-database-136448.html)
+
+</details>
+
+
 ### ORM 和原生 SQL 的区别
 
 <details markdown="1">
@@ -1189,10 +1199,29 @@ ORM 的缺点是效率低，另外有些场景只能用原生 SQL 实现。
 ## 计算机组成原理
 
 ### 引用和指针的区别
-TODO
+
+<details markdown="1">
+<summary>答案</summary>
+
+相同点：引用和指针都可以作为参数传递给函数，用于更改函数作用域外的变量；也可以作为函数的参数，在传递大对象时避免复制，提升效率。
+
+不同点：
+* 指针可以声明为 void，但引用永远不能为 void。
+* 指针可以有指针的指针、指针的指针的指针... 但是引用只能有一级引用。
+* 引用在声明之后就不能再修改。
+* 引用其实是一个内部的指针。
+* 引用比指针更安全，相对的，引用的也没有指针更灵活。
+* 见 [https://www.geeksforgeeks.org/references-in-c](https://www.geeksforgeeks.org/references-in-c/)
+</details>
 
 ### 函数的参数是如何传递的
-引用传递、值传递。
+
+
+<details markdown="1">
+<summary>答案</summary>
+[值传递、指针传递和引用传递。](https://www.cnblogs.com/poissonnotes/p/4371352.html)
+
+</details>
 
 ### 大端法、小端法及其判断 
 [答案]({% post_url 2019-11-30-csapp-2%}#big-end)
