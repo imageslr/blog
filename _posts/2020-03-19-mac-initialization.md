@@ -3,7 +3,7 @@ layout: post
 title: 💻【Mac 相关】从零开始配置高效 Mac 开发环境
 date: 2020/3/19 14:00
 permalink: 2020/03/19/mac-initialization.html
-last_modified_at: 2021/08/25
+last_modified_at: 2021/09/05
 typora-root-url: ../
 typora-copy-images-to: ../media
 ---
@@ -86,6 +86,16 @@ defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 ```
 
 下文提到的插件 Moom 也可以快速调整窗口大小。
+
+### 关闭触控板前进后退
+
+在浏览网页时，可以在触控板两指水平轻扫，控制页面的前进后退。
+
+<img src="/media/image-20210905113805315.png" alt="image-20210905113805315" style="zoom:50%;" />
+
+> 图：在 Chrome 中两指右扫，会出现页面后退提示符
+
+但实际场景下，这个功能基本没用，且误触频率很高 (和页面的水平滚动条冲突)。建议关闭：`系统设置 - 触控板 - 更多手势 - 在页面之间轻扫`，取消勾选。
 
 ## 开发环境
 ### Homebrew
@@ -461,6 +471,14 @@ code ~/.zshrc // 在  VS Code 中打开 .zshrc 文件，类似于 vim ~/.zshrc
 
 ### 单词翻译：Bob
 [Github 下载](https://github.com/ripperhe/Bob)。快捷键十分好用，支持截图翻译。有了它以后，就不需要在 Chrome 里安装划词翻译插件了。
+
+### 单词学习：欧路词典
+
+如果你希望**随手记录**自己遇到的生词，并**定期复习**，那么可以使用[欧路词典](https://www.eudic.net/v4/en/app/eudic)。功能：
+
+* 全局鼠标划词翻译，一键加入单词本，还可以记笔记。
+* 全平台同步。工作时在电脑上取词，通勤时在手机上复习。
+* 支持 FlashCard 形式的单词复习，搭配艾宾浩斯记忆法，自动设置学习计划。
 
 ### 其他
 
