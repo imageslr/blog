@@ -123,7 +123,7 @@ int FD_ISSET(int fd, fd_set *fdset); // 检测 fd_set 某一位是否为 1
 2. 同时能够监听的文件描述符数量太少。受限于 `sizeof(fd_set)` 的大小，在编译内核时就确定了且无法更改。一般是 1024，不同的操作系统不相同
 
 ## poll
-poll 和 select 几乎没有区别。poll 采用**数组**的方式存储文件描述符，没有最大存储数量的限制 (感谢 [@LydiaCai1203](https://github.com/LydiaCai1203) 指出)。
+poll 和 select 几乎没有区别。poll 在用户态通过**数组**方式**传递**文件描述符，在内核会转为**链表**方式**存储**，没有最大数量的限制 (感谢 [@LydiaCai1203](https://github.com/LydiaCai1203)、[@kingcanfish](https://github.com/kingcanfish) 指出)。
 
 poll 的函数签名如下：
 
