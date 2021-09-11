@@ -65,6 +65,10 @@ p:last-child {
 .outline-box {
   border: 1px solid #e8e8e8;
 
+  > *:last-child {
+    margin-bottom: 0;
+  }
+
   &-head {
     padding: 8px 12px;
     color: rgba(0,0,0,.85);
@@ -79,7 +83,7 @@ p:last-child {
   &-body {
     padding: 10px 15px;
 
-    > p:last-child {
+    > *:last-child {
       margin-bottom: 0;
     }
   }
