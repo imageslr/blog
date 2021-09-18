@@ -2,7 +2,7 @@
 layout: post
 title: 🗂【面试题】技术面试题汇总 🔥
 date: 2020/11/6 17:00
-last_modified_at: 2021/9/4
+last_modified_at: 2021/9/17
 permalink: 2020/07/08/tech-interview.html
 toc: false
 # redirect_to: http://www.github.com
@@ -1586,17 +1586,91 @@ C++ STL 中的 `map` 和 `unordered_map`，分别使用红黑树和哈希表实�
 - 百万量级的数据排序（任意大小，或者 0～10000）
 - 百万量级的数据查询在不在
 - 百万量级的数据求 TopK
+- 海量数据，统计只出现一次 / 不重复的数字
+- 海量数据，统计出现次数最多的数字
 
 <details markdown="1">
 <summary>答案</summary>
 
-百万量级的数据排序：
+**百万量级的数据排序：**
 * 任意大小：外排序，先将数据拆分到多个文件中，分别加载到内存中排序，然后再归并到一个文件里。实际上就是 [LeetCode 23. 合并 k 个有序链表](mweblib://15783856405435)，需要用到最小堆。
 * 范围为 [0, 10000]：计数排序。
 
-百万量级的数据查询在不在：可以使用位图，前提是数据范围不超过内存大小。
+**百万量级的数据查询在不在**：可以使用位图，前提是数据范围不超过内存大小。
 
-百万量级的数据求 TopK：数据流的 TopK 问题，维护一个大小为 k 的小根堆，然后分片读入数据，并更新堆。
+**百万量级的数据求 TopK**：数据流的 TopK 问题，维护一个大小为 k 的小根堆，然后分片读入数据，并更新堆。
+
+**海量数据，统计只出现一次的数字**：
+
+(1) 位图法
+
+如果题目给定数据大小范围是 0～10000，那么只需要申请一个 10000 字节的空间。即使是将所有的 int 整数表示出来，也只需要 `2^32` bit 空间，大约 512MB，这个空间并不大。
+
+位图的实现很简单。比如我在面试时使用 Go 实现的位图：
+
+<details markdown="1">
+<summary>点击展开</summary>
+
+```go
+package main
+
+import (
+    "fmt"
+)
+
+type BitMap struct {
+    bits []byte
+}
+
+func NewBitMap(capacity int) BitMap {
+    return BitMap{make([]byte, (capacity+7)/8)}
+}
+
+func (bitmap *BitMap) Set(num int) {
+    if (num > 8*len(bitmap.bits)) {
+        return
+    }
+    pos := num / 8
+    offset := uint(num % 8)
+    bitmap.bits[pos] |= (0x80 >> offset)
+}
+
+func (bitmap *BitMap) Check(num int) bool {
+    if (num > 8*len(bitmap.bits)) {
+        return false
+    }
+    pos := num / 8
+    offset := uint(num % 8)
+    return bitmap.bits[pos] & (0x80 >> offset) > 0
+}
+
+func main() {
+    bitmap := NewBitMap(15)
+    bitmap.Set(2)
+    bitmap.Set(15)
+    bitmap.Set(30)
+    fmt.Println(bitmap.Check(2))
+    fmt.Println(bitmap.Check(3))
+    fmt.Println(bitmap.Check(15))
+    fmt.Println(bitmap.Check(30))
+}
+```
+
+</details>
+
+C 语言的位图实现，可以参考[这篇文章](https://layerlab.org/2018/06/07/My-bitmap.html)。
+
+(2) Hash 分治法
+
+如果数据量过大，也可以先使用 hash 函数，将所有整数映射到 N 个文件中；然后在每个文件中使用 bitmap 或者 HashMap 去重，最后归并所有文件中只出现一次的结果。因为使用了 hash 函数，可以保证相同的数字必定会分到同一个文件中。
+
+**扩展阅读：**
+* [十道海量数据处理面试题与十个方法大总结](https://blog.csdn.net/v_july_v/article/details/6279498)
+* [教你如何迅速秒杀掉：99% 的海量数据处理面试题](https://blog.csdn.net/v_july_v/article/details/7382693)
+* [经典面试问题: Top K 之海量数据找出现次数最多或不重复的](https://juejin.cn/post/6844903573164130318)
+* [10 亿 int 型数，统计只出现一次的数](https://itimetraveler.github.io/2017/07/13/%E3%80%90%E7%AE%97%E6%B3%95%E3%80%9110%E4%BA%BFint%E5%9E%8B%E6%95%B0%EF%BC%8C%E7%BB%9F%E8%AE%A1%E5%8F%AA%E5%87%BA%E7%8E%B0%E4%B8%80%E6%AC%A1%E7%9A%84%E6%95%B0/)
+
+
 
 </details>
 
