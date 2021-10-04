@@ -265,6 +265,9 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize
 其他插件请在 [Github - sindresorhus/quick-look-plugins](https://github.com/sindresorhus/quick-look-plugins) 自行选用，Catalina 系统的安装方法见 [README](https://github.com/sindresorhus/quick-look-plugins)。
 
 ### 快速调整窗口大小：Moom
+
+{: #moom}
+
 Mac 的一款窗口布局工具，可以快速缩放应用/移动位置，比如将应用布局成以下状态，只需分别点击三下，如果此时将桌面布局保存为一个快照，之后就可以一键恢复布局。
 
 ![-w1241](/media/15846201525933.jpg)
