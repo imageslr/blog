@@ -2,7 +2,8 @@
 layout: post
 title: 🔖【方法论】我的效率提升方法论 - 通用思维篇 ③ 工作区
 date: 2021/10/4 12:00
-last_modified_at: 2021/10/4
+last_modified_at: 2021/10/26
+toc_h_max: 3
 typora-root-url: ../
 typora-copy-images-to: ../media
 ---
@@ -151,8 +152,10 @@ typora-copy-images-to: ../media
   * 看代码时，使用深色主题、字号小一点；写作时，使用浅色主题、字号大一点。
   * 只开启该工作区必需的插件、关闭无用插件，减少内存占用与快捷键冲突。
 
-### Chrome
-{: #chrome}
+### 浏览器
+{: #browser}
+
+#### Chrome
 
 推荐安装 Workona 插件 [[官网](https://workona.com/)] [[少数派介绍文章](https://sspai.com/post/53985)]，主要功能：
 {: .mb-2}
@@ -162,14 +165,36 @@ typora-copy-images-to: ../media
 * 多个工作区之间可以快速切换。
 * 每个工作区中可以保存关联的网页链接、笔记、文件等，关键信息触手可得。
 
+![image-20211027233928088](/media/image-20211027233928088.png)
+
 不过 Workona 今年 12 月将要开始收费，免费用户最多只能创建 5 个工作区。因此再推荐一个平替插件：[Workspaces](https://chrome.google.com/webstore/detail/workspaces/hpljjefgmnkloakbfckghmlapghabgfa)，同样支持创建工作区、不同工作区快速切换。
 
-书签也可以用工作区思想来管理。比如上面的平替插件 Workspaces 不支持在工作区中保存网页链接，此时可以创建一个和工作区同名的书签文件夹，用于保存和工作相关的网页链接。
+还有一个类似的标签页管理插件：[tabExtend](https://www.tabextend.com/)。个人认为，这个插件最大的缺点在于不支持快速切换已经打开的标签页或者工作区，本质上还是个书签管理器。所以这里不作推荐。
+
+Chrome 自带的标签页分组功能也可以用来创建不同的工作区，但是所有分组默认都会放置在同一个窗口中 (如下图所示)。相比于 Workona 的管理方式，Chrome 的标签页分组不够灵活，工作区的边界划分也不明显。
+
+![image-20211027234638759](/media/image-20211027234638759.png)
 
 💡 可以设置一个单独的名为“Inbox”的工作区 (窗口)，存放所有临时打开的页面。[👉 ① 收件箱思维]({% post_url 2021-08-07-efficiency-01 %})
 {: .ant-alert}
 
-还有一个类似的标签页管理插件：[tabExtend](https://www.tabextend.com/)。个人认为，这个插件最大的缺点在于不支持快速切换已经打开的标签页或者工作区，本质上还是个书签管理器。所以这里不作推荐。
+#### Safari
+
+**2021-10-26** <br>在最近更新的 macOS Monterey 系统中，Safari 浏览器也增加了标签页分组功能，这是工作区思维的直接体现。
+{: .ant-alert .ant-alert-info}
+
+Safari 的标签页分组功能，整体布局和 Chrome Workona 插件类似，左侧边栏列出了所有工作区，不同工作区之间互相独立，点击即可快速切换。
+
+如果读者日常使用的是 Safari 浏览器，不妨试试这个新增的功能。
+
+![image-20211027234050684](/media/image-20211027234050684.png)
+
+#### 书签
+
+书签也可以用工作区思想来管理。可以创建一个和工作区同名的书签文件夹，用于保存和某项工作相关的网页链接。
+
+> Chrome Workona 插件可以直接在工作区界面保存书签 / 文件等相关资源。
+
 
 
 
