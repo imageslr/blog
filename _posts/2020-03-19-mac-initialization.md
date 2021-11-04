@@ -158,7 +158,7 @@ Mac 自带了 zsh，执行 `zsh --version` 检查是否安装了 zsh。
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 
-当 oh-my-zsh 安装成功后，我们会看到终端的文本不再是单调的白色，而是有了不同的颜色。这是因为 oh-my-zsh 提供了很多主题，可以通过编辑 `~/.zshrc` 中的 `ZSH_THEME` 字段修改，默认是 `robbyrussell`。
+当 oh-my-zsh 安装成功后，我们会看到终端的文本不再是单调的白色，而是有了不同的颜色。这是因为 oh-my-zsh 提供了很多主题，可以通过编辑 `~/.zshrc` 中的 `ZSH_THEME` 字段修改，默认是 `robbyrussell`。服务端我使用 `jonathan`。
 > oh-my-zsh 提供了一个 `~/.zshrc` 模板，安装后会替换默认的 `~/.zshrc`。下面以安装 oh-my-zsh 后的 `~/.zshrc` 为准。
 
 安装完成后，oh-my-zsh 会自动设置为默认 shell 工具。如果设置失败，手动执行：

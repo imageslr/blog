@@ -70,10 +70,10 @@ layout: default
 
 <div class="about-content e-content" itemprop="articleBody" markdown="1">
 
-<div class="ant-alert ant-alert-warning">
+<div class="ant-alert">
 <details markdown="1">
-<summary><b>2021 校招正式批</b> 投递入口 👉 
-<span style="float: right; font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">8.12～10.31</span>
+<summary>2021 校招正式批 投递入口 👉 
+<span style="float: right; font-size: 12px; font-style: italic; margin-top: 2px">8.12～10.31 已结束</span>
 </summary>
 
 字节跳动 2021 校招正式批已经开启，欢迎大家踊跃投递。每人可投递 **2 个**岗位。内推方式：
@@ -165,7 +165,6 @@ Ads Infra 的校招岗位：
 如果你是字节员工，我们接受内部活水 (正式 / 实习)，请在内网访问：
 * 内网内推投递：[http://go/joinadsinfra](http://go/joinadsinfra)
 
-2021 年校招已经正式启动，请查看页面上方的投递指引。
 
 ## 团队介绍
 

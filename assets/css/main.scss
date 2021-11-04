@@ -5,6 +5,26 @@ sitemap: false
 @import "moving";
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600&display=swap");
 
+/* markdown body */
+
+.post-content {
+  .task-list-item {
+    list-style-type: none;
+    text-indent: -1.5em;
+  }
+  .task-list-item:before {
+    content: "";
+    display: static;
+    margin-right: 0px;
+  }
+  .task-list-item > input[type=checkbox] {
+    margin-right: 8px;
+    text-indent: -1.7em;
+  }
+}
+
+/* end */
+
 /* layout */
 
 details > summary {
