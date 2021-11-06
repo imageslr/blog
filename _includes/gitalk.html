@@ -1,6 +1,6 @@
-
+{%- if jekyll.environment == 'production' -%}
 <div id="gitalk-container">
-</div>
+</div>
 <script>
     var gitalk = new Gitalk({
         clientID: '01cc177b8599660246c3',
@@ -16,3 +16,4 @@
     })
     gitalk.render('gitalk-container')
 </script>
+{%- endif -%}
