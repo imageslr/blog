@@ -70,9 +70,49 @@ layout: default
 
 <div class="about-content e-content" itemprop="articleBody" markdown="1">
 
+<div class="ant-alert ant-alert-warning">
+<details markdown="1">
+<summary>Ads Infra 2021 校招交流群 👉 
+</summary>
+
+*无论是否通过我内推*，均可加入 Ads Infra 校招交流群，群内会有工作内容介绍、面试经验分享、答疑解惑、进度查询、信息同步等。联系邮箱 [elonzzz@163.com](mailto://elonzzz@163.com) 获取进群方式。
+
+</details>
+</div>
+
+<div class="ant-alert ant-alert-warning" markdown="1">
+
+<details markdown="1">
+<summary>找我内推 👉 <span style="float: right; font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">实习 / 校招 / 社招</span>
+</summary>
+
+<span style="font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">长期有效，不限岗位，不限批次 (实习 / 校招)</span>
+
+方式：
+{: .m-0}
+* 将简历发送至我的邮箱：[elonzzz@163.com](mailto://elonzzz@163.com)，备注意向岗位
+* 内推链接：[https://jobs.toutiao.com/s/eDRgyVR](https://jobs.toutiao.com/s/eDRgyVR)
+* 内推码：**65V7M7W**，在 [字节跳动 - 校园招聘](https://jobs.bytedance.com/campus/) 页面选择岗位并投递，输入内推码
+
+**推荐使用邮箱投递**，方便我们双向沟通，及时同步。典型场景是：如果你想定向投递我们部门，但简历其他部门锁定，我需要联系你确认意向，才能帮忙申请解锁。如果你通过内推链接投递，我是无法看到你的联系方式的。
+
+**我可以：**
+{: .m-0}
+* 面试前：帮改简历、分享面试经验、写推荐语 (最好先自己编辑一段)、问题答疑 (非涉密信息)
+* 面试中：同步面试进展、催 HR 推进流程
+* 面试后：询问面试反馈；(如果未通过) 一起复盘、校招季再次投递
+{: .mb-0}
+</details>
+</div>
+
+<div class="ant-alert ant-alert-info" markdown="1">
+想了解在 Ads Infra 的实习体验？[点击查看！]({% post_url 2021-04-07-autumn-recruit %}#ads-infra)
+</div>
+
+
 <div class="ant-alert">
 <details markdown="1">
-<summary>2021 校招正式批 投递入口 👉 
+<summary>2021 校招正式批 投递入口
 <span style="float: right; font-size: 12px; font-style: italic; margin-top: 2px">8.12～10.31 已结束</span>
 </summary>
 
@@ -102,44 +142,7 @@ Ads Infra 的校招岗位：
 </details>
 </div>
 
-<div class="ant-alert ant-alert-warning">
-<details markdown="1">
-<summary>Ads Infra 2021 校招交流群 👉 
-</summary>
 
-*无论是否通过我内推*，均可加入 Ads Infra 校招交流群，群内会有工作内容介绍、面试经验分享、答疑解惑、进度查询、信息同步等。联系邮箱 [elonzzz@163.com](mailto://elonzzz@163.com) 获取进群方式。
-
-</details>
-</div>
-
-<div class="ant-alert ant-alert-warning" markdown="1">
-
-<details markdown="1">
-<summary>找我内推 👉 <span style="float: right; font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">实习 / 校招</span>
-</summary>
-
-<span style="font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">长期有效，不限岗位，不限批次 (实习 / 校招)</span>
-
-方式：
-{: .m-0}
-* 将简历发送至我的邮箱：[elonzzz@163.com](mailto://elonzzz@163.com)，备注意向岗位
-* 内推链接：[https://jobs.toutiao.com/s/eDRgyVR](https://jobs.toutiao.com/s/eDRgyVR)
-* 内推码：**65V7M7W**，在 [字节跳动 - 校园招聘](https://jobs.bytedance.com/campus/) 页面选择岗位并投递，输入内推码
-
-**推荐使用邮箱投递**，方便我们双向沟通，及时同步。典型场景是：如果你想定向投递我们部门，但简历其他部门锁定，我需要联系你确认意向，才能帮忙申请解锁。如果你通过内推链接投递，我是无法看到你的联系方式的。
-
-**我可以：**
-{: .m-0}
-* 面试前：帮改简历、分享面试经验、写推荐语 (最好先自己编辑一段)、问题答疑 (非涉密信息)
-* 面试中：同步面试进展、催 HR 推进流程
-* 面试后：询问面试反馈；(如果未通过) 一起复盘、校招季再次投递
-{: .mb-0}
-</details>
-</div>
-
-<div class="ant-alert ant-alert-info" markdown="1">
-想了解在 Ads Infra 的实习体验？[点击查看！]({% post_url 2021-04-07-autumn-recruit %}#ads-infra)
-</div>
 
 > 中文｜[English]({{ site.url }}/en/ads-infra.html)
 

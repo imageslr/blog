@@ -268,6 +268,9 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize
 
 {: #moom}
 
+💡 Mac 系统自带了类似的功能：将鼠标悬浮到应用程序红绿灯的“绿灯”按钮上，然后按下 `Alt` 键，可以快速将应用程序调整至左、右半个屏幕。但是 Moom 的定制性更强。
+{: .ant-alert}
+
 Mac 的一款窗口布局工具，可以快速缩放应用/移动位置，比如将应用布局成以下状态，只需分别点击三下，如果此时将桌面布局保存为一个快照，之后就可以一键恢复布局。
 
 ![-w1241](/media/15846201525933.jpg)
@@ -496,6 +499,8 @@ code ~/.zshrc // 在  VS Code 中打开 .zshrc 文件，类似于 vim ~/.zshrc
 * 壁纸应用：[pap.er](http://paper.meiyuan.in/?utm_source=zh)，专为 Mac 设计的壁纸应用，简洁易用，图片质量也很高。
 * 触控板增强：BetterTouchTool（[介绍视频](https://www.bilibili.com/video/BV1a7411W7s3)），[论坛](https://community.folivora.ai/c/setup-preset-sharing/5/l/top)里提供了很多预设，可以直接导入使用。我个人认为按住 Command 显示 Dock 栏程序图标是比较有用的，但功能太复杂，所以放弃了，喜欢配置的话可以尝试一下。
 * 快速连接 AirPods：~~ToothFairy，菜单栏一键连接 AirPods~~。直接通过蓝牙图标连接，更稳定快捷。
+* Finder 增强：Default Folder X，访问深层嵌套的文件更迅速，可以记录近期访问的文件。
+* Dock 栏增强：Contexts，隐藏原生的 Dock 栏 (程序坞)，只显示需要关注的应用程序，鼠标移动到屏幕边缘即可快速显示。
 
 ## 附件
 [百度云](https://pan.baidu.com/s/1J9ytW_efBmusut7QiG0mYw)，提取码: 6641
