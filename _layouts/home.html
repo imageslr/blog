@@ -3,85 +3,72 @@ layout: default
 ---
 
 <style>
-.busuanzi_container  > .busuanzi_container_site {
-  opacity: 0;
-  transition: opacity 0.1s linear; 
-}
+  .busuanzi_container > .busuanzi_container_site {
+    opacity: 0;
+    transition: opacity 0.1s linear;
+  }
 
-.busuanzi_container:hover > .busuanzi_container_site {
-  opacity: 1;
-}
+  .busuanzi_container:hover > .busuanzi_container_site {
+    opacity: 1;
+  }
 </style>
 
 <div class="home">
   <head>
-      <title>{{ site.title }}</title>
+    <title>{{ site.title }}</title>
   </head>
-    
+
   <div class="home-title">
     <p class="home-heading">{{ site.title }}</p>
-    <p class="home-sub-heading">{{- site.description | escape -}}
-      <input
-        type="text" 
-        id="search-input" 
-        class="text-gray-800 bg-transparent border-none px-3 py-1 m-0 ml-4 rounded-md focus:outline-none focus:ring-2 ring-blue-200"
-        style="font: inherit"
-        placeholder="Search...">
-      <span class="busuanzi_container float-right">
+    <div class="flex items-center">
+      <div class="home-sub-heading mt-0">{{- site.description | escape -}}</div>
+      <div id="search-container" class="flex-grow ml-4"></div>
+      <div class="busuanzi_container">
         <span class="busuanzi_container_site">
-          <span id="busuanzi_container_site_pv">PV: <span id="busuanzi_value_site_pv"></span></span> 
-          | 
-          <span id="busuanzi_container_site_uv">UV: <span id="busuanzi_value_site_uv"></span></span>
+          <span id="busuanzi_container_site_pv"
+            >PV: <span id="busuanzi_value_site_pv"></span
+          ></span>
+          |
+          <span id="busuanzi_container_site_uv"
+            >UV: <span id="busuanzi_value_site_uv"></span
+          ></span>
         </span>
-      </span>
-    </p>
+      </div>
+    </div>
   </div>
 
   <ul id="results-container" class="mt-8"></ul>
 
   {%- if site.posts.size > 0 -%}
   <ul class="post-list mt-0">
-      {% for post in site.posts  %}
-      {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-      {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
-  
-      {% if forloop.first %}
-      <h2 id="{{ this_year }}-ref" class="post-year">{{this_year}}</h2>
-      <ul>
+    {% for post in site.posts %} {% capture this_year %}{{ post.date | date:
+    "%Y" }}{% endcapture %} {% capture next_year %}{{ post.previous.date | date:
+    "%Y" }}{% endcapture %} {% if forloop.first %}
+    <h2 id="{{ this_year }}-ref" class="post-year">{{this_year}}</h2>
+    <ul>
       {% endif %}
-  
+
       <li>
-          {%- assign date_format = site.moving.date_format | default: "%b %-d, %Y" -%}
-          <span class="post-meta">
-            {{ post.date | date: date_format }}
-          </span>
-          <a class="black-link post-link-layout" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
+        {%- assign date_format = site.moving.date_format | default: "%b %-d, %Y"
+        -%}
+        <span class="post-meta"> {{ post.date | date: date_format }} </span>
+        <a
+          class="black-link post-link-layout"
+          href="{{ post.url | relative_url }}"
+        >
+          {{ post.title | escape }}
+        </a>
       </li>
-  
+
       {% if forloop.last %}
-      </ul>
-      {% else %}
-          {% if this_year != next_year %}
-          </ul>
-          <h2 id="{{ next_year }}-ref" class="post-year">{{next_year}}</h2>
-          <ul>
-          {% endif %}
-      {% endif %}
-  {% endfor %}
+    </ul>
+    {% else %} {% if this_year != next_year %}
+  </ul>
+  <h2 id="{{ next_year }}-ref" class="post-year">{{next_year}}</h2>
+  <ul>
+    {% endif %} {% endif %} {% endfor %}
   </ul>
   {%- endif -%}
 </div>
 
-<script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
-<script>
-  var sjs = SimpleJekyllSearch({
-    searchInput: document.getElementById('search-input'),
-    resultsContainer: document.getElementById('results-container'),
-    searchResultTemplate: '<li><span class="post-meta">{date}</span><a class="black-link post-link-layout" href="{url}">{title}</a></li>',
-    noResultsText: "找不到相关文章（目前只支持搜索标题）",
-    json: '/search.json',
-    limit: 100
-  })
-</script>
+{%- include docsearch.html -%}
