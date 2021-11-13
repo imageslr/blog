@@ -3,11 +3,32 @@
   src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"
 ></script>
 <script type="text/javascript">
+  function debounce(func, wait = 100) {
+    let lastTimeout = null;
+    return function (...args) {
+      const that = this;
+      return new Promise((resolve, reject) => {
+        if (lastTimeout) {
+          clearTimeout(lastTimeout);
+        }
+        lastTimeout = setTimeout(() => {
+          lastTimeout = null;
+          Promise.resolve(func.apply(that, args)).then(resolve).catch(reject);
+        }, wait);
+      });
+    };
+  }
   docsearch({
     appId: "BH4D9OD16A",
     apiKey: "d3e41b08210ce297e8c68b411b818138",
     indexName: "imageslr",
     container: "#search-container",
+    transformSearchClient: function (searchClient) {
+      return {
+        ...searchClient,
+        search: debounce(searchClient.search, 700),
+      };
+    },
     debug: false, // Set debug to true if you want to inspect the modal
   });
 </script>
