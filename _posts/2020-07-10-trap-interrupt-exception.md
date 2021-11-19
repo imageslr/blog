@@ -171,5 +171,5 @@ Linux 内核给 `0x80` 中断注册了名为 `ia32_syscall` 的中断执行程�
 
 ## 参考资料
 * [80386 的异常号与描述](https://wizardforcel.gitbooks.io/intel-80386-ref-manual/10.html)
-* [Linux 系统调用指南](https://zcfy.cc/article/the-definitive-guide-to-linux-system-calls-670.html?t=new)
+* [Linux 系统调用指南](https://blog.csdn.net/m0_37329910/article/details/86427285)
 * 《深入理解计算机系统》第八章
