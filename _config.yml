@@ -10,6 +10,8 @@ google_analytics: G-L7FZF6PD06
 show_excerpts: false # set to true to show excerpts on the homepage
 permalink: /:categories/:year/:title:output_ext
 
+beian: 京ICP备2021035401号
+
 # Moving date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 moving:
