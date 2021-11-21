@@ -323,6 +323,18 @@ OKR 的执行过程中，我们需要定期复盘。
 💡 复盘随时可以进行，不一定要严格按照上面的周期。
 {: .ant-alert}
 
+## OKR 工具
+
+个人目标管理是一个相对简单的场景，不涉及团队成员之间的对齐，迭代频率也较低，因此使用记事本或云文档就完全足够了。
+
+如果想尝试专业的工具，推荐使用[飞书 OKR](https://okr.feishu.cn/)，支持设置双月 OKR 和年度 OKR。只需要用手机号注册一个*个人团队*，就可以免费使用。
+
+<div class="ant-alert" markdown=1>
+
+💡 奥卡姆剃刀原则：“如非必要，勿增实体”。形成正确的理念，比玩弄花哨的工具更重要。[More →]({% post_url 2021-08-07-efficiency-01 %})
+
+</div>
+
 ## 总结
 <div class="outline-box outline-box-hoverable mb-8 px-3 py-3" markdown="1">
 **OKR = Objectives + Key Results**
