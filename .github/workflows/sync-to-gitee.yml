@@ -1,0 +1,27 @@
+# 参考教程：https://www.bahuangshanren.tech/github%E4%B8%8Egitee%E5%8F%8C%E5%90%91%E8%87%AA%E5%8A%A8%E5%90%8C%E6%AD%A5/
+# hub-mirror-action 配置文档：https://github.com/Yikun/hub-mirror-action
+
+name: Sync Github Repos To Gitee
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+    - name: Sync Github Repos To Gitee 
+      uses: Yikun/hub-mirror-action@v1.0 
+      with:
+        src: github/imageslr 
+        dst: gitee/imageslr 
+        dst_key: ${{ secrets.GITEE_PRIVATE_KEY }} 
+        dst_token:  ${{ secrets.GITEE_TOKEN }} 
+        account_type: user 
+        clone_style: "ssh" # 使用 ssh 方式进行 clone，也可以使用 https
+        debug: true # 启用后会显示所有执行命令
+        force_update: true # 启用后，强制同步，即强制覆盖目的端仓库
+        static_list: "blog" # 静态同步列表，在此填写需要同步的仓库名称，可填写多个
+        timeout: '600s' # git 超时设置，超时后会自动重试 git 操作
