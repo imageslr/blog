@@ -4,6 +4,7 @@
 .sass-cache
 _site
 Gemfile.lock
+vendor/*
 
 .DS_Store
 .MWebMetaData
