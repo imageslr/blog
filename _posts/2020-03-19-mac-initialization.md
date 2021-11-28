@@ -422,7 +422,12 @@ Paste 可以记录剪切板历史。Paste 同样支持 iCloud 同步。
 * [macOS 下怎么录屏，能同时保留声音？有哪些较好的解决方案？ - 殊哥的回答 - 知乎](https://www.zhihu.com/question/20251726/answer/94938941)
 * [如何用 QuickTime 对 Mac 屏幕录制，而且录上声音？ - 夯七的回答 - 知乎](https://www.zhihu.com/question/26032781/answer/170489532)
 
+### 视频下载：Downie
+
+简单高效的老牌视频下载软件，可以下载 Youtube、Bilibili、爱奇艺等主流网站的任意视频。只需要复制网页链接，在应用窗口中粘贴，就可以自动下载。下载速度取决于网速，不限速。还可以自动识别 Youtube 的播放列表，批量下载多个视频。
+
 ## 其他软件
+
 ### 记笔记：MWeb
 {: #mweb}
 
