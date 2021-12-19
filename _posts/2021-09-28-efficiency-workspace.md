@@ -138,7 +138,7 @@ typora-copy-images-to: ../media
 * 聊天软件，放在一个桌面。
 
 * 每个项目的关联应用，放在一个桌面。包括：Chrome 标签页组、文档、VS Code 等。
-* 配合 [Moom 插件]({% post_url 2020-03-19-mac-initialization%}#moom)，可以一键恢复桌面布局。
+* 配合 [Moom 插件]({% post_url 2020-03-19-mac-initialization%}#moom) 的「快照 Snapshot」功能，可以保存桌面各个应用的相对布局，之后一键恢复。
 
 ### VS Code
 
