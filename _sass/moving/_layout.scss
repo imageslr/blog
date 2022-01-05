@@ -209,6 +209,7 @@
 
   @media (max-width: 500px) {
     @include relative-font-size(1);
+    margin-left: 0;
   }
 
   @include relative-font-size(1.2);
