@@ -587,7 +587,7 @@ C 语言使用运行时栈来存储过程信息。每个函数的信息存储在
 <summary>答案</summary>
 - 5 种 I/O 模型：阻塞 I/O、非阻塞 I/O、信号驱动式 I/O、I/O 多路复用、异步 I/O（AIO）
 - I/O 同步和异步的区别在于：将数据从内核复制到用户空间时，用户进程是否会阻塞（需要用户进程来完成）
-- I/O 阻塞和非阻塞的区别在于：进程发起系统调用后，是会被挂起直到收到数据后在返回、还是立即返回成功或错误
+- I/O 阻塞和非阻塞的区别在于：进程发起系统调用后，是会被挂起直到收到数据后在返回、还是立即返回成功或错误  
 ![](/media/16010947228749.jpg)
 - I/O 多路复用 [答案]({% post_url 2020-02-27-select-poll-epoll %})
 
@@ -760,7 +760,7 @@ TCP 如何保证传输的可靠性？
 
 TCP / UDP 协议头：
 * UDP 协议头包含 4 个字段：源端口、目的端口、长度和校验码，其中每一个字段都占 2 字节，总长度 8 字节，请查看 RFC 文档：[UDP Format - RFC 768](https://datatracker.ietf.org/doc/html/rfc768)
-* TCP 协议头包含以下字段，详情请查看 RFC 文档：[TCP Header Format - RFC 793](https://datatracker.ietf.org/doc/html/rfc793#page-15)
+* TCP 协议头包含以下字段，详情请查看 RFC 文档：[TCP Header Format - RFC 793](https://datatracker.ietf.org/doc/html/rfc793#page-15)  
   ![image-20210524214130965](/media/image-20210524214130965.png)
 
 > 参考资料：[为什么 UDP 头只有 8 个字节 - Draveness](https://draveness.me/whys-the-design-udp-minimum-header/)
