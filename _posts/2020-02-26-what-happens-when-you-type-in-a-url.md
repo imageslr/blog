@@ -59,7 +59,7 @@ permalink: 2020/02/26/what-happens-when-you-type-in-a-url.html
 
 ## 深入底层原理之网络协议
 ### 网络协议栈
-[OSI 七层模型与 TCP/IP 协议栈各层功能与协议]({% post_url 2020-07-08-protocol-stack%})：
+[OSI 七层模型与 TCP/IP 协议栈各层功能与协议]({% post_url 2020-07-08-protocol-stack%})：  
 ![](/media/15826996820684.jpg)
 
 

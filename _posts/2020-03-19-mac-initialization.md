@@ -70,6 +70,7 @@ defaults write -g NSAutomaticSpellingCorrectionEnabled -bool false
 默认情况下，我们只能通过「回车」选择“确定”，如果想选择“取消”，必须通过鼠标点击。打开全键盘控制后，通过 `Tab` 键切换选项，聚焦到“取消”上，然后按下「空格」，就可以选择“取消”。
 
 在“系统偏好设置-键盘-快捷键”页面下方，打开全键盘控制：
+
 ![-w668](/media/15846068903987.jpg)
 
 注意：无论焦点聚焦于哪个选项，按下「回车」都相当于是选择 “确定”。
@@ -267,8 +268,10 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize
 ### 快速调整窗口大小：Moom
 
 {: #moom}
+💡 推荐功能类似的免费软件：[Rectangle](https://rectangleapp.com/)
+{: .ant-alert .ant-alert-info}
 
-💡 Mac 系统自带了类似的功能：将鼠标悬浮到应用程序红绿灯的“绿灯”按钮上，然后按下 `Alt` 键，可以快速将应用程序调整至左、右半个屏幕。但是 Moom 的定制性更强。
+💡 Mac 系统自带了类似的功能：将鼠标悬浮到应用程序红绿灯的“绿灯”按钮上，然后按下 `Alt` 键，可以快速将应用程序调整至左、右半个屏幕。
 {: .ant-alert}
 
 Mac 的一款窗口布局工具，可以快速缩放应用/移动位置，比如将应用布局成以下状态，只需分别点击三下，如果此时将桌面布局保存为一个快照，之后就可以一键恢复布局。
