@@ -157,6 +157,9 @@ typora-copy-images-to: ../media
 
 #### Chrome
 
+**2022-01-17** <br>Workona 现在开始收费了，免费用户最多只能创建 5 个工作区。推荐一个轻量好用的平替插件：[**Workspaces**](https://chrome.google.com/webstore/detail/workspaces/hpljjefgmnkloakbfckghmlapghabgfa)，同样支持创建工作区、不同工作区快速切换、关闭工作区后一键恢复。
+{: .ant-alert .ant-alert-info}
+
 推荐安装 Workona 插件 [[官网](https://workona.com/)] [[少数派介绍文章](https://sspai.com/post/53985)]，主要功能：
 {: .mb-2}
 
@@ -167,13 +170,11 @@ typora-copy-images-to: ../media
 
 ![image-20211027233928088](/media/image-20211027233928088.png)
 
-不过 Workona 今年 12 月将要开始收费，免费用户最多只能创建 5 个工作区。因此再推荐一个平替插件：[Workspaces](https://chrome.google.com/webstore/detail/workspaces/hpljjefgmnkloakbfckghmlapghabgfa)，同样支持创建工作区、不同工作区快速切换。
-
-> 还有一个类似的标签页管理插件：[tabExtend](https://www.tabextend.com/)。个人认为，这个插件最大的缺点在于不支持快速切换已经打开的标签页或者工作区，本质上还是个书签管理器。所以这里不作推荐。
-
 Chrome 提供了自带的标签页分组功能，所有分组默认都会放置在同一个窗口中。我一般会配合 Workona 使用这个功能，将工作区下的标签页进一步划分为不同的分组：
 
 ![image-20211106114044799](/media/image-20211106114044799.png)
+
+还有一些类似的标签页管理插件，例如 OneTab、[tabExtend](https://www.tabextend.com/)。这类插件最大的缺点在于无法快速切换*已经打开* 的标签页组 (工作区)，本质上还是个书签管理器。所以这里不作推荐。
 
 💡 可以设置一个单独的名为“Inbox”的工作区 (窗口)，存放所有临时打开的页面。[👉 ① 收件箱思维]({% post_url 2021-08-07-efficiency-01 %})
 {: .ant-alert}
