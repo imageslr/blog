@@ -70,17 +70,20 @@ layout: default
 
 <div class="about-content e-content" itemprop="articleBody" markdown="1">
 
-<div class="ant-alert ant-alert-warning">
-<details markdown="1">
-<summary>Ads Infra 2021 校招交流群 👉 
-</summary>
 
-*无论是否通过我内推*，均可加入 Ads Infra 校招交流群，群内会有工作内容介绍、面试经验分享、答疑解惑、进度查询、信息同步等。联系邮箱 [elonzzz@163.com](mailto://elonzzz@163.com) 获取进群方式。
 
-</details>
-</div>
 
 <div class="ant-alert ant-alert-warning" markdown="1">
+**2023 届暑期实习预热中** [👉 点击查看牛客网宣讲帖](https://www.nowcoder.com/discuss/834943)
+</div>
+
+
+<div class="ant-alert ant-alert-info" markdown="1">
+想了解在 Ads Infra 的实习体验？[点击查看！]({% post_url 2021-04-07-autumn-recruit %}#ads-infra)
+</div>
+
+
+<div class="ant-alert" markdown="1">
 
 <details markdown="1">
 <summary>找我内推 👉 <span style="float: right; font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">实习 / 校招 / 社招</span>
@@ -105,12 +108,19 @@ layout: default
 </details>
 </div>
 
-<div class="ant-alert ant-alert-info" markdown="1">
-想了解在 Ads Infra 的实习体验？[点击查看！]({% post_url 2021-04-07-autumn-recruit %}#ads-infra)
+
+<div class="ant-alert">
+<details markdown="1">
+<summary>Ads Infra 2021 校招交流群 👉 
+</summary>
+
+*无论是否通过我内推*，均可加入 Ads Infra 校招交流群，群内会有工作内容介绍、面试经验分享、答疑解惑、进度查询、信息同步等。联系邮箱 [elonzzz@163.com](mailto://elonzzz@163.com) 获取进群方式。
+
+</details>
 </div>
 
 
-<div class="ant-alert">
+<div class="ant-alert hidden">
 <details markdown="1">
 <summary>2021 校招正式批 投递入口
 <span style="float: right; font-size: 12px; font-style: italic; margin-top: 2px">8.12～10.31 已结束</span>
