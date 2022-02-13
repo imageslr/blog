@@ -2,7 +2,7 @@
 layout: post
 title: 🔖【方法论】我的效率提升方法论 - 通用思维篇 ③ 工作区
 date: 2021/10/4 12:00
-last_modified_at: 2021/10/26
+last_modified_at: 2022/2/13
 toc_h_max: 3
 typora-root-url: ../
 typora-copy-images-to: ../media
@@ -133,34 +133,38 @@ typora-copy-images-to: ../media
 
 ## 工作区的实践指南
 
-### 桌面
-
-* 聊天软件，放在一个桌面。
-
-* 每个项目的关联应用，放在一个桌面。包括：Chrome 标签页组、文档、VS Code 等。
-* 配合 [Moom 插件]({% post_url 2020-03-19-mac-initialization%}#moom) 的「快照 Snapshot」功能，可以保存桌面各个应用的相对布局，之后一键恢复。
-
 ### VS Code
 
-* 推荐安装 [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager) 扩展：
-  * 可以将任意文件夹或者工作区保存为一个项目 (Project)，在侧边栏统一管理。
-  * 在当前窗口或新窗口一键打开某个项目，不需要再去 Finder 里找文件夹了。
-  * 支持保存远程服务器的文件夹。
-  * 在已打开的工作区之间快速切换。
+VS Code 自带了[工作区功能](https://code.visualstudio.com/docs/editor/workspaces)，每个工作区可以包含一个或多个关联的文件夹。工作区保存成一个后缀为 `.code-workspace` 的文件。可以个性化配置各个工作区：
+* 看代码时，使用深色主题、字号小一点；写作时，使用浅色主题、字号大一点。
+* 只开启该工作区必需的插件、关闭无用插件，减少内存占用与快捷键冲突。
 
-* 可以针对各个工作区，个性化配置：
-  * 看代码时，使用深色主题、字号小一点；写作时，使用浅色主题、字号大一点。
-  * 只开启该工作区必需的插件、关闭无用插件，减少内存占用与快捷键冲突。
+推荐安装 [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager) 扩展，可以将任意文件夹 (包括远程服务器的文件夹) 或工作区保存为一个项目 Project。安装后，可以在侧边栏看到所有项目，单击可以直接打开，并且上次关闭时的标签页和浏览位置都会**自动恢复**。
+
+<img src="/media/image-20220213175427261.png" width="400px" />
+
+日常开发时，我会把自己常用的代码库都保存在 Project Manager 中。每次想要查看代码时，通过 Project Manager 一键打开，不需要再去 Finder 中查找文件夹。看完后，直接关闭整个窗口。下次再打开时，又会自动定位到我上次查看的位置。
+
+💡 用完即走，一键恢复。
+{: .ant-alert .ant-alert-warning}
+
+
 
 ### 浏览器
 {: #browser}
 
 #### Chrome
 
-**2022-01-17** <br>Workona 现在开始收费了，免费用户最多只能创建 5 个工作区。推荐一个轻量好用的平替插件：[**Workspaces**](https://chrome.google.com/webstore/detail/workspaces/hpljjefgmnkloakbfckghmlapghabgfa)，同样支持创建工作区、不同工作区快速切换、关闭工作区后一键恢复。
-{: .ant-alert .ant-alert-info}
+浏览器中的工作区，实际上是一组关联的标签页。
 
-推荐安装 Workona 插件 [[官网](https://workona.com/)] [[少数派介绍文章](https://sspai.com/post/53985)]，主要功能：
+Chrome 自带了标签页分组功能，但是默认都在同一个窗口中，不是很方便。推荐一个轻量好用的插件 [Workspaces](https://chrome.google.com/webstore/detail/workspaces/hpljjefgmnkloakbfckghmlapghabgfa)，可以为不同的标签页组创建工作区、**自动保存**当前工作区中的标签页、并在重新打开工作区时**自动恢复**、不同工作区之间可以**快速切换**。
+
+<img src="/media/image-20220213183753158.png" width="200px"/>
+
+<details markdown="1">
+<summary><span markdown="1">Chrome 下还有一个类似的插件 [Workona](https://workona.com/)，功能更丰富，但是现在开始收费了，免费用户最多只能创建 5 个工作区，所以不作推荐。其他的标签页管理插件如 [OneTab](https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall)、[tabExtend](https://www.tabextend.com/)，本质上都是书签管理器，无法自动保存、自动恢复、快速切换，同样不作推荐。</span></summary>
+
+Workona 插件的主要功能 [[少数派介绍文章](https://sspai.com/post/53985)]：
 {: .mb-2}
 
 * 为不同的标签页组创建不同的工作区。
@@ -174,15 +178,29 @@ Chrome 提供了自带的标签页分组功能，所有分组默认都会放置�
 
 ![image-20211106114044799](/media/image-20211106114044799.png)
 
-还有一些类似的标签页管理插件，例如 OneTab、[tabExtend](https://www.tabextend.com/)。这类插件最大的缺点在于无法快速切换*已经打开* 的标签页组 (工作区)，本质上还是个书签管理器。所以这里不作推荐。
+</details>
 
-💡 可以设置一个单独的名为“Inbox”的工作区 (窗口)，存放所有临时打开的页面。[👉 ① 收件箱思维]({% post_url 2021-08-07-efficiency-01 %})
-{: .ant-alert}
+
+工作中，我会把各项工作相关的网页都保存为 Workspaces 插件中的工作区 (见上图)。需要查看时，打开某个工作区；用完后，直接关闭整个窗口；下次打开时，所有标签页又会自动恢复。**用完即走，一键恢复**，有效解决了以下问题：
+
+![image-20220213190712070](/media/image-20220213190712070.png)
+
+
+Workspaces 插件还可以和以下工具配合使用：
+
+* [Tab Suspender](https://chrome.google.com/webstore/detail/tab-suspender/fiabciakcmgepblmdkmemdbbkilneeeh)：自动暂停长期不活动的选项卡，节省内存。
+* [AltTab](https://alt-tab-macos.netlify.app/)：Mac 窗口切换增强工具，切换窗口时显示缩略图，还可以在*同一个应用* 的不同窗口之间切换，快捷键 `Command + Tab` 或 `` Command + ` ``。
+* 将 Chrome 的窗口命名为工作区名称，切换窗口时更容易区分。具体操作：
+  1. 转到想命名的窗口
+  2. 右键点击顶部的“打开新的标签页”图标旁边的空白处，然后选择“为窗口命名”。
+  3. 或者，依次选择右上角的“更多”图标 - 更多工具 - 命名窗口
+  4. 为窗口输入一个名称
+
+最后，不是所有的标签页都需要创建一个工作区。可以使用一个单独的窗口作为[收件箱](({% post_url 2021-08-07-efficiency-01 %}))，存放所有新打开的标签页；定时整理，没用的页面直接关闭、有用的页面分配给现有的工作区，或者创建一个新的工作区。
 
 #### Safari
 
-**2021-10-26** <br>在最近更新的 macOS Monterey 系统中，Safari 浏览器也增加了标签页分组功能，这是工作区思维的直接体现。
-{: .ant-alert .ant-alert-info}
+本文撰于 2021 年 9 月。在 10 月更新的 macOS Monterey 系统中，Safari 浏览器也增加了标签页分组功能，这是工作区思维的直接体现。
 
 Safari 的标签页分组功能，整体布局和 Chrome Workona 插件类似，左侧边栏列出了所有工作区，不同工作区之间互相独立，点击即可快速切换。
 
@@ -190,13 +208,25 @@ Safari 的标签页分组功能，整体布局和 Chrome Workona 插件类似，
 
 ![image-20211027234050684](/media/image-20211027234050684.png)
 
+
+### 桌面
+
+关联的应用可以放在一个桌面，例如：
+* 开发项目时的*网页* 和*代码开发工具*
+* 写博客时的*参考资料* 和*文本编辑器*
+* 聊天工具
+
+配合 [Moom 插件]({% post_url 2020-03-19-mac-initialization%}#moom) 的「快照 Snapshot」功能，可以保存桌面各个应用的相对布局，之后一键恢复。
+
+
+{::comment}
 #### 书签
 
 书签也可以用工作区思想来管理。可以创建一个和工作区同名的书签文件夹，用于保存和某项工作相关的网页链接。
 
 > Chrome Workona 插件可以直接在工作区界面保存书签 / 文件等相关资源。
 
-
+{:/comment}
 
 
 ## 总结
