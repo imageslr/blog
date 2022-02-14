@@ -218,6 +218,10 @@ Safari 的标签页分组功能，整体布局和 Chrome Workona 插件类似，
 
 配合 [Moom 插件]({% post_url 2020-03-19-mac-initialization%}#moom) 的「快照 Snapshot」功能，可以保存桌面各个应用的相对布局，之后一键恢复。
 
+#### 终端
+
+如果你在远程服务器上开发，那么对 [tmux](https://www.ruanyifeng.com/blog/2019/10/tmux.html) 应该不陌生。tmux 可以自动保存执行过的命令和会话上下文，即使网络断线，再次登录后还是可以一键恢复。tmux 还可以将终端窗口水平 / 垂直划分为多个区域，以便同时查看各种信息。tmux 就是命令行场景下的工作区插件。
+
 
 {::comment}
 #### 书签
