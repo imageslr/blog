@@ -107,7 +107,7 @@ typora-copy-images-to: ../media
 </details>
 
 <div class="ant-alert ant-alert-info" markdown="1">
-字节跳动 2021 年校招已经正式启动，欢迎大家投递 [Ads Infra 团队]({{ site.url }}/ads-infra.html)，这里是一些介绍：
+字节跳动 2022 年春招 / 暑期实习已经正式启动，欢迎大家投递 [Ads Infra 团队]({{ site.url }}/ads-infra.html)，这里是一些介绍：
 {: .mb-1}
 * [团队与岗位介绍]({{ site.url }}/ads-infra.html)
 * [我的实习感受]({% post_url 2021-04-07-autumn-recruit %}#ads-infra)

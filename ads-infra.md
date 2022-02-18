@@ -71,10 +71,23 @@ layout: default
 <div class="about-content e-content" itemprop="articleBody" markdown="1">
 
 
-
-
 <div class="ant-alert ant-alert-warning" markdown="1">
-**2023 届暑期实习预热中** [👉 点击查看牛客网宣讲帖](https://www.nowcoder.com/discuss/834943)
+
+// 再修改的时候，搜索“Ads Infra”，找到所有关于校招时间的文章
+{: .hidden}
+
+<details markdown="1">
+<summary><span markdown="1">**2022 年 / 2023 届暑期实习正式开启投递！** [👉 点击查看牛客网宣讲帖](https://www.nowcoder.com/discuss/834943)</span><span style="float: right; font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">2 次投递机会 + 81% 实习转正率</span>
+</summary>
+* 【暑期实习】系统架构实习生-商业化技术-北京：[https://jobs.toutiao.com/s/LvHdyXR](https://jobs.toutiao.com/s/LvHdyXR)
+* 【暑期实习】系统架构实习生-商业化技术-上海：[https://jobs.toutiao.com/s/LvHNRhA](https://jobs.toutiao.com/s/LvHNRhA)
+* 【日常实习】广告投放架构实习生-北京/上海：[https://job.toutiao.com/s/eD8Gnw3](https://job.toutiao.com/s/eD8Gnw3)
+* 【日常实习】广告算法架构实习生-北京/上海：[https://job.toutiao.com/s/eD8gHQS](https://job.toutiao.com/s/eD8gHQS)
+* 【内推码】**65V7M7W**
+{: .mb-2}
+
+*以上岗位均有转正机会；日常实习推进面试流程更灵活。*
+</details>
 </div>
 
 
@@ -111,7 +124,7 @@ layout: default
 
 <div class="ant-alert">
 <details markdown="1">
-<summary>Ads Infra 2021 校招交流群 👉 
+<summary>Ads Infra 2022 校招交流群 👉 
 </summary>
 
 *无论是否通过我内推*，均可加入 Ads Infra 校招交流群，群内会有工作内容介绍、面试经验分享、答疑解惑、进度查询、信息同步等。联系邮箱 [elonzzz@163.com](mailto://elonzzz@163.com) 获取进群方式。
