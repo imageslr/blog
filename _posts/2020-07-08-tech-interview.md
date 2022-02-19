@@ -1700,9 +1700,6 @@ C 语言的位图实现，可以参考[这篇文章](https://layerlab.org/2018/0
 
 ## Q & A
 
-Q：如何展开所有答案？
-{: #open-all}
-> 在浏览器控制台执行：
-> ```js
-> [...document.getElementsByTagName("details")].forEach(e => e.open = true)
-> ```
+<a href="javascript:[...document.getElementsByTagName('details')].forEach(e => e.open = true);void(0);">点击展开所有答案</a>
+
+<a href="javascript:[...document.getElementsByTagName('details')].forEach(e => e.open = false);void(0);">点击折叠所有答案</a>
