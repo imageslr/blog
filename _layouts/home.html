@@ -21,7 +21,11 @@ layout: default
   <div class="home-title">
     <p class="home-heading">{{ site.title }}</p>
     <div class="flex items-center">
-      <div class="home-sub-heading mt-0">{{- site.description | escape -}}</div>
+      <div class="home-sub-heading mt-0">
+        <a style="color:inherit" href="{{ site.url }}/about.html">
+          {{- site.description | escape -}}
+        </a>
+      </div>
       <div id="search-container" class="flex-grow ml-4"></div>
       <div class="busuanzi_container">
         <span class="busuanzi_container_site">
