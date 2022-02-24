@@ -161,6 +161,24 @@ Chrome 自带了标签页分组功能，但是默认都在同一个窗口中，�
 
 <img src="/media/image-20220213183753158.png" width="200px"/>
 
+
+工作中，我会把各项工作相关的网页都保存为 Workspaces 插件中的工作区 (见上图)。需要查看时，打开某个工作区；用完后，直接关闭整个窗口；下次打开时，所有标签页又会自动恢复。**用完即走，一键恢复**，有效解决了以下问题：
+
+![image-20220213190712070](/media/image-20220213190712070.png)
+
+
+Workspaces 插件还可以和以下工具配合使用：
+
+* [AltTab](https://alt-tab-macos.netlify.app/)：强烈推荐的 Mac 插件，切换窗口时可以显示缩略图。安装即用，无需配置。如果经常需要打开多个浏览器或 VS Code 窗口，那么这个工具非常有用。快捷键和 Mac 系统一致：`Command + Tab` 切换不同应用，`` Command + ` `` 切换当前应用的不同窗口。
+* [Tab Suspender](https://chrome.google.com/webstore/detail/tab-suspender/fiabciakcmgepblmdkmemdbbkilneeeh)：Chrome 插件，自动暂停长期不活动的选项卡，节省内存。
+* 将 Chrome 的窗口命名为工作区名称，切换窗口时更容易区分。具体操作：
+  1. 转到想命名的窗口
+  2. 右键点击顶部的“打开新的标签页”图标旁边的空白处，然后选择“为窗口命名”。
+  3. 或者，依次选择右上角的“更多”图标 - 更多工具 - 命名窗口
+  4. 为窗口输入一个名称
+
+最后，不是所有的标签页都需要创建一个工作区。可以使用一个单独的窗口作为[收件箱](({% post_url 2021-08-07-efficiency-01 %}))，存放所有新打开的标签页；定时整理，没用的页面直接关闭、有用的页面分配给现有的工作区，或者创建一个新的工作区。
+
 <details markdown="1">
 <summary><span markdown="1">Chrome 下还有一个类似的插件 [Workona](https://workona.com/)，功能更丰富，但是现在开始收费了，免费用户最多只能创建 5 个工作区，所以不作推荐。其他的标签页管理插件如 [OneTab](https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall)、[tabExtend](https://www.tabextend.com/)，本质上都是书签管理器，无法自动保存、自动恢复、快速切换，同样不作推荐。</span></summary>
 
@@ -180,23 +198,6 @@ Chrome 提供了自带的标签页分组功能，所有分组默认都会放置�
 
 </details>
 
-
-工作中，我会把各项工作相关的网页都保存为 Workspaces 插件中的工作区 (见上图)。需要查看时，打开某个工作区；用完后，直接关闭整个窗口；下次打开时，所有标签页又会自动恢复。**用完即走，一键恢复**，有效解决了以下问题：
-
-![image-20220213190712070](/media/image-20220213190712070.png)
-
-
-Workspaces 插件还可以和以下工具配合使用：
-
-* [Tab Suspender](https://chrome.google.com/webstore/detail/tab-suspender/fiabciakcmgepblmdkmemdbbkilneeeh)：自动暂停长期不活动的选项卡，节省内存。
-* [AltTab](https://alt-tab-macos.netlify.app/)：Mac 窗口切换增强工具，切换窗口时显示缩略图，还可以在*同一个应用* 的不同窗口之间切换，快捷键 `Command + Tab` 或 `` Command + ` ``。
-* 将 Chrome 的窗口命名为工作区名称，切换窗口时更容易区分。具体操作：
-  1. 转到想命名的窗口
-  2. 右键点击顶部的“打开新的标签页”图标旁边的空白处，然后选择“为窗口命名”。
-  3. 或者，依次选择右上角的“更多”图标 - 更多工具 - 命名窗口
-  4. 为窗口输入一个名称
-
-最后，不是所有的标签页都需要创建一个工作区。可以使用一个单独的窗口作为[收件箱](({% post_url 2021-08-07-efficiency-01 %}))，存放所有新打开的标签页；定时整理，没用的页面直接关闭、有用的页面分配给现有的工作区，或者创建一个新的工作区。
 
 #### Safari
 
