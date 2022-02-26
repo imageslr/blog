@@ -152,6 +152,10 @@ HTTP 2 引入了**多路复用**，允许通过同一个连接发起多个请求
 [📔 两台主机的通信过程]({% post_url 2021-05-18-computer-communicate %})
 
 ## 扩展阅读
+* [深入了解现代浏览器 (一) - Google](https://xie.infoq.cn/article/eede3e411bde101bdf0366ea8)
+* [深入了解现代浏览器 (二) - Google](https://xie.infoq.cn/article/02b0a659aa7cea565a11f4489)
+* [深入了解现代浏览器 (三) - Google](https://xie.infoq.cn/article/e1fe295a68fdf41129a31c421)
+* [深入了解现代浏览器 (四) - Google](https://xie.infoq.cn/article/0d700b848bf0bac6b734efd00)
 * [撒网要见鱼的文章 - segmentfault](https://segmentfault.com/a/1190000013662126) - 前端的视角
 * [skyline75489 的文章 - github](https://github.com/skyline75489/what-happens-when-zh_CN) - 前端的视角
 * [nwind 的文章](http://fex.baidu.com/blog/2014/05/what-happen/) - 硬件的视角
