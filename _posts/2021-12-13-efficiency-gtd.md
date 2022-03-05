@@ -127,7 +127,7 @@ typora-copy-images-to: ../media
 🔗 关于「定期回顾」，在之前的文章中有更详细的讨论，建议阅读：[🕖 定期回顾]({% post_url 2021-08-13-efficiency-02 %})。
 {: .ant-alert .ant-alert-info}
 
-## 二、进阶指南
+## 三、进阶指南
 
 ### 日程表与提醒事项
 
@@ -254,7 +254,7 @@ typora-copy-images-to: ../media
    * <span class="ant-tag">随时随地</span>
 
 
-## 三、最佳实践
+## 四、最佳实践
 
 ### 选择合适的工具
 
@@ -355,7 +355,7 @@ typora-copy-images-to: ../media
 {: .ant-alert}
 
 
-## 四、总结
+## 五、总结
 
 本文分享了作者在任务管理领域的实践经验，重点讨论了「收集、整理、回顾」三个核心方法、以及如何将它们渐进式地融入到自己当下的系统中。
 
