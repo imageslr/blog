@@ -81,8 +81,8 @@ layout: default
 </summary>
 * 【暑期实习】系统架构实习生-商业化技术-北京：[https://jobs.toutiao.com/s/LvHdyXR](https://jobs.toutiao.com/s/LvHdyXR)
 * 【暑期实习】系统架构实习生-商业化技术-上海：[https://jobs.toutiao.com/s/LvHNRhA](https://jobs.toutiao.com/s/LvHNRhA)
-* 【日常实习】广告投放架构实习生-北京/上海：[https://job.toutiao.com/s/eD8Gnw3](https://job.toutiao.com/s/eD8Gnw3)
-* 【日常实习】广告算法架构实习生-北京/上海：[https://job.toutiao.com/s/eD8gHQS](https://job.toutiao.com/s/eD8gHQS)
+* 【日常实习】广告投放架构实习生-北京/上海：[https://job.toutiao.com/s/NLvQpGJ](https://job.toutiao.com/s/NLvQpGJ)
+* 【日常实习】广告算法架构实习生-北京/上海：[https://job.toutiao.com/s/NLvQpGJ](https://job.toutiao.com/s/NLvQpGJ)
 * 【内推码】**65V7M7W**
 {: .mb-2}
 
@@ -180,8 +180,8 @@ Ads Infra 的校招岗位：
 我们接受**校招 / 实习 / 社招 / 内部转岗**：
 
 如果你是实习生，这段实习经历不仅可以提升个人水平、扩展技术视野，还可以让你的简历在众多 CRUD 中脱颖而出，成为校招过程中极具竞争力的加分项。现在投递：
-* [广告投放架构实习生（可转正）-Ads Infra](https://job.toutiao.com/s/eD8Gnw3)
-* [广告算法架构实习生（可转正）-Ads Infra](https://job.toutiao.com/s/eD8gHQS)
+* [广告投放架构实习生（可转正）-Ads Infra](https://job.toutiao.com/s/NLvQpGJ)
+* [广告算法架构实习生（可转正）-Ads Infra](https://job.toutiao.com/s/NLvQpGJ)
 
 > 北京、上海均有实习岗位，如果系统中没有展示，请将简历发送到我的邮箱：[elonzzz@163.com](mailto://elonzzz@163.com)
 
