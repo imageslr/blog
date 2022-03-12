@@ -392,20 +392,21 @@ SnippetsLab 支持 iCloud 同步，这意味着当我们切换到新 Mac 后，�
     4. `⌥ Alt` + `↩︎ Enter` 在 SnippetsLab 中打开当前选择的代码片段
     5. `⌘ Command` + `↩︎ Enter` 将当前选择的代码片段粘贴到屏幕最前方的应用中
 
+### 记录剪切板历史：Alfred / Paste
 
-### ~~记录剪切板历史：Paste（Deprecated）~~
+我推荐使用 Alfred，性能更好，更轻量。设置路径：“Preference - Features - Clipboard History”，勾选“Keep Plain Text”、“Keep Images”、“Keep File Lists”。快捷键推荐设置为 `⌘ Command` + `⇧ Shift` + `V`。
 
-使用 Alfred 即可实现相同的功能，无需再安装 Paste。设置路径：“Preference - Features - Clipboard History”，勾选“Keep Plain Text”、“Keep Images”、“Keep File Lists”。快捷键推荐设置为 `⌘ Command` + `⇧ Shift` + `V`。
+---
 
-----
+Paste 可以记录剪切板历史，支持 iCloud 同步。
 
-Paste 可以记录剪切板历史。Paste 同样支持 iCloud 同步。
 ![-w1192](/media/15846159741374.jpg)
 
 快捷键：`⌘ Command` + `⇧ Shift` + `V` 打开 Paste，`⌘ Command` + `数字` 快速复制某一条记录。
 
-<div id="terminal-fq"></div>
 ### 科学上网
+{: #terminal-fq}
+
 在终端安装 Homebrew、或者执行 `git clone` 时，一般情况下很慢（~100KB/s），需要安装科学上网工具，然后在终端科学上网。
 
 一般互联网公司的 VPN 都自带科学上网功能。如果公司不提供 VPN，可以参考[这篇文章](https://portal.shadowsocks.nz/knowledgebase/182/Windows-or-macOSClash-for-Windows-%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%B3%95.html)。

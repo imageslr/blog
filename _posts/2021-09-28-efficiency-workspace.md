@@ -177,7 +177,7 @@ Workspaces 插件还可以和以下工具配合使用：
   3. 或者，依次选择右上角的“更多”图标 - 更多工具 - 命名窗口
   4. 为窗口输入一个名称
 
-最后，不是所有的标签页都需要创建一个工作区。可以使用一个单独的窗口作为[收件箱](({% post_url 2021-08-07-efficiency-01 %}))，存放所有新打开的标签页；定时整理，没用的页面直接关闭、有用的页面分配给现有的工作区，或者创建一个新的工作区。
+最后，可以使用一个单独的窗口作为收件箱[[?](({% post_url 2021-08-07-efficiency-01 %}))]，存放所有新打开的标签页；定时整理这些页面，没用的直接关闭、有用的分配给现有的工作区，或者创建一个新的工作区。
 
 <details markdown="1">
 <summary><span markdown="1">Chrome 下还有一个类似的插件 [Workona](https://workona.com/)，功能更丰富，但是现在开始收费了，免费用户最多只能创建 5 个工作区，所以不作推荐。其他的标签页管理插件如 [OneTab](https://chrome.google.com/webstore/detail/onetab/chphlpgkkbolifaimnlloiipkdnihall)、[tabExtend](https://www.tabextend.com/)，本质上都是书签管理器，无法自动保存、自动恢复、快速切换，同样不作推荐。</span></summary>
@@ -217,7 +217,9 @@ Safari 的标签页分组功能，整体布局和 Chrome Workona 插件类似，
 * 写博客时的*参考资料* 和*文本编辑器*
 * 聊天工具
 
-配合 [Moom 插件]({% post_url 2020-03-19-mac-initialization%}#moom) 的「快照 Snapshot」功能，可以保存桌面各个应用的相对布局，之后一键恢复。
+这里可以配合窗口调整工具 (例如 [Rectangle](https://rectangleapp.com/))，通过快捷键快速调整应用的大小和位置。
+
+也有一些软件可以帮助管理桌面级的工作区。[Workspaces](https://www.apptorium.com/workspaces) 可以将一系列关联的文件、笔记、网页和应用程序等资源保存成一个*工作区*，随时一键启动，或在不同工作区之间快速切换。[Moom]({% post_url 2020-03-19-mac-initialization%}#moom) 可以保存将桌面各个应用的大小和布局存成一个快照 (Snapshot)，随时一键恢复。
 
 #### 终端
 
