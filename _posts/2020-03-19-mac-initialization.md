@@ -298,6 +298,8 @@ Moom 是 Mac 的一款窗口布局工具，可以快速缩放应用/移动位置
 {: .ant-alert}
 
 ### 效率神器：Alfred
+{: #alfred}
+
 Mac 效率神器，不多作介绍。快捷键：
 1. `⌥ Alt` + `Space` 打开 Alfred（我改成了双击 `⌥ Alt`）
 2. `↑`、`↓` 切换高亮项
@@ -496,8 +498,8 @@ code ~/.zshrc // 在  VS Code 中打开 .zshrc 文件，类似于 vim ~/.zshrc
 
 ### 其他
 
-* 绘图工具：[draw.io desktop](https://github.com/jgraph/drawio-desktop/releases)。
-* 截图工具：[Xnip](https://zh.xnipapp.com/)。
+* 绘图工具：[draw.io desktop](https://github.com/jgraph/drawio-desktop/releases)
+* 截图工具：[Xnip](https://zh.xnipapp.com/)
 * 窗口布局工具：[Rectangle](https://rectangleapp.com/)
 * 切换应用时显示缩略图：[AltTab](https://alt-tab-macos.netlify.app/)
 * 键盘清理工具：[KeyboardCleanTool](https://sspai.com/post/45406)，可以在清理键盘的时候锁定键盘。

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 🔘【方法论】我的效率提升方法论 - 任务管理篇 ⑤ GTD 🆕
+title: 🔘【方法论】我的效率提升方法论 - 任务管理篇 ⑤ GTD
 date: 2022/1/9 8:00
 toc_h_max: 3
 typora-root-url: ../
@@ -445,6 +445,6 @@ typora-copy-images-to: ../media
 * [🔖【方法论】我的效率提升方法论 - 通用思维篇 ③ 工作区]({% post_url 2021-09-28-efficiency-workspace %})
 * [🎯【方法论】我的效率提升方法论 - 目标管理篇 ④ OKR]({% post_url 2021-10-28-efficiency-okr %})
 * [🔘【方法论】我的效率提升方法论 - 任务管理篇 ⑤ GTD]({% post_url 2021-12-13-efficiency-gtd %})
-* 💡【方法论】我的效率提升方法论 - 工具使用篇
+* [⚙️【方法论】我的效率提升方法论 - 工具使用篇 ⑥ Workflow]({% post_url 2022-02-28-efficiency-workflow %})
 
 </div>
