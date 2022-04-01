@@ -221,7 +221,7 @@ Safari 的标签页分组功能，整体布局和 Chrome Workona 插件类似，
 
 也有一些软件可以帮助管理桌面级的工作区。[Workspaces](https://www.apptorium.com/workspaces) 可以将一系列关联的文件、笔记、网页和应用程序等资源保存成一个*工作区*，随时一键启动，或在不同工作区之间快速切换。[Moom]({% post_url 2020-03-19-mac-initialization%}#moom) 可以保存将桌面各个应用的大小和布局存成一个快照 (Snapshot)，随时一键恢复。
 
-#### 终端
+### 终端
 
 如果你在远程服务器上开发，那么对 [tmux](https://www.ruanyifeng.com/blog/2019/10/tmux.html) 应该不陌生。tmux 可以自动保存执行过的命令和会话上下文，即使网络断线，再次登录后还是可以一键恢复。tmux 还可以将终端窗口水平 / 垂直划分为多个区域，以便同时查看各种信息。tmux 就是命令行场景下的工作区插件。
 
