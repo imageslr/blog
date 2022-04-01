@@ -86,7 +86,7 @@ layout: default
 * 【内推码】**65V7M7W**
 {: .mb-2}
 
-*以上岗位均有转正机会；日常实习推进面试流程更灵活。*
+*以上岗位均有转正机会；日常实习推进面试流程更灵活。点击查看 [Ads Infra 校招 / 实习 Q & A](https://shimo.im/docs/98rrrqhP9rDw8kjr)*。
 </details>
 </div>
 
