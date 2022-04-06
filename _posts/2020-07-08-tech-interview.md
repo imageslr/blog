@@ -955,7 +955,7 @@ DNS 查询共有两类：递归查询和迭代查询。**递归查询**是指，
 
 流程图 [[来源](https://zhuanlan.zhihu.com/p/257126863)]：
 
-![](/media/16165826766488.jpg)
+<img src="/media/16165826766488.jpg" style="zoom: 50%;" />
 
 TCP 和 UDP 可以同时监听同一个端口，操作系统根据五元组 `{传输协议，源IP，目的IP，源端口，目的端口}` 判断数据的接收者。
 
@@ -1699,6 +1699,8 @@ C 语言的位图实现，可以参考[这篇文章](https://layerlab.org/2018/0
 ## [💡 校招复习 / 面试方法论]({%post_url 2021-04-07-autumn-recruit%})
 
 ## Q & A
+
+<div id="open-all"></div>
 
 <a href="javascript:[...document.getElementsByTagName('details')].forEach(e => e.open = true);void(0);">点击展开所有答案</a>
 
