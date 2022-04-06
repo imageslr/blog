@@ -101,13 +101,13 @@ hr {
   * Images
   */
 img {
-  margin-bottom: 5px;
-  margin-top: 5px;
   padding: 2px 2px;
   border-radius: 3px;
   background-color: lighten($grey-color-light, 3%);
   max-width: 100%;
   vertical-align: middle;
+  display: block;
+  margin: 5px auto;
 }
 
 /**
