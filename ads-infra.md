@@ -73,8 +73,7 @@ layout: default
 
 <div class="ant-alert ant-alert-warning" markdown="1">
 
-// 再修改的时候，搜索“Ads Infra”，找到所有关于校招时间的文章
-{: .hidden}
+{%- comment -%}// 再修改的时候，搜索“Ads Infra”，找到所有关于校招时间的文章{%- endcomment -%}
 
 <details markdown="1">
 <summary><span markdown="1">**2022 年 / 2023 届暑期实习正式开启投递！** [👉 点击查看牛客网宣讲帖](https://www.nowcoder.com/discuss/834943)</span><span style="float: right; font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">2 次投递机会 + 81% 实习转正率</span>
