@@ -89,4 +89,4 @@ Internal Transfer：[http://go/joinadsinfra](http://go/joinadsinfra)
   </div>
 </div>
 
-{%- include gitalk.html -%}
+<div id="gitalk-container"></div>

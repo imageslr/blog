@@ -51,6 +51,21 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css">
   <script src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script>
   <script src="{{ site.baseurl }}/assets/js/md5.min.js"></script>
+  <script>
+    var gitalk = new Gitalk({
+        clientID: '01cc177b8599660246c3',
+        clientSecret: '2a6fbef9e9ea57f5e3c94432328a8d79864576b1',
+        repo: 'blog',
+        owner: 'imageslr',
+        admin: ['imageslr'],
+        id: md5(location.pathname),  // Ensure uniqueness and length less than 50
+        distractionFreeMode: false,  // Facebook-like distraction free mode
+        createIssueManually: true,
+        pagerDirection: "first",
+        perPage: 25,
+    })
+    gitalk.render('gitalk-container')
+  </script>
   {%- endif -%}
 
   <!-- viewerjs -->
