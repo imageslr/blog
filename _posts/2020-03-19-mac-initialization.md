@@ -265,16 +265,14 @@ brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize
 
 其他插件请在 [Github - sindresorhus/quick-look-plugins](https://github.com/sindresorhus/quick-look-plugins) 自行选用，Catalina 系统的安装方法见 [README](https://github.com/sindresorhus/quick-look-plugins)。
 
-### 快速调整窗口大小：Moom
+### 快速调整窗口大小：Rectangle
 
 {: #moom}
-💡 推荐功能类似的免费软件：[Rectangle](https://rectangleapp.com/)
-{: .ant-alert .ant-alert-info}
 
-💡 Mac 系统自带了类似的功能：将鼠标悬浮到应用程序红绿灯的“绿灯”按钮上，然后按下 `Alt` 键，可以快速将应用程序调整至左、右半个屏幕。
-{: .ant-alert}
+<details markdown="1">
+<summary>Moom 是一款收费软件。推荐功能类似的免费软件：<a href="(https://rectangleapp.com/">Rectangle</a></summary>
 
-Mac 的一款窗口布局工具，可以快速缩放应用/移动位置，比如将应用布局成以下状态，只需分别点击三下，如果此时将桌面布局保存为一个快照，之后就可以一键恢复布局。
+Moom 是 Mac 的一款窗口布局工具，可以快速缩放应用/移动位置，比如将应用布局成以下状态，只需分别点击三下，如果此时将桌面布局保存为一个快照，之后就可以一键恢复布局。
 
 ![-w1241](/media/15846201525933.jpg)
 
@@ -294,6 +292,10 @@ Mac 的一款窗口布局工具，可以快速缩放应用/移动位置，比如
 
 ![](/media/15846215818236.jpg)
 
+</details>
+
+💡 Mac 系统也自带了简易的窗口布局功能：将鼠标悬浮到应用程序红绿灯的“绿灯”按钮上，然后按下 `Alt` 键，可以快速将应用程序调整至左、右半个屏幕。
+{: .ant-alert}
 
 ### 效率神器：Alfred
 Mac 效率神器，不多作介绍。快捷键：
@@ -435,27 +437,23 @@ Paste 可以记录剪切板历史，支持 iCloud 同步。
 ### 记笔记：MWeb
 {: #mweb}
 
-MWeb 是一款非常优秀的 Markdown 笔记软件。在尝试过印象笔记、Typora、Bear、Ulysses 等多款软件后，个人认为没有一款软件可以替代 MWeb，后者对 Markdown 与 LaTex 的支持相当完善，同时保持了良好的使用体验。此外，MWeb 也有 iOS 应用，在不内购的情况下可以阅读、编辑笔记，无法新建笔记，足以满足日常需求。
+[MWeb](https://zh.mweb.im/) 是一款非常优秀的 Markdown 笔记软件。在尝试过印象笔记、Typora、Bear、Ulysses 等多款软件后，个人认为没有一款软件可以替代 MWeb，后者对 Markdown 与 LaTex 的支持相当完善，同时保持了良好的使用体验。此外，MWeb 也有 iOS 应用，在不内购的情况下可以阅读、编辑笔记，无法新建笔记，足以满足日常需求。
 
 ![](/media/15846229381899.jpg)
 
-MWeb 可以通过 iCloud 实现同步，只需要将文档库保存在 iCloud 云盘下即可。每个设备都使用云盘中的文件夹作为 MWeb 的文档库。
+对我而言， MWeb 更重要的角色是**个人知识库**。MWeb 的笔记管理功能相当强大，支持任意层级的文件夹、标签等功能。日常使用中，我会配合  [mweb alfred workflow](https://github.com/tianhao/alfred-mweb-workflow) 插件，根据关键字，快速检索文档。
+
+MWeb 是一个*开放的* 笔记软件，这意味着我可以直接编辑其中的 `.md` 文件。因此在需要输出长文的情况下，我会优先使用 [Typora](https://typoraio.cn/)，以获得所见即所得的体验。
+
+MWeb 可以通过 iCloud 同步，只需要将文档库保存在 iCloud 云盘下。
 
 ![-w619](/media/15846233668366.jpg)
 
----
+我制作的 MWeb、Typora 主题：
 
-[2021.08.24 更新]
-
-MWeb 支持文件夹形式的文档管理功能，对我而言，它更重要的角色是作为文档库，整理我的所有文档。日常使用中，我会配合  [mweb alfred workflow](https://github.com/tianhao/alfred-mweb-workflow) 插件，根据关键字，快速搜索和查看某篇文档。
-
-最近发现，Typora 所见即所得的风格非常适合 Markdown 写作，不需要频繁切到预览模式。因此在需要输出长文的情况下，我会选择 Typora。这个场景和 MWeb 的适用场景并不冲突。
-
-我制作的一些 MWeb、Typora 主题：
-
-* [https://github.com/imageslr/mweb-themes](https://github.com/imageslr/mweb-themes)
-* [https://github.com/imageslr/typora-theme-bear](https://github.com/imageslr/typora-theme-bear)
-* [https://github.com/imageslr/typora-theme-lark](https://github.com/imageslr/typora-theme-lark)
+* [https://github.com/imageslr/mweb-themes](https://github.com/imageslr/mweb-themes)：MWeb 主题
+* [https://github.com/imageslr/typora-theme-bear](https://github.com/imageslr/typora-theme-bear)：30 余款 Bear 风格的主题
+* [https://github.com/imageslr/typora-theme-lark](https://github.com/imageslr/typora-theme-lark)：飞书云文档主题
 
 ### 待办事项管理：OmniFocus
 
@@ -500,17 +498,17 @@ code ~/.zshrc // 在  VS Code 中打开 .zshrc 文件，类似于 vim ~/.zshrc
 
 * 绘图工具：[draw.io desktop](https://github.com/jgraph/drawio-desktop/releases)。
 * 截图工具：[Xnip](https://zh.xnipapp.com/)。
-* 类似于 Moom 的窗口管理工具：[Amethyst](https://github.com/ianyh/Amethyst)
+* 窗口布局工具：[Rectangle](https://rectangleapp.com/)
+* 切换应用时显示缩略图：[AltTab](https://alt-tab-macos.netlify.app/)
 * 键盘清理工具：[KeyboardCleanTool](https://sspai.com/post/45406)，可以在清理键盘的时候锁定键盘。
 * 番茄钟：[Stretchly](https://hovancik.net/stretchly/downloads/)，既能充当番茄钟，还能用弹窗提醒你起来活动活动，对程序员来说很有用，[介绍文章](https://www.appinn.com/stretchly/)。类似的工具还有 [Just Focus](https://getjustfocus.com/mac.html)。
   * Stretchly 的弹窗提醒会随机展示一句舒展身体的 idea，[我翻译的中文版](https://gist.github.com/imageslr/8f22b699c6a769d971a098fd5d614994)
 * 屏幕取色：[Sip](https://xclient.info/s/sip.html)，或者 [uTools](https://u.tools/) 自带的取色工具，前端开发经常用到。(Mac 自带的数码取色器可以显示为十六进制，但不能复制到剪贴板)
 * 状态栏管理：Bartender 4，可以自定义隐藏状态栏的图标，或者更新时显示 15s 再隐藏，按住 Command 可以自由拖动排列顺序；另一个应用是 Hidden Bar，App Store 免费下载，同样好用，我用来和 Bartender 配合，隐藏一些不受后者控制的图标。
 * 壁纸应用：[pap.er](http://paper.meiyuan.in/?utm_source=zh)，专为 Mac 设计的壁纸应用，简洁易用，图片质量也很高。
-* 触控板增强：BetterTouchTool（[介绍视频](https://www.bilibili.com/video/BV1a7411W7s3)），[论坛](https://community.folivora.ai/c/setup-preset-sharing/5/l/top)里提供了很多预设，可以直接导入使用。我个人认为按住 Command 显示 Dock 栏程序图标是比较有用的，但功能太复杂，所以放弃了，喜欢配置的话可以尝试一下。
-* 快速连接 AirPods：~~ToothFairy，菜单栏一键连接 AirPods~~。直接通过蓝牙图标连接，更稳定快捷。
-* Finder 增强：Default Folder X，访问深层嵌套的文件更迅速，可以记录近期访问的文件。
-* Dock 栏增强：Contexts，隐藏原生的 Dock 栏 (程序坞)，只显示需要关注的应用程序，鼠标移动到屏幕边缘即可快速显示。
+* ~~触控板增强：BetterTouchTool（[介绍视频](https://www.bilibili.com/video/BV1a7411W7s3)），[论坛](https://community.folivora.ai/c/setup-preset-sharing/5/l/top)里提供了很多预设，可以直接导入使用。我个人认为按住 Command 显示 Dock 栏程序图标是比较有用的，但功能太复杂，所以放弃了，喜欢配置的话可以尝试一下。~~{: .text-gray-300}
+* 快速连接 AirPods：~~ToothFairy。~~{: .text-gray-300}直接通过菜单栏的蓝牙图标连接。
+* Finder 增强：[Default Folder X](https://stclairsoft.com/DefaultFolderX/)，快速选择文件夹、记录近期访问的文件。
 
 ## 附件
 [百度云](https://pan.baidu.com/s/1J9ytW_efBmusut7QiG0mYw)，提取码: 6641
