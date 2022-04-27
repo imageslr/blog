@@ -364,7 +364,7 @@ https://www.baidu.com/s?ie=utf-8&wd=测试
 那么百度搜索的 Search URL 就是：
 
 ```
-https;//www.baidu.com/s?wd={query}
+https://www.baidu.com/s?wd={query}
 ```
 
 同理，Google 的 Search URL 是：
