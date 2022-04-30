@@ -5,6 +5,14 @@ sitemap: false
 @import "moving";
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600&display=swap");
 
+/* override */
+
+.gt-container .gt-comment-body blockquote {
+  font-size: 16px;
+}
+
+/* end */
+
 /* markdown body */
 
 .post-content {
