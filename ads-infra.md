@@ -85,7 +85,7 @@ layout: default
 * 【内推码】**65V7M7W**
 {: .mb-2}
 
-*以上岗位均有转正机会；日常实习推进面试流程更灵活。点击查看 [Ads Infra 校招 / 实习 Q & A](https://shimo.im/docs/98rrrqhP9rDw8kjr)*。
+*以上岗位均有转正机会；日常实习推进面试流程更灵活。*
 </details>
 </div>
 
@@ -94,6 +94,10 @@ layout: default
 想了解在 Ads Infra 的实习体验？[点击查看！]({% post_url 2021-04-07-autumn-recruit %}#ads-infra)
 </div>
 
+
+<div class="ant-alert ant-alert-info" markdown="1">
+了解 Ads Infra 的工作内容 / 和其他后端岗位的区别，请戳 👉 [Ads Infra 校招 / 实习 Q & A](https://shimo.im/docs/98rrrqhP9rDw8kjr)
+</div>
 
 <div class="ant-alert" markdown="1">
 
