@@ -25,15 +25,14 @@ figure {
   * Basic styling
   */
 body {
-  font: $base-font-weight #{$small-font-size}/#{$small-line-height}
-    $base-font-family;
+  font: $base-font-weight #{$small-font-size}/#{$small-line-height} $base-font-family;
   color: $text-color;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-  -moz-font-feature-settings: "kern" 1;
-  -o-font-feature-settings: "kern" 1;
-  font-feature-settings: "kern" 1;
+  -webkit-font-feature-settings: "kern"1;
+  -moz-font-feature-settings: "kern"1;
+  -o-font-feature-settings: "kern"1;
+  font-feature-settings: "kern"1;
   font-kerning: normal;
   display: flex;
   min-height: 100vh;
@@ -42,8 +41,7 @@ body {
 
   @media screen and (min-width: $on-medium) {
     padding: 0 5%;
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height}
-      $base-font-family;
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   }
 }
 
@@ -72,7 +70,8 @@ details,
   * `main` element
   */
 main {
-  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+  display: block;
+  /* Default value of `display` of `main` element is 'inline' in IE 11. */
 }
 
 /**
@@ -83,18 +82,14 @@ hr {
   margin-bottom: 20px;
   border: 0;
   height: 1px;
-  background: -webkit-linear-gradient(
-    left,
-    transparent,
-    rgba(0, 0, 0, 0.5),
-    transparent
-  );
-  background: linear-gradient(
-    left,
-    transparent,
-    rgba(0, 0, 0, 0.5),
-    transparent
-  );
+  background: -webkit-linear-gradient(left,
+      transparent,
+      rgba(0, 0, 0, 0.5),
+      transparent);
+  background: linear-gradient(left,
+      transparent,
+      rgba(0, 0, 0, 0.5),
+      transparent);
 }
 
 /**
@@ -113,7 +108,7 @@ img {
 /**
   * Figures
   */
-figure > img {
+figure>img {
   display: block;
 }
 
@@ -130,8 +125,9 @@ ol {
 }
 
 li {
-  > ul,
-  > ol {
+
+  >ul,
+  >ol {
     margin-bottom: 0;
   }
 }
@@ -164,16 +160,16 @@ a {
 /**
   * Blockquotes
   */
-blockquote {
+.wrapper blockquote {
   color: $grey-color;
   border-left: 4px solid $grey-color-light;
   padding-left: $spacing-unit / 2;
   @include relative-font-size(1);
   letter-spacing: -1px;
 
-@media (max-width: 600px) {
-  @include relative-font-size(0.8);
-}
+  @media (max-width: 600px) {
+    @include relative-font-size(0.8);
+  }
 
   > :last-child {
     margin-bottom: 0;
@@ -189,6 +185,7 @@ code {
   border: 1px solid darken($grey-color-light, 3%);
   border-radius: 3px;
   background-color: lighten($grey-color-light, 3%);
+
   @media (max-width: 600px) {
     @include relative-font-size(0.8);
   }
@@ -202,7 +199,7 @@ pre {
   padding: 2px 2px;
   overflow-x: auto;
 
-  > code {
+  >code {
     border: 0;
     padding-right: 0;
     padding-left: 0;
@@ -269,20 +266,24 @@ table {
   color: lighten($text-color, 18%);
   border-collapse: collapse;
   border: 1px solid $grey-color-light;
+
   tr {
     &:nth-child(even) {
       background-color: lighten($grey-color-light, 6%);
     }
   }
+
   th,
   td {
     padding: ($spacing-unit / 3) ($spacing-unit / 2);
   }
+
   th {
     background-color: lighten($grey-color-light, 3%);
     border: 1px solid darken($grey-color-light, 4%);
     border-bottom-color: darken($grey-color-light, 12%);
   }
+
   td {
     border: 1px solid $grey-color-light;
   }
