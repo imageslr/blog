@@ -434,7 +434,7 @@ SEO 关键词可以增加信息量，提升检索效率。下面这些位置可�
 
 ### 多用键盘，少用鼠标
 
-1. 使用 Alfred 作为 App 启动器；配置 [Alfred Web Search](#web-search)
+1. 使用 Alfred 作为 App 启动器；使用 Alfred 搜索文件；配置 [Alfred Web Search](#web-search)。
 2. **学会这几个文本操作快捷键**，适用于任何文本编辑的场景：
     * 移动光标：
       * 移动一个字符：`←`、`→`

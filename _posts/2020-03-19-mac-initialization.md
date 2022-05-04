@@ -300,6 +300,9 @@ Moom 是 Mac 的一款窗口布局工具，可以快速缩放应用/移动位置
 ### 效率神器：Alfred
 {: #alfred}
 
+💡 推荐阅读 [⚙️ 效率提升方法论 - 工具使用篇 - alfred]({% post_url 2022-02-28-efficiency-workflow %}#alfred)
+{: .ant-alert .ant-alert-info}
+
 Mac 效率神器，不多作介绍。快捷键：
 1. `⌥ Alt` + `Space` 打开 Alfred（我改成了双击 `⌥ Alt`）
 2. `↑`、`↓` 切换高亮项
@@ -398,15 +401,11 @@ SnippetsLab 支持 iCloud 同步，这意味着当我们切换到新 Mac 后，�
 
 ### 记录剪切板历史：Alfred / Paste
 
-我推荐使用 Alfred，性能更好，更轻量。设置路径：“Preference - Features - Clipboard History”，勾选“Keep Plain Text”、“Keep Images”、“Keep File Lists”。快捷键推荐设置为 `⌘ Command` + `⇧ Shift` + `V`。
+推荐使用 Alfred，性能更好，更轻量。设置路径：“Preference - Features - Clipboard History”，勾选“Keep Plain Text”、“Keep Images”、“Keep File Lists”。快捷键推荐设置为 `⌘ Command` + `⇧ Shift` + `V`。
 
----
-
-Paste 可以记录剪切板历史，支持 iCloud 同步。
+Paste 也可以记录剪切板历史，支持 iCloud 同步。快捷键：`⌘ Command` + `⇧ Shift` + `V` 打开 Paste，`⌘ Command` + `数字` 快速复制某一条记录。
 
 ![-w1192](/media/15846159741374.jpg)
-
-快捷键：`⌘ Command` + `⇧ Shift` + `V` 打开 Paste，`⌘ Command` + `数字` 快速复制某一条记录。
 
 ### 科学上网
 {: #terminal-fq}
@@ -414,9 +413,6 @@ Paste 可以记录剪切板历史，支持 iCloud 同步。
 在终端安装 Homebrew、或者执行 `git clone` 时，一般情况下很慢（~100KB/s），需要安装科学上网工具，然后在终端科学上网。
 
 一般互联网公司的 VPN 都自带科学上网功能。如果公司不提供 VPN，可以参考[这篇文章](https://portal.shadowsocks.nz/knowledgebase/182/Windows-or-macOSClash-for-Windows-%E8%AE%BE%E7%BD%AE%E6%96%B9%E6%B3%95.html)。
-
-### 微信小助手
-[Github - MustangYM/WeChatExtension-ForMac](https://github.com/MustangYM/WeChatExtension-ForMac)
 
 ### 录屏软件
 {: #kap}
