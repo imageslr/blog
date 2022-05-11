@@ -277,7 +277,7 @@ Alfred 内置了很多搜索引擎 (Preferences - Features - Web Search)：
 **格式固定的 url 也可以配置为 Web Search**。比如：
 
 * github 的链接格式是 `github.com/用户名/仓库名`，我配置了一个 Web Search：`https://github.com/{query}`。之后在 Alfred 中输入 `github vuejs/vue`，就可以直接打开 [https://github.com/vuejs/vue](https://github.com/vuejs/vue)。
-* 公司内部服务平台的链接格式是 `https://cloud.xxx.net/ms/service/服务名/home`，我也配置成了 Web Search：`https://cloud.xxx.net/ms/service/{query}/home`，这样连搜索的步骤都省下了。
+* 公司内部服务平台的链接格式是 `https://cloud.xxx.net/service/服务名`，我也配置成了 Web Search：`https://cloud.xxx.net/service/{query}`，这样连搜索的步骤都省下了。
 
 最后，**尽量通过 Alfred 执行搜索操作**。只需专注于内容本身，完全不需要任何浏览器操作。
 
@@ -457,8 +457,8 @@ SEO 关键词可以增加信息量，提升检索效率。下面这些位置可�
     * 不同应用程序：`Cmd + Tab`、`Cmd + Shift + Tab`
     * 相同应用程序：`` Cmd + ` ``
 4. **不同的软件快捷键可以配置成一样的，便于记忆**。比如：
-  * Chrome、iTerm2 都可以按 `Cmd + n` 来切换标签页，我给 VS Code 也配置了同样的快捷键，按 `Cmd + n` 可以切换当前打开的源文件。
-  * 我经常使用飞书云文档、MWeb 和 Typora 编写 Markdown 文件。因为飞书云文档不支持自定义快捷键，所以我把其他两个软件的快捷键都配置成和飞书云文档一样。
+  * 我经常使用飞书云文档、MWeb 和 Typora 编写 Markdown 文件。因为飞书云文档不支持自定义快捷键，所以我把其他两个软件的 Markdown 编辑快捷键都配置成和飞书云文档一样的。
+  * Chrome、iTerm2 都可以按 `Cmd + n` (n=1,2,3...) 来切换标签页，我给 VS Code 也配置了同样的快捷键，按 `Cmd + n` 可以切换当前打开的源文件。
 
 💡&nbsp;&nbsp;&nbsp;Mac 的某些应用程序没有提供快捷键配置入口，这种情况下可以在系统偏好设置中更改，详见[附录](#shortcut-config)。
 {: .ant-alert .ant-alert-warning}
