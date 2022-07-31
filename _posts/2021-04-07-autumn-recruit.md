@@ -527,7 +527,7 @@ WXG：2 轮技术面 + 2 轮面委会 + 1 轮 HR 面。难度比其他部门高�
 * [CyC2018/CS-Notes](https://github.com/CyC2018/CS-Notes?utm_source=gold_browser_extension)
 * [Java-Guide](https://github.com/Snailclimb/JavaGuide)
 * [frank-lam/fullstack-tutorial](https://github.com/frank-lam/fullstack-tutorial)
-* `0917新增` [Top K 面试题 - 海外兔](https://osjobs.net/topk/)
+* [Top K 面试题 - 海外兔](https://osjobs.net/topk/)
 * [Github - Search · 面试](https://github.com/search?q=%E9%9D%A2%E8%AF%95&ref=opensearch)
 
 ### LeetCode 题解
