@@ -76,10 +76,11 @@ layout: default
 {%- comment -%}// 再修改的时候，搜索“Ads Infra”，找到所有关于校招时间的文章{%- endcomment -%}
 
 <details markdown="1">
-<summary><span markdown="1">**2023 届校招提前批已开启投递！** [👉 点击查看牛客网宣讲帖](https://www.nowcoder.com/discuss/946553)</span><span style="float: right; font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">2 次投递机会 + 81% 实习转正率</span>
+<summary><span markdown="1">**2023 届校招正式批已开启投递！** [👉 点击查看牛客网宣讲帖](https://www.nowcoder.com/discuss/946553)</span><span style="float: right; font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">08.14 ~ 10.31</span>
 </summary>
-* 【校招提前批】系统架构工程师-商业化技术-北京: [https://jobs.toutiao.com/s/YoQJjxy](https://jobs.toutiao.com/s/YoQJjxy)
-* 【校招提前批】系统架构工程师-商业化技术-上海: [https://jobs.toutiao.com/s/Yoxn8fF](https://jobs.toutiao.com/s/Yoxn8fF)
+* 【所有在招岗位】: [https://jobs.toutiao.com/s/j6vs8vy](https://jobs.toutiao.com/s/j6vs8vy)，已附内推码
+* 【校招正式批】系统架构工程师-商业化技术-北京: [https://jobs.toutiao.com/s/j6vGWh1](https://jobs.toutiao.com/s/j6vGWh1)
+* 【校招正式批】系统架构工程师-商业化技术-上海: [https://jobs.toutiao.com/s/j6v3Lhe ](https://jobs.toutiao.com/s/j6v3Lhe )
 * 【日常实习】广告投放架构实习生-北京/上海：[https://job.toutiao.com/s/NLvQpGJ](https://job.toutiao.com/s/NLvQpGJ)
 * 【日常实习】广告算法架构实习生-北京/上海：[https://job.toutiao.com/s/NLvQpGJ](https://job.toutiao.com/s/NLvQpGJ)
 * 【内推码】**65V7M7W**
