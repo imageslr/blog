@@ -24,6 +24,7 @@ typora-copy-images-to: ../media
 * 同局域网内的两台主机之间的通信过程
 
 ## 准备 Docker 环境
+{: #docker}
 
 本文在 Docker 容器中进行实验，以获得干净、一致的体验。请前往[官网下载](https://docs.docker.com/get-docker/) Docker 的安装包。关于 Docker 的基础概念 (容器、镜像等)，可以阅读阮一峰的 [Docker 入门教程](http://www.ruanyifeng.com/blog/2018/02/docker-tutorial.html)。下文将描述如何配置实验所需的 Docker 环境、以及相关的命令。
 

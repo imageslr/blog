@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ⚙️【方法论】我的效率提升方法论 - 工具使用篇 ⑥ 🆕
+title: ⚙️【方法论】我的效率提升方法论 - 工具使用篇 ⑥
 date: 2022/5/1 23:00
 toc_h_max: 3
 typora-root-url: ../
