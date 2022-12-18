@@ -231,4 +231,4 @@ Ads Infra 的校招岗位：
   </div>
 </div>
 
-<div id="gitalk-container"></div>
+{%- include giscus.html -%}
