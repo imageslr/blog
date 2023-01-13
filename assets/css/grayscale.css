@@ -75,7 +75,7 @@ grayscale style (c) MY Sun <simonmysun@gmail.com>
 .hljs-built_in,
 .hljs-builtin-name {
   color: #000;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .hljs-meta {
