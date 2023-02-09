@@ -34,7 +34,7 @@ layout: default
     <div class="about-avatar" style="font-size: 6rem; line-height: 1">🎯</div>
     <div class="about-info">
       <div class="about-your-name">
-        字节跳动 - 商业化技术 - 业务中台 - Ads Infra
+        字节跳动 - 商业化技术 - Ads Infra
       </div>
       <p class="about-description">
         建设全球领先的商业化产品和架构。
