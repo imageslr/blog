@@ -2,6 +2,7 @@
 layout: post
 title: ⚙️【方法论】我的效率提升方法论 - 工具使用篇 ⑥
 date: 2022/5/1 23:00
+last_modified_at: 2023/2/18
 toc_h_max: 3
 typora-root-url: ../
 typora-copy-images-to: ../media
@@ -192,8 +193,6 @@ Spotlight 是 Mac 系统内置的一个快速搜索工具。市面上有一些�
 </div>
 
 
-
-
 操作鼠标是一个很低效的动作。每次都需要右手先离开键盘、找到鼠标、移动和点击、再把手放回键盘，重新校准手指位置；这个过程中，眼睛还必须配合鼠标指针的移动。
 
 建议使用 Alfred 充当 App 启动器。输入 App 名称 (拼音或首字母) 即可启动，双手不需要离开键盘，速度更快、更方便。
@@ -209,6 +208,39 @@ Spotlight 是 Mac 系统内置的一个快速搜索工具。市面上有一些�
 
 图：配置一个简单的 workflow，就可以通过快捷键显示 / 隐藏 App
 {: .caption}
+
+### 剪贴板历史 / Snippets
+
+<div class="ant-alert ant-alert-info" markdown="1">
+👎&nbsp;&nbsp;&nbsp;使用两个工具，分别管理剪贴板历史和代码片段，资源占用大、操作流程长。  
+👍&nbsp;&nbsp;&nbsp;使用 Alfred 解决所有问题。
+</div>
+
+
+
+Alfred 内置了剪贴板历史工具，非常好用，且资源占用小。我用它替换了 iPaste。配置方式：
+
+* Preference - Features - Clipboard History，我的快捷键是 `Cmd + Shift + V`
+* 勾选上 `Keep Plain Text`、`Keep Images` 和 `Keep File List` 以同时保存文本和文件
+* 在“Advanced”里勾选 `Auto-paste on return`，这样按下回车后就会自动粘贴
+
+这之后就可以通过快捷键查看历史记录了。上下键选择某条记录，回车粘贴，也可以通过 **`Cmd + 数字`** 直接选择；支持输入关键字搜索。
+
+![Clipboard History](/media/clipboard-viewer.png)
+
+Alfred 剪贴板工具的最赞之处在于能够**和 Snippets 联动**。
+
+Alfred 内置了一个 Snippets 管理工具，可以创建多个清单来管理自己的代码片段：
+
+![Snippets Prefs](/media/snippets-prefs.png)
+
+我把经常执行的一些命令保存成了代码片段，这之后就可以直接在剪贴板历史里查看了，也可以根据关键字搜索代码段的名称或内容：
+
+![Snippets Viewer](/media/snippet-viewer-this-land.png)
+
+**剪贴板历史的内容，可以直接保存到 Snippets 里**。只需要呼出剪贴板历史工具，选中一行，然后按 `Cmd + S` 快捷键。强烈推荐使用这个功能，大幅降低录入成本。
+
+Snippets 的详细使用说明见 [Alfred 官网](https://www.alfredapp.com/help/features/snippets/)。
 
 ### 搜索文件
 
