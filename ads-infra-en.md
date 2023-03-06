@@ -81,7 +81,7 @@ If you join the Ads Infra team, you would:
 - Optimize core strategy systems such as targeting, indexing, bidding, auction, that drive rapid business growth.
 - Address challenges of development under globally geo-distributed datacenters. Build advertising systems that meet the diverse requirements from all over the world.  
  
-We are a global team, with members based in **Beijing, Shanghai, the Bay Area and Seattle**. The team is also proudly diverse of their past tenures, as we have many experienced engineers who joined us from top-tier tech companies, such as Facebook, Microsoft, Google, Alibaba, Tencent, etc. In addition, we also have a plethora of new graduates that continue to bring us fresh perspectives. This team has the world’s most exciting business and technical challenges, alongside with powerful platforms and plentitude of support and resources. We admire technology, encourage innovation, and sincerely hope that you will join us!
+We are a global team, with members based in **Beijing, Shanghai, Singapore, the Bay Area and Seattle**. The team is also proudly diverse of their past tenures, as we have many experienced engineers who joined us from top-tier tech companies, such as Facebook, Microsoft, Google, Alibaba, Tencent, etc. In addition, we also have a plethora of new graduates that continue to bring us fresh perspectives. This team has the world’s most exciting business and technical challenges, alongside with powerful platforms and plentitude of support and resources. We admire technology, encourage innovation, and sincerely hope that you will join us!
 
 Apply：[https://job.toutiao.com/s/eDRghG2](https://job.toutiao.com/s/egeGeGB)  
 Internal Transfer：[http://go/joinadsinfra](http://go/joinadsinfra)
