@@ -350,6 +350,7 @@ Alfred Workflow 的配置教程可以在 [Alfred 官网](https://www.alfredapp.c
 我的知识库管理应用是 [MWeb]({%- post_url 2020-03-19-mac-initialization -%}#mweb)。下面是我的一些使用心得。
 
 ### All In Markdown
+{: #markdown}
 
 Markdown 是一种用来写作的轻量级标记式语言，它使用简洁的纯文本格式来编写文档，可以转换成有效的 HTML 或 PDF 文档。Markdown 最重要的设计是易读易写 —— 语法轻量化；纯文本格式也能够直接在字面上被阅读。
 
