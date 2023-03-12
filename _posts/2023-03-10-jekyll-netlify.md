@@ -68,10 +68,10 @@ bundle exec jekyll serve --livereload
 ![image-20230312151902964](/media/jekyll/image-20230312151902964.png)
 
 💡  给  serve 命令添加 --livereload 选项，可以在源文件有任何改变时自动刷新页面。
-{: .ant-alert}
+{: .ant-alert .ant-alert-info}
 
 💡 亲测 MacOS 安装 Jekyll 环境比较麻烦，可以考虑使用现成的 docker 镜像，参考[这篇文章](https://dev.to/stankukucka/install-jekyll-on-your-mac-with-docker-compose-file-everything-you-need-to-get-going-2alf)。
-{: .ant-alert}
+{: .ant-alert .ant-alert-info}
 
 ### 二、创建 Github 仓库
 
@@ -220,7 +220,7 @@ Markdown 是一种用来写作的轻量级标记式语言，它使用简洁的�
 
 * [Google Analytics](https://analytics.google.com/analytics/web/provision/#/provision)：Google 提供的站点统计工具，可以分析流量来源、所在国家、每个页面的阅读人次等。类似的工具还有[百度网站统计](https://tongji.baidu.com/web5/welcome/basic)。
 
-* [Algolia](https://www.algolia.com/)：网站搜索工具。本身是一个付费服务，但对开源社区提供了免费额度，需要发邮件申请，一般三个工作日会回复。申请通过后，algolia 会定时给你的网站建索引，之后在网站上添加一个搜索按钮，接入其 SDK，就可以搜索全站内容了。但如果博客的 SEO 做的不错，直接通过 `site: xxx.com` 在 Google 搜索就足够了。
+* [Algolia](https://www.algolia.com/)：网站搜索工具。本身是一个付费服务，但对开源社区提供了免费额度，需要发邮件申请，一般三个工作日会回复。申请通过后，algolia 会定时给你的网站建索引，之后在网站上添加一个搜索按钮，接入其 SDK，就可以搜索全站内容了。但如果博客的 SEO 做得不错，直接通过 `site: xxx.com` 在 Google 搜索就足够了。
 
   <img src="/media/jekyll/image-20230312205507859.png" alt="image-20230312205507859" style="width:500px;margin:0" />
 
@@ -231,13 +231,13 @@ Markdown 是一种用来写作的轻量级标记式语言，它使用简洁的�
 
 #### SEO 优化
 
-因为使用了 Netlify 提供的服务，一开始百度无法索引到我的博客内容。解决办法是在[百度站长平台](https://ziyuan.baidu.com/linksubmit/index)中主动推送网站的 sitemap：
+因为 Netlify 的服务器在国外，一开始百度无法索引到我的博客内容。解决办法是在[百度站长平台](https://ziyuan.baidu.com/linksubmit/index)中主动推送网站的 sitemap：
 
 ![image-20230312205009660](/media/jekyll/image-20230312205009660.png)
 
 我使用的是 jekyll，需要安装  [jekyll-sitemap](https://github.com/jekyll/jekyll-sitemap) 插件，这会在构建博客时生成一个 [sitemap 文件](https://imageslr.com/sitemap.xml)。之后把这个链接提交到上图的输入框中，过十几天就可以在百度搜索到网站内容了。验证方法是在百度搜索 [site: imageslr.com](https://www.baidu.com/s?wd=site%3A%20imageslr.com)。
 
-除此之外，我的博客就没有做过 SEO 优化了，也没有主动推广过。目前来看，Google 的搜索效果最好、流量最多，百度则聊胜于无。每天大约 80 UV。
+除此之外，我的博客就没有做过 SEO 优化了，也没有主动推广过。目前来看，Google 的搜索效果最好、流量最多，百度聊胜于无。每天大约 80 UV。
 
 #### 性能优化
 
@@ -271,7 +271,7 @@ Markdown 是一种用来写作的轻量级标记式语言，它使用简洁的�
 
 ## 结语
 
-最后，我还是想强调：搭建博客是成本最低的操作，持续输出才是最难的。要多写精品文章、写原创内容。不要发笔记、不要堆一些别人可以很容易检索到的内容。提高博客文章的信息量、让博客的内容有长期价值、让每位读者都有收获。
+最后我想说，搭建博客是成本最低的操作，持续输出才是最难的。要多写精品文章、写原创内容。不要发一些可以很容易检索到的内容。提高博客文章的信息量、让博客的内容有长期价值、让每位读者都有收获。
 
 
 
