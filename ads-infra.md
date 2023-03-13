@@ -76,7 +76,7 @@ layout: default
 {%- comment -%}// 再修改的时候，搜索“Ads Infra”，找到所有关于校招时间的文章{%- endcomment -%}
 
 <details markdown="1">
-<summary><span markdown="1">**2024 届校招实习已开启投递，有转正机会！** [👉 点击查看牛客网宣讲帖](https://www.nowcoder.com/discuss/946553)</span><span style="float: right; font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">08.14 ~ 10.31</span>
+<summary><span markdown="1">**2024 届校招实习已开启投递，有转正机会！** [👉 点击查看牛客网宣讲帖](https://www.nowcoder.com/discuss/946553)</span><span style="float: right; font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">03.13 ~ 07</span>
 </summary>
 * 【广告架构实习生-北京】：<https://jobs.toutiao.com/s/S48sScS>
 * 【广告架构实习生-杭州】：<https://jobs.toutiao.com/s/S48TeQK>
