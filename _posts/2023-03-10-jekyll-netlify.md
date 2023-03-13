@@ -23,7 +23,7 @@ typora-copy-images-to: ../media/jekyll
 ## Quick Start
 
 这一节我们将直接用  [Netlify](https://www.netlify.com/) + [Github](https://github.com) + [Jekyll](https://jekyllrb.com/) 零成本搭建个人博客。简单介绍一下原理：
-* Jekyll 是一个[静态博客生成器](#staitc)，它可以把 markdown 格式的文本内容转成静态的 HTML 页面。可以修改 CSS 来配置博客的样式和风格，网上有很多现成的[主题](http://jekyllthemes.org/)可以使用。
+* Jekyll 是一个[静态博客生成器](#static)，它可以把 markdown 格式的文本内容转成静态的 HTML 页面。可以修改 CSS 来配置博客的样式和风格，网上有很多现成的[主题](http://jekyllthemes.org/)可以使用。
 * 每个 Jekyll 项目是一个文件夹，包含了这个博客的所有内容，如 markdown 文章、图片、CSS 文件、字体资源等。
 * Jekyll 构建的产物是纯 HTML 页面。我们把它拖到任何一个静态站点托管服务上，便可以在浏览器中访问。
 * Github 提供了 [Github Pages](https://docs.github.com/zh/pages/getting-started-with-github-pages/about-github-pages)。这是一个免费的静态站点托管服务，我们可以直接在某个 Github 仓库里托管 HTML 页面，然后通过  `<username>.github.io` 去访问。
