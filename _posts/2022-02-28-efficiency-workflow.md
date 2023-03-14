@@ -2,7 +2,7 @@
 layout: post
 title: ⚙️【方法论】我的效率提升方法论 - 工具使用篇 ⑥
 date: 2022/5/1 23:00
-last_modified_at: 2023/2/18
+last_modified_at: 2023/3/14
 toc_h_max: 3
 typora-root-url: ../
 typora-copy-images-to: ../media
@@ -155,6 +155,9 @@ typora-copy-images-to: ../media
 {: .caption}
 
 当书签名足够有信息量时，我们甚至不需要书签栏，直接在地址栏搜索关键字就能打开想要的书签。事实上，我在使用浏览器时，书签栏就始终是隐藏状态。
+
+💡 这里再推荐一个 Chrome 插件：[Holmes](https://chrome.google.com/webstore/detail/holmes/gokficnebmomagijbakglkcmhdbchbhn)。安装后，在地址栏输入 `*` 再按 `Tab`，就能搜索书签了。
+{: .ant-alert .ant-alert-info}
 
 #### (2) 使用文件夹管理书签
 
