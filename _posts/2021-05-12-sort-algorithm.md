@@ -101,8 +101,7 @@ void selectSort(vector<int>& nums) {
 ## 快速排序
 * `[0, last)` 表示所有小于 `pivot` 的元素集合，初始时 `last = 0` 表示区间为空
 * 选择左侧第一个元素作为 `pivot`
-* 不断地将小于 `pivot` 的元素，移动到该区间后面
-* 递归过程中，区间左边界为 `start`
+* 不断地将小于 `pivot` 的元素，移动到该区间里
 
 ```c++
 void quickSort(vector<int> &nums) {
