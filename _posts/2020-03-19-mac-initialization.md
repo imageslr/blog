@@ -509,7 +509,7 @@ code ~/.zshrc // 在  VS Code 中打开 .zshrc 文件，类似于 vim ~/.zshrc
 * Finder 增强：[Default Folder X](https://stclairsoft.com/DefaultFolderX/)，快速选择文件夹、记录近期访问的文件。
 
 ## 附件
-[百度云](https://pan.baidu.com/s/1J9ytW_efBmusut7QiG0mYw)，提取码: 6641
+请自行在 <https://xclient.info> 下载。
 
 如果安装时提示“已损坏”，在终端执行：
 ```
