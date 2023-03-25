@@ -1,0 +1,255 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600&display=swap");
+#write {
+  font: 400 15.3px/1.6 "Bitter", "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", "Bitter", sans-serif;
+  color: #111;
+  background-color: #fdfdfd;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 0 2%;
+  -webkit-font-smoothing: auto;
+  max-width: -webkit-calc(860px - (30px));
+  max-width: calc(860px - (30px));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  /* reset */
+  /**
+  * Divider
+  */
+  /**
+  * Images
+  */
+  /**
+  * Figures
+  */
+  /**
+  * Lists
+  */
+  /**
+  * Headings
+  */
+  /**
+  * Links
+  */
+  /**
+  * Blockquotes
+  */
+  /**
+  * Code formatting
+  */
+  /**
+  * Clearfix
+  */
+  /**
+  * Icons
+  */
+  /**
+  * Tables
+  */
+}
+#write * {
+  box-sizing: border-box;
+}
+@media screen and (min-width: 600px) {
+  #write {
+    padding: 0 5%;
+    font: 400 18px/1.8 "Bitter", "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", "Bitter", sans-serif;
+  }
+}
+@media screen and (min-width: 800px) {
+  #write {
+    max-width: -webkit-calc(860px - (30px * 2));
+    max-width: calc(860px - (30px * 2));
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write blockquote, #write hr, #write dl, #write dd, #write ol, #write ul, #write figure {
+  margin: 0;
+  padding: 0;
+}
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write blockquote, #write ul, #write ol, #write dl, #write figure, #write details {
+  margin-bottom: 15px;
+}
+#write hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  height: 1px;
+  background: -webkit-linear-gradient(left, transparent, rgba(0, 0, 0, 0.5), transparent);
+  background: linear-gradient(left, transparent, rgba(0, 0, 0, 0.5), transparent);
+}
+#write img {
+  padding: 2px 2px;
+  border-radius: 3px;
+  background-color: #f0f0f0;
+  max-width: 100%;
+  vertical-align: middle;
+  display: block;
+  margin: 5px auto;
+}
+#write figure > img {
+  display: block;
+}
+#write figcaption {
+  font-size: 15.3px;
+}
+#write ul,
+#write ol {
+  margin-left: 30px;
+}
+#write li > ul,
+#write li > ol {
+  margin-bottom: 0;
+}
+#write h1,
+#write h2,
+#write h3,
+#write h4,
+#write h5,
+#write h6 {
+  margin-top: 2rem;
+  font-weight: 400;
+}
+#write h2 {
+  font-size: 31.5px;
+}
+@media screen and (min-width: 800px) {
+  #write h2 {
+    font-size: 36px;
+  }
+}
+#write h3,
+#write h3 code {
+  font-size: 24.75px;
+}
+@media screen and (min-width: 800px) {
+  #write h3,
+#write h3 code {
+    font-size: 29.25px;
+  }
+}
+#write h4 {
+  font-size: 20.25px;
+}
+@media screen and (min-width: 800px) {
+  #write h4 {
+    font-size: 22.5px;
+  }
+}
+#write a {
+  color: #2a7ae2;
+  text-decoration: none;
+}
+#write a:hover {
+  text-decoration: underline;
+}
+#write blockquote {
+  color: #828282;
+  border-left: 4px solid #e8e8e8;
+  padding-left: 15px;
+  font-size: 18px;
+  letter-spacing: -1px;
+}
+@media (max-width: 600px) {
+  #write blockquote {
+    font-size: 14.4px;
+  }
+}
+#write blockquote > :last-child {
+  margin-bottom: 0;
+}
+#write code {
+  font-size: 16.2px;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  background-color: #f0f0f0;
+}
+@media (max-width: 600px) {
+  #write code {
+    font-size: 14.4px;
+  }
+}
+#write pre.md-fences,
+#write pre.md-meta-block,
+#write .md-rawblock-control:not(.md-rawblock-tooltip) .md-rawblock-input {
+  font-size: 16.2px;
+  border: 2px solid #e0e0e0;
+  border-radius: 3px;
+  background-color: #fdfdfd;
+  padding: 0.5em;
+  color: #333;
+}
+@media (max-width: 600px) {
+  #write pre.md-fences,
+#write pre.md-meta-block,
+#write .md-rawblock-control:not(.md-rawblock-tooltip) .md-rawblock-input {
+    font-size: 14.4px;
+  }
+}
+#write code {
+  padding: 1px 1px;
+}
+#write pre {
+  padding: 2px 2px;
+  overflow-x: auto;
+}
+#write pre > code {
+  border: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
+#write #write:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#write .orange {
+  color: #f66a0a;
+}
+#write .grey {
+  color: #828282;
+}
+#write .svg-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  fill: currentColor;
+  padding: 5px 3px 2px 5px;
+  vertical-align: text-bottom;
+}
+#write table {
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: left;
+  color: #3f3f3f;
+  border-collapse: collapse;
+  border: 1px solid #e8e8e8;
+}
+#write table tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+#write table th,
+#write table td {
+  padding: 10px 15px;
+}
+#write table th {
+  background-color: #f0f0f0;
+  border: 1px solid #dedede;
+  border-bottom-color: #c9c9c9;
+}
+#write table td {
+  border: 1px solid #e8e8e8;
+}
+#write details[open] summary {
+  margin-bottom: 12px;
+}
