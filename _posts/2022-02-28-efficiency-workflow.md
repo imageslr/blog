@@ -560,7 +560,6 @@ SEO 关键词可以增加信息量，提升检索效率。下面这些位置可�
     ![image-20220414000609625](/media/image-20220414000609625.png)
 
 ### Alfred Web Search 配置方法
-
 {: #web-search-config}
 
 配置 Web Search 的方法很简单。以 github 为例，首先在搜索框中输入内容，回车：
@@ -598,6 +597,8 @@ Google 的 Search URL 是：
 ```
 https://www.google.com/search?q={query}
 ```
+
+评论区里会不断更新我日常使用的 websearch 配置。
 
 ### Mac 系统自定义快捷键配置方法
 {: #shortcut-config}
