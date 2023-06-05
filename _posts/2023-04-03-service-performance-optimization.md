@@ -168,13 +168,23 @@ Perf 是 Linux 操作系统中一个强大的性能分析工具，可以用来�
 使用 `perf record` 命令，将程序的 CPU 执行情况记录到 `perf.data` 文件中：
 
 ```plaintext
-perf record -e cycles:u -g program
+perf record -p {pid} sleep 30
 ```
 
-使用 `perf report` 命令，可视化地查看和分析数据：
+上面的命令表示采集指定 `pid` 的进程，持续 30s。可能的输出：
 
 ```
-perf report -n --sort comm,dso,symbol
+$ ./perf record -p 59 sleep 30
+Lowering default frequency rate from 4000 to 1000.
+Please consider tweaking /proc/sys/kernel/perf_event_max_sample_rate.
+[ perf record: Woken up 55 times to write data ]
+[ perf record: Captured and wrote 21.482 MB perf.data (462814 samples) ]
+```
+
+使用 `perf report` 命令，可视化地查看和分析数据。默认加载当前目录的 `perf.data` 文件：
+
+```
+perf report
 ```
 
 一个可能的数据样例如下，从中我们可以看到每个函数执行占用的 CPU 百分比：
@@ -204,7 +214,9 @@ perf report -n --sort comm,dso,symbol
               4.70%  Bar::baz()
 ```
 
-一般来说，我们可以很快通过 `perf report` 或火焰图定位到哪个函数是热点。接下来需要在机器指令级别深入分析产生性能热点的原因。**Perf 命令可以展示每条机器指令的执行开销**，以下是一个可能的数据报告：
+加载数据后，按 `/` 可以搜索函数名，会从高到低展示不同线程中该函数的 CPU 占比。
+
+一般来说，我们可以很快通过 `perf report` 或火焰图定位到哪个函数是热点。接下来需要在机器指令级别深入分析产生性能热点的原因。在某个函数名上回车，可以进入该函数，**查看每条机器指令的执行开销**。以下是一个可能的数据报告：
 
 ```plaintext
 ------------------------------------------------
