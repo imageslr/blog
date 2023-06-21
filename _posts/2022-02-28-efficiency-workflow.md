@@ -65,7 +65,7 @@ typora-copy-images-to: ../media
 图：Mac 触控板四指上划，打开调度中心，在多个 Chrome 窗口间切换
 {: .caption}
 
-安装 [AltTab](https://alt-tab-macos.netlify.app/) 插件可以完美地解决上述问题。这是一个即装即用的 Mac 窗口切换增强工具，按下 `Command + Tab` / `` Command + ` `` 切换窗口时可以显示缩略图。
+安装 [AltTab](https://alt-tab-macos.netlify.app/) 插件可以完美地解决上述问题。这是一个即装即用的 Mac 窗口切换增强工具，按下 `Command + Tab` / `` Command + ` `` 切换窗口时可以显示缩略图。详细配置方法见[这里]({% post_url 2021-09-28-efficiency-workspace %}#alt-tab)。
 
 ![image-20220313233854266](/media/image-20220313233854266.png)
 

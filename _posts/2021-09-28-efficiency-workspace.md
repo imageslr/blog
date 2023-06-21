@@ -169,7 +169,7 @@ Chrome 自带了标签页分组功能，但是默认都在同一个窗口中，�
 
 Workspaces 插件还可以和以下工具配合使用：
 
-* [AltTab](https://alt-tab-macos.netlify.app/)：强烈推荐的 Mac 插件，切换窗口时可以显示缩略图。安装即用，无需配置。如果经常需要打开多个浏览器或 VS Code 窗口，那么这个工具非常有用。快捷键和 Mac 系统一致：`Command + Tab` 切换不同应用，`` Command + ` `` 切换当前应用的不同窗口。
+* [AltTab](https://alt-tab-macos.netlify.app/)：强烈推荐的 Mac 插件，切换窗口时可以显示缩略图。安装即用。如果经常需要打开多个浏览器或 VS Code 窗口，那么这个工具非常有用。快捷键和 Mac 系统一致：`Command + Tab` 切换不同应用，`` Command + ` `` 切换当前应用的不同窗口。详细配置方法见[附录](#alt-tab)。
 * [Tab Suspender](https://chrome.google.com/webstore/detail/tab-suspender/fiabciakcmgepblmdkmemdbbkilneeeh)：Chrome 插件，自动暂停长期不活动的选项卡，节省内存。
 * 将 Chrome 的窗口命名为工作区名称，切换窗口时更容易区分。具体操作：
   1. 转到想命名的窗口
@@ -268,10 +268,42 @@ Safari 的标签页分组功能，整体布局和 Chrome Workona 插件类似，
 {: .mb-0}
 * 为工作区命名时，可以采用添加前缀的方式来实现层级结构。
 * 每个软件 (Chrome, VS Code 等) 都提供了自己的「工作区」功能，将这些软件放置到同一个桌面，就构成了一个更大的工作区。
-
 </div>
-<div class="ant-alert ant-alert-blue" markdown=1>
 
+
+
+## 附录
+
+{: #alt-tab}
+### AltTab 配置方法
+
+AltTab 是 Mac 系统下的一个窗口切换软件，强烈推荐，切换窗口时可以显示缩略图。
+
+按 `Command + Tab` 时，系统的默认效果：
+
+<img src="/media/mac_task_switcher.png" alt="How to Alt+Tab to Switch Windows on a Mac" style="zoom:50%" />
+
+配置好 AltTab 之后的效果：
+
+![img](/media/frontpage-20230622003716763.jpg)
+
+
+安装方法：<https://alt-tab-macos.netlify.app> 直接 Download。
+
+快捷键默认是 `Alt + Tab`，我们把它配置成`Command + Tab` 切换不同应用，`` Command + ` `` 切换当前应用的不同窗口。请参考下面这几张图，勾选上对应的选项：
+
+<img src="/media/image-20230622003428922.png" alt="image-20230622003428922" style="width:48%;display:inline" />
+<img src="/media/image-20230622003359057.png" alt="image-20230622003359057" style="width:48%;display:inline" />
+
+参考如下设置，简化外观 (左图)；此外，可以把不需要的应用在 AltTab 里隐藏掉 (右图)：
+
+<div style="display:flex;align-items:center;margin-bottom:20px">
+<img src="/media/image-20230622003532521.png" alt="image-20230622003532521" style="width:40%" />
+<img src="/media/image-20230622003614015.png" alt="image-20230622003614015" style="width:50%" />
+</div>
+
+
+<div class="ant-alert ant-alert-blue" markdown=1>
 **效率提升方法论系列**
 {: .mb-2}
 
