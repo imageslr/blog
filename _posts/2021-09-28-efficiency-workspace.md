@@ -285,7 +285,7 @@ AltTab 是 Mac 系统下的一个窗口切换软件，强烈推荐，切换窗�
 
 配置好 AltTab 之后的效果：
 
-![img](/media/frontpage-20230622003716763.jpg)
+![img](/media/frontpage.jpg)
 
 
 安装方法：<https://alt-tab-macos.netlify.app> 直接 Download。
