@@ -183,6 +183,9 @@ Spotlight 是 Mac 系统内置的一个快速搜索工具。市面上有一些�
 
 我使用的是 Alfred。它的功能很全，插件丰富，就算不折腾，默认功能也已经足够好用。下面罗列了一些我常用的功能。
 
+💡 在 2023 年的今天，我更推荐使用 [Raycast](https://www.raycast.com/)。它涵盖了 Alfred 的几乎所有功能，但界面更美观、更易用。[附录](#raycast)是 Raycast 和 Alfred 的对比。
+{: .ant-alert .ant-alert-info}
+
 ### 基本设置
 
 * 快捷键：双击 `Alt`。这样一只手就能激活 Alfred。
@@ -600,7 +603,26 @@ https://www.google.com/search?q={query}
 
 评论区里会不断更新我日常使用的 websearch 配置。
 
+{: #raycast}
+### Raycast vs Alfred
+
+本文提到的所有 Alfred 的功能，[Raycast](https://www.raycast.com/) 都有：
+
+1. 打开 App：Raycast 可以直接给某个 App 绑定快捷键。
+2. Web Search：在 Raycast 里是 Quicklinks，可以直接粘贴 Alfred 的 Web Search 配置。可以设置 Fallback Result。但不支持重复的 Alias (Keyword)。
+3. 剪贴板历史：支持保存文本、图片、文件。按 Cmd + S 同样能保存 Snippets。但 Snippets 不支持分类保存。
+
+其他方面：
+
+1. 快捷键和 Alfred 基本一致，比如按 Cmd + 1、Cmd + 2 等可以快速选择。配置方式和 Alfred 也基本一致，但体验更佳。
+2. 快捷笔记 Floating Notes 功能使用很方便，代替了系统的便签。
+3. 界面现代，交互丝滑。扩展市场应用丰富，安装简便。新手教程友好。
+4. 个人使用完全免费。
+
+因此，建议使用 Raycast 代替 Alfred。
+
 ### Mac 系统自定义快捷键配置方法
+
 {: #shortcut-config}
 
 以 Typora 为例。点击菜单栏，可以看到这样的操作列表，每个操作标题后面都有对应的快捷键：

@@ -1,6 +1,6 @@
 {
   "markdown.extension.tableFormatter.enabled": false,
-  "workbench.colorTheme": "Default Light+",
+  "workbench.colorTheme": "Default Dark+",
   "pasteImage.path": "${projectRoot}/media",
   "pasteImage.basePath": "${projectRoot}",
   "pasteImage.prefix": "/",
