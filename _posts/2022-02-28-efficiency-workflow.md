@@ -621,6 +621,12 @@ https://www.google.com/search?q={query}
 
 因此，建议使用 Raycast 代替 Alfred。
 
+---
+
+Raycast 也可以直接替换某些系统插件：
+
+* [Rectangle](https://rectangleapp.com/)：窗口布局工具。Raycast 提供了完全一致的功能 (Window Management)，且可以直接导入 Rectangle 的快捷键 (Presets)。
+
 ### Mac 系统自定义快捷键配置方法
 
 {: #shortcut-config}

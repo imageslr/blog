@@ -71,16 +71,29 @@ layout: default
 <div class="about-content e-content" itemprop="articleBody" markdown="1">
 
 
-<div class="ant-alert ant-alert-warning" markdown="1">
+
+<div class="ant-alert ant-alert-warning">
+<details markdown="1">
+<summary><span markdown="1">**2024 届校招提前批已开启投递！** [👉 点击查看牛客网宣讲帖](https://www.nowcoder.com/discuss/946553)</span><span style="float: right; font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">2023.07.12~2023.09.30</span>
+</summary>
+
+* Ads Infra 的岗位：[系统架构工程师 - 商业化技术 - 北京](https://jobs.bytedance.com/campus/position/7254071399987284282/detail?referral_code=65V7M7W)
+* 所有岗位：<https://jobs.toutiao.com/s/iyCL8Bs>，已附内推码 **65V7M7W**
+
+</details>
+</div>
+
+
+<div class="ant-alert ant-alert-warning hidden" markdown="1">
 
 {%- comment -%}// 再修改的时候，搜索“Ads Infra”，找到所有关于校招时间的文章{%- endcomment -%}
 
 <details markdown="1">
-<summary><span markdown="1">**2024 届校招实习已开启投递，有转正机会！** [👉 点击查看牛客网宣讲帖](https://www.nowcoder.com/discuss/946553)</span><span style="float: right; font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">03.13 ~ 07</span>
+<summary><span markdown="1">**2024 届校招提前批已开启投递！** [👉 点击查看牛客网宣讲帖](https://www.nowcoder.com/discuss/946553)</span><span style="float: right; font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">03.13 ~ 07</span>
 </summary>
 * 【广告架构实习生-北京】：<https://jobs.toutiao.com/s/S48sScS>
 * 【广告架构实习生-杭州】：<https://jobs.toutiao.com/s/S48TeQK>
-* 【所有在招岗位】: <https://jobs.toutiao.com/s/j6vs8vy>，已附内推码
+* 【所有在招岗位】: <https://jobs.toutiao.com/s/iyCL8Bs>，已附内推码
 * 【内推码】**65V7M7W**
 {: .mb-2}
 
@@ -137,39 +150,6 @@ layout: default
 </div>
 
 {%- endcomment -%}
-
-
-<div class="ant-alert hidden">
-<details markdown="1">
-<summary>2021 校招正式批 投递入口
-<span style="float: right; font-size: 12px; font-style: italic; margin-top: 2px">8.12～10.31 已结束</span>
-</summary>
-
-字节跳动 2021 校招正式批已经开启，欢迎大家踊跃投递。每人可投递 **2 个**岗位。内推方式：
-{: .mb-0}
-* 内推码：**65V7M7W**
-* 内推链接：[https://jobs.toutiao.com/s/eDRgyVR](https://jobs.toutiao.com/s/eDRgyVR)
-
-如果希望定向投递到我们部门 —— Ads Infra，推荐先将简历发送至我的邮箱 [elonzzz@163.com](mailto://elonzzz@163.com)，备注意向城市 (北京 / 上海)。我会帮你评估和修改简历，并拉你进入 Ads Infra 校招交流群。
-
-Ads Infra 的校招岗位：
-{: .mb-0}
-* [系统架构工程师 - 商业化技术 - 北京](https://jobs.toutiao.com/s/eou5WwR) / [上海](https://jobs.toutiao.com/s/eorGJ1o)
-* [后端开发工程师 - 商业化技术 - 北京](https://jobs.toutiao.com/s/eohdShU)
-* [大数据开发工程师 - 商业化技术 - 北京](https://jobs.toutiao.com/s/eorKvkx)
-* [运维开发工程师 - 商业化技术 - 北京](https://jobs.toutiao.com/s/eouPStK)
-
-<!-- 
-如果你想自行投递，可以通过**[内推链接](https://jobs.toutiao.com/s/eDRgyVR)**在校招官网进行投递。**注意**！请务必确保使用了我的内推码，并且投递以下指定岗位，才能定向到我们部门。
-
-投递完成后，请给我*发一封邮件*，我会及时与你同步面试进展，并拉你进入**校招交流群**。 -->
-
-<!-- 如果你想投递其他岗位，也可以使用上面的内推链接进行投递。 -->
-
-有任何问题，欢迎随时与我联系！
-
-</details>
-</div>
 
 
 
