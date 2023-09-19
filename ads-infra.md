@@ -63,7 +63,7 @@ layout: default
 <summary><span markdown="1">**Ads Infra “金九银十” 社招 / 校招 / 实习内推火热进行中！** [👉 即刻投递](https://jobs.toutiao.com/s/iyCL8Bs)</span><span style="float: right; font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">2023.09.01~2023.11.30</span>
 </summary>
 
-「商业平台与架构 & 质量保障」负责字节跳动中国区广告研发团队的**架构、平台、质量保障**工作，包括 **Ads Infra**、**商业平台**、和**质量中台**等方向，是整个广告系统的核心部门。团队在北京、上海、杭州、深圳均有岗位，欢迎大家加入！
+「商业平台与架构 & 质量保障」负责字节跳动中国区广告研发团队的**架构、平台、质量保障**工作，包括 **Ads Infra**、**商业平台**、**质量中台**等方向，是整个广告系统的核心部门。团队在北京、上海、杭州、深圳均有岗位，欢迎大家加入！
 
 **2024 届校招**：[所有岗位 →](https://job.toutiao.com/s/ieXA7g5r)
 {: .mb-0}
