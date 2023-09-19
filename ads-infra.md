@@ -81,7 +81,7 @@ layout: default
 - 前端开发实习生-商业化技术-北京/上海/杭州
 - 后端开发实习生-商业化技术-北京/上海/杭州
 
-**社招**：[所有岗位 →](https://jobs.toutiao.com/s/iyCL8Bs)
+**社招**：[所有岗位 →](https://job.toutiao.com/s/ieXyawR6)
 {: .mb-0}
 - 广告算法架构高级工程师-Ads Infra-北京
 - 广告投放架构高级工程师-Ads Infra-北京
@@ -93,7 +93,7 @@ layout: default
 - 测试开发工程师-北京/上海/杭州
 - 前端开发工程师-北京/上海/杭州
 
-**字节跳动所有岗位：**<https://jobs.toutiao.com/s/iyCL8Bs>，已附内推码 **65V7M7W**
+**字节跳动所有岗位：**<https://job.toutiao.com/s/ieXyawR6>，已附内推码 **65V7M7W**
 
 </details>
 </div>
