@@ -25,14 +25,15 @@ figure {
   * Basic styling
   */
 body {
-  font: $base-font-weight #{$small-font-size}/#{$small-line-height} $base-font-family;
+  font: $base-font-weight #{$small-font-size}/#{$small-line-height}
+    $base-font-family;
   color: $text-color;
   background-color: $background-color;
   -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern"1;
-  -moz-font-feature-settings: "kern"1;
-  -o-font-feature-settings: "kern"1;
-  font-feature-settings: "kern"1;
+  -webkit-font-feature-settings: "kern" 1;
+  -moz-font-feature-settings: "kern" 1;
+  -o-font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
   font-kerning: normal;
   display: flex;
   min-height: 100vh;
@@ -41,7 +42,8 @@ body {
 
   @media screen and (min-width: $on-medium) {
     padding: 0 5%;
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+    font: $base-font-weight #{$base-font-size}/#{$base-line-height}
+      $base-font-family;
   }
 }
 
@@ -82,14 +84,18 @@ hr {
   margin-bottom: 20px;
   border: 0;
   height: 1px;
-  background: -webkit-linear-gradient(left,
-      transparent,
-      rgba(0, 0, 0, 0.5),
-      transparent);
-  background: linear-gradient(left,
-      transparent,
-      rgba(0, 0, 0, 0.5),
-      transparent);
+  background: -webkit-linear-gradient(
+    left,
+    transparent,
+    rgba(0, 0, 0, 0.5),
+    transparent
+  );
+  background: linear-gradient(
+    left,
+    transparent,
+    rgba(0, 0, 0, 0.5),
+    transparent
+  );
 }
 
 /**
@@ -108,7 +114,7 @@ img {
 /**
   * Figures
   */
-figure>img {
+figure > img {
   display: block;
 }
 
@@ -125,9 +131,8 @@ ol {
 }
 
 li {
-
-  >ul,
-  >ol {
+  > ul,
+  > ol {
     margin-bottom: 0;
   }
 }
@@ -160,7 +165,8 @@ a {
 /**
   * Blockquotes
   */
-article blockquote {
+article blockquote,
+.about-page blockquote {
   color: $grey-color;
   border-left: 4px solid $grey-color-light;
   padding-left: $spacing-unit / 2;
@@ -199,7 +205,7 @@ pre {
   padding: 2px 2px;
   overflow-x: auto;
 
-  >code {
+  > code {
     border: 0;
     padding-right: 0;
     padding-left: 0;
