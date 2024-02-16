@@ -121,7 +121,8 @@ _以上岗位均有转正机会；日常实习推进面试流程更灵活。_
 </div>
 
 <div class="ant-alert ant-alert-info" markdown="1">
-了解 Ads Infra 的工作内容 / 和其他后端岗位的区别，请戳 👉 [Ads Infra 校招 / 实习 Q & A](https://shimo.im/docs/98rrrqhP9rDw8kjr)
+了解 Ads Infra 的工作内容 / 和其他后端岗位的区别，请戳 👉 [Ads Infra 校招 / 实习 Q & A](./assets/ads_infra_qa.pdf)
+<!-- https://shimo.im/docs/98rrrqhP9rDw8kjr -->
 </div>
 
 <div class="ant-alert" markdown="1">
@@ -222,4 +223,4 @@ _无论是否通过我内推_，均可加入 Ads Infra 校招交流群，群内�
   </div>
 </div>
 
-{%- include giscus.html -%}
+{%- include giscus.html -%} /
