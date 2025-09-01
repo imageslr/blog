@@ -128,7 +128,7 @@ _以上岗位均有转正机会；日常实习推进面试流程更灵活。_
 <div class="ant-alert" markdown="1">
 
 <details markdown="1">
-<summary>找我内推 👉 <span style="float: right; font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">实习 / 校招 / 社招</span>
+<summary>找我内推 👉 (Update: 我已不在 Ads Infra 部门，本文仅保留索引，供大家参考) <span style="float: right; font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">实习 / 校招 / 社招</span>
 </summary>
 
 <span style="font-size: 12px; font-style: italic; color: #d48806; margin-top: 2px">长期有效，不限岗位，不限批次 (实习 / 校招)</span>
