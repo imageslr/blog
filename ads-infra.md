@@ -156,7 +156,7 @@ _以上岗位均有转正机会；日常实习推进面试流程更灵活。_
 
 <div class="ant-alert">
 <details markdown="1">
-<summary>Ads Infra 2022 校招交流群 👉 
+<summary>Ads Infra 2022 校招交流群 👉
 </summary>
 
 _无论是否通过我内推_，均可加入 Ads Infra 校招交流群，群内会有工作内容介绍、面试经验分享、答疑解惑、进度查询、信息同步等。联系邮箱 [elonzzz@163.com](mailto://elonzzz@163.com) 获取进群方式。
@@ -216,11 +216,11 @@ _无论是否通过我内推_，均可加入 Ads Infra 校招交流群，群内�
 
 我们是一支国际化的团队，团队成员分布在**北京、上海、杭州、新加坡、美国硅谷、西雅图**。我们既有曾就职于 BATJMD、微软、Google、Facebook 等一线互联网公司的资深工程师，也有大批校招毕业加入的年轻中坚力量。这里有全球最有挑战性的业务场景，也有强大的内部平台和海量的资源。我们崇尚技术，鼓励创新。期待你的加入！
 
-公网内推投递：<https://job.toutiao.com/s/ieXSURwn>  
-内网内推投递：[http://go/joinadsinfra](http://go/joinadsinfra)  
+公网内推投递：<https://job.toutiao.com/s/ieXSURwn>
+内网内推投递：[http://go/joinadsinfra](http://go/joinadsinfra)
 实习岗位投递：<https://job.toutiao.com/s/ieXSUng4>
 
   </div>
 </div>
 
-{%- include giscus.html -%} /
+{%- include giscus.html -%}
