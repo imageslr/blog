@@ -7,3 +7,5 @@ gem 'jekyll-redirect-from'
 gem "webrick", "~> 1.7"
 gem 'jekyll-sitemap'
 gem "csv", "~> 3.3"
+
+gem "base64", "~> 0.3.0"
